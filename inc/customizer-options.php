@@ -11,8 +11,8 @@ require get_template_directory() . '/inc/fontawesome_json.php';
 if ( class_exists( 'Kirki' ) ) {
 
 	Kirki::add_section( 'typography', array(
-	    'title'          => __( 'Font Settings', 'lathom' ),
-	    'description'    => __( 'Configure Font Settings. You can also type the desired Font into the Select Box if you are looking for a special one.', 'lathom' ),
+	    'title'          => __( 'Font Settings', 'understrap' ),
+	    'description'    => __( 'Configure Font Settings. You can also type the desired Font into the Select Box if you are looking for a special one.', 'understrap' ),
 	    'panel'          => '',
 	    'priority'       => 190,
 	    'capability'     => 'edit_theme_options',
@@ -20,21 +20,21 @@ if ( class_exists( 'Kirki' ) ) {
 
 	Kirki::add_panel( 'topbar', array(
 	    'priority'    => 200,
-	    'title'       => __( 'Topbar', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'title'       => __( 'Topbar', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	) );
 
 	Kirki::add_section( 'topbar_features', array(
-	    'title'          => __( 'Topbar Features', 'lathom' ),
-	    'description'    => __( 'Configure Settings for the Topbar', 'lathom' ),
+	    'title'          => __( 'Topbar Features', 'understrap' ),
+	    'description'    => __( 'Configure Settings for the Topbar', 'understrap' ),
 	    'panel'          => 'topbar',
 	    'priority'       => 10,
 	    'capability'     => 'edit_theme_options',
 	) );
 
 	Kirki::add_section( 'topbar_color_settings', array(
-	    'title'          => __( 'Topbar Colors', 'lathom' ),
-	    'description'    => __( 'Configure Color Settings for the Topbar', 'lathom' ),
+	    'title'          => __( 'Topbar Colors', 'understrap' ),
+	    'description'    => __( 'Configure Color Settings for the Topbar', 'understrap' ),
 	    'panel'          => 'topbar',
 	    'priority'       => 20,
 	    'capability'     => 'edit_theme_options',
@@ -42,13 +42,13 @@ if ( class_exists( 'Kirki' ) ) {
 
 	// Kirki::add_panel( 'menue', array(
 	//     'priority'    => 210,
-	//     'title'       => __( 'Offcanvas Menu Configuration', 'lathom' ),
-	//     'description' => __( '', 'lathom' ),
+	//     'title'       => __( 'Offcanvas Menu Configuration', 'understrap' ),
+	//     'description' => __( '', 'understrap' ),
 	// ) );
 
 	Kirki::add_section( 'menu_settings', array(
-	    'title'          => __( 'Offcanvas Menu Settings', 'lathom' ),
-	    'description'    => __( '', 'lathom' ),
+	    'title'          => __( 'Offcanvas Menu Settings', 'understrap' ),
+	    'description'    => __( '', 'understrap' ),
 	    'panel'          => '',
 	    'priority'       => 220,
 	    'capability'     => 'edit_theme_options',
@@ -56,53 +56,53 @@ if ( class_exists( 'Kirki' ) ) {
 
 	Kirki::add_panel( 'content', array(
 	    'priority'    => 230,
-	    'title'       => __( 'Content Settings', 'lathom' ),
-	    'description' => __( 'My Description', 'lathom' ),
+	    'title'       => __( 'Content Settings', 'understrap' ),
+	    'description' => __( 'My Description', 'understrap' ),
 	) );
 
 	Kirki::add_section( 'content_features', array(
-	    'title'          => __( 'Content Features', 'lathom' ),
-	    'description'    => __( '', 'lathom' ),
+	    'title'          => __( 'Content Features', 'understrap' ),
+	    'description'    => __( '', 'understrap' ),
 	    'panel'          => 'content',
 	    'priority'       => 10,
 	    'capability'     => 'edit_theme_options',
 	) );
 
 	Kirki::add_section( 'article_features', array(
-	    'title'          => __( 'Article Features', 'lathom' ),
-	    'description'    => __( '', 'lathom' ),
+	    'title'          => __( 'Article Features', 'understrap' ),
+	    'description'    => __( '', 'understrap' ),
 	    'panel'          => 'content',
 	    'priority'       => 15,
 	    'capability'     => 'edit_theme_options',
 	) );
 
 	Kirki::add_section( 'article_colors', array(
-	    'title'          => __( 'Article Colors', 'lathom' ),
-	    'description'    => __( '', 'lathom' ),
+	    'title'          => __( 'Article Colors', 'understrap' ),
+	    'description'    => __( '', 'understrap' ),
 	    'panel'          => 'content',
 	    'priority'       => 20,
 	    'capability'     => 'edit_theme_options',
 	) );
 
 	Kirki::add_section( 'comment_section_colors', array(
-	    'title'          => __( 'Comment Section', 'lathom' ),
-	    'description'    => __( '', 'lathom' ),
+	    'title'          => __( 'Comment Section', 'understrap' ),
+	    'description'    => __( '', 'understrap' ),
 	    'panel'          => 'content',
 	    'priority'       => 22,
 	    'capability'     => 'edit_theme_options',
 	) );
 
 	Kirki::add_section( 'article_sticky_config', array(
-	    'title'          => __( 'Sticky Article Settings', 'lathom' ),
-	    'description'    => __( '', 'lathom' ),
+	    'title'          => __( 'Sticky Article Settings', 'understrap' ),
+	    'description'    => __( '', 'understrap' ),
 	    'panel'          => 'content',
 	    'priority'       => 25,
 	    'capability'     => 'edit_theme_options',
 	) );
 
 	Kirki::add_section( 'sidebar_config', array(
-	    'title'          => __( 'Sidebar Settings', 'lathom' ),
-	    'description'    => __( 'Configure Sidebar Settings', 'lathom' ),
+	    'title'          => __( 'Sidebar Settings', 'understrap' ),
+	    'description'    => __( 'Configure Sidebar Settings', 'understrap' ),
 	    'panel'          => 'content',
 	    'priority'       => 30,
 	    'capability'     => 'edit_theme_options',
@@ -110,29 +110,29 @@ if ( class_exists( 'Kirki' ) ) {
 
 	Kirki::add_panel( 'footer', array(
 	    'priority'    => 260,
-	    'title'       => __( 'Footer Configuration', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'title'       => __( 'Footer Configuration', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	) );
 
 	Kirki::add_section( 'footerwidgets_settings', array(
-	    'title'          => __( 'Footer Widgets Settings', 'lathom' ),
-	    'description'    => __( 'Configure Settings for the Footer Widgets Area', 'lathom' ),
+	    'title'          => __( 'Footer Widgets Settings', 'understrap' ),
+	    'description'    => __( 'Configure Settings for the Footer Widgets Area', 'understrap' ),
 	    'panel'          => 'footer',
 	    'priority'       => 10,
 	    'capability'     => 'edit_theme_options',
 	) );
 
 	Kirki::add_section( 'footer_settings', array(
-	    'title'          => __( 'Footer Settings', 'lathom' ),
-	    'description'    => __( 'Configure Settings for the Footer', 'lathom' ),
+	    'title'          => __( 'Footer Settings', 'understrap' ),
+	    'description'    => __( 'Configure Settings for the Footer', 'understrap' ),
 	    'panel'          => 'footer',
 	    'priority'       => 10,
 	    'capability'     => 'edit_theme_options',
 	) );
 
 	Kirki::add_section( 'custom_code', array(
-	    'title'          => __( 'Custom Code', 'lathom' ),
-	    'description'    => __( 'You can inject your own CSS and Javascript without modifying any of the theme files or having the need to create a Child-Theme to ensure that this Theme still remains updatable.', 'lathom' ),
+	    'title'          => __( 'Custom Code', 'understrap' ),
+	    'description'    => __( 'You can inject your own CSS and Javascript without modifying any of the theme files or having the need to create a Child-Theme to ensure that this Theme still remains updatable.', 'understrap' ),
 	    'panel'          => '',
 	    'priority'       => 270,
 	    'capability'     => 'edit_theme_options',
@@ -141,11 +141,11 @@ if ( class_exists( 'Kirki' ) ) {
 
 	/**
 	 * Add the configuration.
-	 * This way all the fields using the 'lathom' ID
+	 * This way all the fields using the 'understrap' ID
 	 * will inherit these options
 	 */
 
-	Kirki::add_config( 'lathom', array(
+	Kirki::add_config( 'understrap', array(
 		'capability'    => 'edit_theme_options',
 		'option_type'   => 'theme_mod',
 	) );
@@ -154,12 +154,12 @@ if ( class_exists( 'Kirki' ) ) {
 	 * Font Settings
 	 */
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'typography',
 		'settings'    => 'base_typography_config',
-		'label'       => esc_attr__( 'Base Typography', 'lathom' ),
-		'description' => esc_attr__( 'Configures the overall Font for the whole Site.', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Base Typography', 'understrap' ),
+		'description' => esc_attr__( 'Configures the overall Font for the whole Site.', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'typography',
 		'default'     => array(
 			'font-style'     => array( 'bold', 'italic' ),
@@ -188,17 +188,17 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'typography',
 		'settings'    => 'headline_typography_config',
-		'label'       => esc_attr__( 'Headline Typography', 'lathom' ),
-		'description' => esc_attr__( 'Configures Headline Fonts for the Site.', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Headline Typography', 'understrap' ),
+		'description' => esc_attr__( 'Configures Headline Fonts for the Site.', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'typography',
 		'default'     => array(
 			'font-style'     => array( 'bold' ),
 			'font-family'    => 'Titillium Web',
-			'font-weight'    => '800',
+			'font-weight'    => '900',
 			'letter-spacing' => '0.125',
 			//'word-spacing'   => '0.125',
 		),
@@ -223,21 +223,21 @@ if ( class_exists( 'Kirki' ) ) {
 	/**
 	 * Topbar text settings
 	 */
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'display_brand_image',
-	    'label'       => __( 'Display Brand Image?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Display Brand Image?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'topbar_features',
 	    'default'     => '1',
 	    'priority'    => 10,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'settings' => 'brand_image',
-	    'label'    => __( 'Choose or upload your brand image', 'lathom' ),
-	    'description' => __( 'Notice: Please use an Image with 50px maximum height to avoid overhead. Image will get scaled down proportionally to 50px height anyway.', 'lathom' ),
+	    'label'    => __( 'Choose or upload your brand image', 'understrap' ),
+	    'description' => __( 'Notice: Please use an Image with 50px maximum height to avoid overhead. Image will get scaled down proportionally to 50px height anyway.', 'understrap' ),
 	    'section'  => 'topbar_features',
 	    'type'     => 'upload',
 	    'mime_type'=> 'image',
@@ -253,11 +253,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'slider',
 	    'settings'    => 'blogtitle_size',
-	    'label'       => __( 'Blog title size', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Blog title size', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'topbar_features',
 	    'default'     => 36,
 	    'priority'    => 30,
@@ -284,22 +284,22 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'display_blog_slug',
-	    'label'       => __( 'Display Blog Slug?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Display Blog Slug?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'topbar_features',
 	    'default'     => '1',
 	    'priority'    => 40,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'slider',
 	    'settings'    => 'blog_slug_size',
-	    'label'       => __( 'Blog slug size', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Blog slug size', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'topbar_features',
 	    'default'     => 16,
 	    'priority'    => 50,
@@ -333,12 +333,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'text',
 	    'settings'    => 'topbar_menu_text',
-	    'label'       => __( 'Menu Button Text', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
-	    'default'     => __( 'MENU', 'lathom' ),
+	    'label'       => __( 'Menu Button Text', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
+	    'default'     => __( 'MENU', 'understrap' ),
 	    'section'     => 'topbar_features',
 	    'priority'    => 70,
 	) );
@@ -346,8 +346,8 @@ if ( class_exists( 'Kirki' ) ) {
 	/**
 	 * Topbar color settings
 	 */
-	$tb_text = __( 'Topbar color settings', 'lathom' );
-	Kirki::add_field( 'lathom', array(
+	$tb_text = __( 'Topbar color settings', 'understrap' );
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'custom0',
 	    'label'       => '',
@@ -355,12 +355,12 @@ if ( class_exists( 'Kirki' ) ) {
 	    'default'     => "<h2>$tb_text</h2>",
 	    'priority'    => 1,
 	) );
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'topbar_background',
-		'label'       => esc_attr__( 'Topbar Background Color', 'lathom' ),
-		'description' => esc_attr__( 'Notice: Topbar transparency should be used carefully!', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Topbar Background Color', 'understrap' ),
+		'description' => esc_attr__( 'Notice: Topbar transparency should be used carefully!', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'topbar_color_settings',
 		'default'     => $primary_color,
 		'priority'    => 10,
@@ -380,24 +380,24 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'toggle_topbar_shadow',
-	    'label'       => __( 'Activate Dropshow?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Activate Dropshow?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'topbar_color_settings',
 	    'default'     => '0',
 	    'priority'    => 20,
 	) );
 
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'topbar_dropshadow_color',
-		'label'       => esc_attr__( 'Topbar Dropshadow Color', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Topbar Dropshadow Color', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'topbar_color_settings',
 		'default'     => 'rgba(0,0,0,0.75)',
 		'priority'    => 30,
@@ -411,11 +411,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'slider',
 	    'settings'    => 'topbar_dropshadow_size',
-	    'label'       => __( 'Dropshadow size', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Dropshadow size', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'topbar_color_settings',
 	    'default'     => 2,
 	    'priority'    => 40,
@@ -433,8 +433,8 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	$btc_text = __( 'Topbar text colors', 'lathom' );
-	Kirki::add_field( 'lathom', array(
+	$btc_text = __( 'Topbar text colors', 'understrap' );
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'custom1',
 	    'label'       => '',
@@ -443,12 +443,12 @@ if ( class_exists( 'Kirki' ) ) {
 	    'priority'    => 50,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'blog_title_color',
-	    'label'       => __( 'Blog title color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Blog title color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'topbar_color_settings',
 	    'default'     => 'rgba(' . hex2rgb($accent_color) . ',1)',
 	    'priority'    => 60,
@@ -468,12 +468,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'blog_title_hover_color',
-	    'label'       => __( 'Blog title hover color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Blog title hover color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'topbar_color_settings',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 70,
@@ -493,12 +493,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'blog_slug_color',
-	    'label'       => __( 'Blog slug color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Blog slug color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'topbar_color_settings',
 	    'default'     => '#ffffff',
 	    'priority'    => 80,
@@ -525,8 +525,8 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	$mb_text = __( 'Menubutton colors', 'lathom' );
-	Kirki::add_field( 'lathom', array(
+	$mb_text = __( 'Menubutton colors', 'understrap' );
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'custommenu',
 	    'label'       => '',
@@ -535,12 +535,12 @@ if ( class_exists( 'Kirki' ) ) {
 	    'priority'    => 90,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'topbar_menu_color',
-	    'label'       => __( 'Menubutton Text Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Menubutton Text Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'topbar_color_settings',
 	    'default'     => 'rgba(' . hex2rgb($text_light) . ',0.75)',
 	    'priority'    => 100,
@@ -560,12 +560,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'topbar_menu_hover_color',
-	    'label'       => __( 'Menu Text Hover Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'lathom' ),
+	    'label'       => __( 'Menu Text Hover Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
 	    'section'     => 'topbar_color_settings',
 	    'default'     => 'rgba(' . hex2rgb($text_light) . ',1)',
 	    'priority'    => 110,
@@ -585,11 +585,11 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'topbar_menu_button_background_color',
-	    'label'       => __( 'Menu Button Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Menu Button Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'topbar_color_settings',
 	    'default'     => $primary_color,
 	    'priority'    => 120,
@@ -613,12 +613,12 @@ if ( class_exists( 'Kirki' ) ) {
 	 * Offcanvas Menu settings
 	 */
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'offcanvas_menu_background',
-		'label'       => esc_attr__( 'Offcancas Menu Background Color', 'lathom' ),
-		'description' => __( 'Notice: Topbar transparency should be used carefully!', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Offcancas Menu Background Color', 'understrap' ),
+		'description' => __( 'Notice: Topbar transparency should be used carefully!', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'menu_settings',
 		'default'     => '#2d2f33',
 		'priority'    => 10,
@@ -638,24 +638,24 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'toggle_menu_shadow',
-	    'label'       => __( 'Activate Menu Dropshow?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Activate Menu Dropshow?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => '0',
 	    'priority'    => 20,
 	) );
 
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'menu_dropshadow_color',
-		'label'       => esc_attr__( 'Menu Dropshadow Color', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Menu Dropshadow Color', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'menu_settings',
 		'default'     => '#000000',
 		'priority'    => 30,
@@ -668,11 +668,11 @@ if ( class_exists( 'Kirki' ) ) {
 	    ),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'slider',
 	    'settings'    => 'menu_dropshadow_size',
-	    'label'       => __( 'Dropshadow size', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Dropshadow size', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => 1,
 	    'priority'    => 40,
@@ -694,8 +694,8 @@ if ( class_exists( 'Kirki' ) ) {
 
 
 
-	$mic_text = __( 'Menu Item Colors', 'lathom' );
-	Kirki::add_field( 'lathom', array(
+	$mic_text = __( 'Menu Item Colors', 'understrap' );
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'custommenuitems',
 	    'label'       => '',
@@ -704,12 +704,12 @@ if ( class_exists( 'Kirki' ) ) {
 	    'priority'    => 50,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'close_button_color',
-		'label'       => esc_attr__( 'Close Button Color', 'lathom' ),
-		'description' => __( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Close Button Color', 'understrap' ),
+		'description' => __( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'menu_settings',
 		'default'     => $primary_color,
 		'priority'    => 55,
@@ -729,11 +729,11 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color',
 	    'settings'    => 'menu_text_color',
-	    'label'       => __( 'Menu Linktext Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Menu Linktext Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => '#aaaaaa',
 	    'priority'    => 60,
@@ -753,11 +753,11 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 	// hover color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color',
 	    'settings'    => 'menu_text_hover_color',
-	    'label'       => __( 'Menu Linktext Hover Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Menu Linktext Hover Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => '#ffffff',
 	    'priority'    => 70,
@@ -777,11 +777,11 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 	// button hover
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color',
 	    'settings'    => 'menu_button_hover_color',
-	    'label'       => __( 'Menu Item Background Hover Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Menu Item Background Hover Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => '#222222',
 	    'priority'    => 80,
@@ -801,8 +801,8 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 	// search color
-	$sbcolors = __( 'Searchbox Colors', 'lathom' );
-	Kirki::add_field( 'lathom', array(
+	$sbcolors = __( 'Searchbox Colors', 'understrap' );
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'custommenuitems',
 	    'label'       => '',
@@ -811,11 +811,11 @@ if ( class_exists( 'Kirki' ) ) {
 	    'priority'    => 90,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color',
 	    'settings'    => 'menu_searchbox_text_color',
-	    'label'       => __( 'Searchbox Text Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Searchbox Text Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => '#555555',
 	    'priority'    => 100,
@@ -836,11 +836,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// BUG!
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color',
 	    'settings'    => 'menu_searchbox_placeholder_text_color',
-	    'label'       => __( 'Searchbox Placeholder Text Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Searchbox Placeholder Text Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => '#999999',
 	    'priority'    => 110,
@@ -860,11 +860,11 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color',
 	    'settings'    => 'menu_searchbox_color',
-	    'label'       => __( 'Searchbox Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Searchbox Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => '#444444',
 	    'priority'    => 120,
@@ -885,11 +885,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// search color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color',
 	    'settings'    => 'menu_searchbox_active_text_color',
-	    'label'       => __( 'Focused Searchbox Text Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Focused Searchbox Text Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => '#111111',
 	    'priority'    => 130,
@@ -910,11 +910,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// search color:focus
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color',
 	    'settings'    => 'menu_searchbox_active_color',
-	    'label'       => __( 'Focused Searchbox Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Focused Searchbox Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => '#ffffff',
 	    'priority'    => 140,
@@ -936,23 +936,23 @@ if ( class_exists( 'Kirki' ) ) {
 
 
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'toggle_searchbox_pointer',
-	    'label'       => __( 'Activate Searchbox Pointer?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Activate Searchbox Pointer?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => 'true',
 	    'priority'    => 150,
 	) );
 
 	// search button
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'menu_searchbutton_color',
-	    'label'       => __( 'Searchbutton Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Searchbutton Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => 'rgba(' . hex2rgb($accent_color) . ',0.85)',
 	    'priority'    => 160,
@@ -974,12 +974,12 @@ if ( class_exists( 'Kirki' ) ) {
 
 
 	// search button:hover
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'menu_searchbutton_hover_color',
-	    'label'       => __( 'Searchbutton Hover Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'lathom' ),
+	    'label'       => __( 'Searchbutton Hover Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => 'rgba(' . hex2rgb($accent_color) . ',1)',
 	    'priority'    => 170,
@@ -1000,11 +1000,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// search button textcolor
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color',
 	    'settings'    => 'menu_searchbutton_text_color',
-	    'label'       => __( 'Searchbutton Text Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Searchbutton Text Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => '#dddddd',
 	    'priority'    => 180,
@@ -1024,12 +1024,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 	// search button textcolor
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color',
 	    'settings'    => 'menu_searchbutton_text_hover_color',
-	    'label'       => __( 'Searchbutton Text Hover Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'lathom' ),
+	    'label'       => __( 'Searchbutton Text Hover Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
 	    'section'     => 'menu_settings',
 	    'default'     => '#ffffff',
 	    'priority'    => 190,
@@ -1053,12 +1053,12 @@ if ( class_exists( 'Kirki' ) ) {
 	 * Content features
 	 */
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'radio-image',
 		'settings'    => 'content_width',
-		'label'       => esc_attr__( 'Content Width Configuration', 'lathom' ),
-		'description' => esc_attr__( 'Choose if you want your Website Content shown in a Fullwidth or a Boxed Layout.', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Content Width Configuration', 'understrap' ),
+		'description' => esc_attr__( 'Choose if you want your Website Content shown in a Fullwidth or a Boxed Layout.', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'content_features',
 		'default'     => 'fullwidth',
 		'priority'    => 10,
@@ -1068,21 +1068,21 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'display_background_image',
-	    'label'       => __( 'Use Background Image?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Use Background Image?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'content_features',
 	    'default'     => '0',
 	    'priority'    => 30,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'settings' => 'bg_image',
-	    'label'    => __( 'Choose or upload your Background Image', 'lathom' ),
-	    'description' => esc_attr__( 'Your Background Image should be at least 1600 Pixels wide and 900 Pixel high if you want it to cover the whole Screen.', 'lathom' ),
+	    'label'    => __( 'Choose or upload your Background Image', 'understrap' ),
+	    'description' => esc_attr__( 'Your Background Image should be at least 1600 Pixels wide and 900 Pixel high if you want it to cover the whole Screen.', 'understrap' ),
 	    'section'  => 'content_features',
 	    'type'     => 'upload',
 	    'mime_type'=> 'image',
@@ -1097,11 +1097,11 @@ if ( class_exists( 'Kirki' ) ) {
 	    ),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color',
 	    'settings'    => 'background_color',
-	    'label'       => __( 'Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'content_features',
 	    'default'     => '#eeeeee',
 	    'priority'    => 50,
@@ -1121,22 +1121,22 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'display_to_top_button',
-	    'label'       => __( 'Display a "To Top" Button?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Display a "To Top" Button?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'content_features',
 	    'default'     => '1',
 	    'priority'    => 60,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'top_button_color',
-	    'label'       => __( '"To Top" Button Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( '"To Top" Button Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'content_features',
 	    'default'     => 'rgba( '.hex2rgb(get_theme_mod( 'topbar_background' )) .',0.75)',
 	    'priority'    => 70,
@@ -1167,24 +1167,24 @@ if ( class_exists( 'Kirki' ) ) {
 	 * Article Features
 	 */
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'show_content_attachment_image',
-	    'label'       => __( 'Show featured image above single article view?', 'lathom' ),
-	    'description' => __( '<strong>Notice:</strong> This may lead to super-huge Images when you switch the Sidebar off <b>and</b> activate Fullwidth Layout according to your Monitors Resolution. Anyway, Images will be resized to 1140x641 Pixels and then scaled up to match the Articles Width.', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Show featured image above single article view?', 'understrap' ),
+	    'description' => __( '<strong>Notice:</strong> This may lead to super-huge Images when you switch the Sidebar off <b>and</b> activate Fullwidth Layout according to your Monitors Resolution. Anyway, Images will be resized to 1140x641 Pixels and then scaled up to match the Articles Width.', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_features',
 	    'default'     => 'true',
 	    'priority'    => 15,
 	) );
 
 	// figure background
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'attachment_text_background_color',
-	    'label'       => __( 'Caption Text Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Caption Text Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_features',
 	    'default'     => 'rgba(255,255,255,0.5)',
 	    'priority'    => 20,
@@ -1211,12 +1211,12 @@ if ( class_exists( 'Kirki' ) ) {
 	    ),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'attachment_text_color',
-	    'label'       => __( 'Caption Text Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Caption Text Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_features',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 30,
@@ -1246,12 +1246,12 @@ if ( class_exists( 'Kirki' ) ) {
 	/**
 	 * Article Colors
 	 */
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_background_color',
-	    'label'       => __( 'Article Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Article Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(255,255,255,0.250)',
 	    'priority'    => 10,
@@ -1271,24 +1271,24 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'toggle_article_shadow',
-	    'label'       => __( 'Activate Article Dropshow?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Activate Article Dropshow?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'false',
 	    'priority'    => 20,
 	) );
 
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'article_dropshadow_color',
-		'label'       => esc_attr__( 'Article Dropshadow Color', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Article Dropshadow Color', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'article_colors',
 		'default'     => 'rgba(0,0,0,0.5)',
 		'priority'    => 30,
@@ -1302,11 +1302,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'slider',
 	    'settings'    => 'article_dropshadow_size',
-	    'label'       => __( 'Article Dropshadow size', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Article Dropshadow size', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 1,
 	    'priority'    => 40,
@@ -1324,8 +1324,8 @@ if ( class_exists( 'Kirki' ) ) {
 	    ),
 	) );
 
-	$ahc_text = __( 'Article Header Colors', 'lathom' );
-	Kirki::add_field( 'lathom', array(
+	$ahc_text = __( 'Article Header Colors', 'understrap' );
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'articleheadercolors_config',
 	    'label'       => '',
@@ -1334,12 +1334,12 @@ if ( class_exists( 'Kirki' ) ) {
 	    'priority'    => 50,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_header_background_color',
-	    'label'       => __( 'Articleheader Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Articleheader Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(0,0,0,0)',
 	    'priority'    => 60,
@@ -1359,12 +1359,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_header_text_color',
-	    'label'       => __( 'Articleheader Text Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Articleheader Text Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 70,
@@ -1384,12 +1384,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_header_link_text_color',
-	    'label'       => __( 'Articleheader Linktext Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Articleheader Linktext Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 80,
@@ -1409,12 +1409,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_header_link_text_hover_color',
-	    'label'       => __( 'Articleheader Linktext Hover Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'lathom' ),
+	    'label'       => __( 'Articleheader Linktext Hover Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(' . hex2rgb($accent_color) . ',1)',
 	    'priority'    => 90,
@@ -1434,8 +1434,8 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	$articlecontentcolors = __( 'Article Content Colors', 'lathom' );
-	Kirki::add_field( 'lathom', array(
+	$articlecontentcolors = __( 'Article Content Colors', 'understrap' );
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'articlecontent_config',
 	    'label'       => '',
@@ -1444,12 +1444,12 @@ if ( class_exists( 'Kirki' ) ) {
 	    'priority'    => 100,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_content_background_color',
-	    'label'       => __( 'Article Content Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Article Content Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(255,255,255,0)',
 	    'priority'    => 110,
@@ -1469,12 +1469,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_content_headline_color',
-	    'label'       => __( 'Article Headline Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Article Headline Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 115,
@@ -1494,12 +1494,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_content_text_color',
-	    'label'       => __( 'Article Text Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Article Text Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => '#222222',
 	    'priority'    => 120,
@@ -1519,12 +1519,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_content_text_link_color',
-	    'label'       => __( 'Article Linktext Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Article Linktext Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => '#000000',
 	    'priority'    => 130,
@@ -1544,12 +1544,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_content_text_link_hover_color',
-	    'label'       => __( 'Article Linktext Hover Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'lathom' ),
+	    'label'       => __( 'Article Linktext Hover Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => '#555555',
 	    'priority'    => 140,
@@ -1569,8 +1569,8 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	$articlefootercolors = __( 'Article Footer Colors', 'lathom' );
-	Kirki::add_field( 'lathom', array(
+	$articlefootercolors = __( 'Article Footer Colors', 'understrap' );
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'articlefooter_config',
 	    'label'       => '',
@@ -1579,12 +1579,12 @@ if ( class_exists( 'Kirki' ) ) {
 	    'priority'    => 160,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_footer_background_color',
-	    'label'       => __( 'Articlefooter Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Articlefooter Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(0,0,0,0.1)',
 	    'priority'    => 170,
@@ -1604,12 +1604,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_footer_text_color',
-	    'label'       => __( 'Articlefooter Text Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Articlefooter Text Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 190,
@@ -1629,12 +1629,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_footer_text_link_color',
-	    'label'       => __( 'Articlefooter Linktext Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'lathom' ),
+	    'label'       => __( 'Articlefooter Linktext Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 190,
@@ -1654,12 +1654,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'article_footer_text_link_hover_color',
-	    'label'       => __( 'Articlefooter Linktext Hover Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'lathom' ),
+	    'label'       => __( 'Articlefooter Linktext Hover Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(' . hex2rgb($accent_color) . ',1)',
 	    'priority'    => 200,
@@ -1682,22 +1682,22 @@ if ( class_exists( 'Kirki' ) ) {
 	/**
 	 * Comment Section Settings
 	 */
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'commentsheadlinecolors_config',
 	    'label'       => '',
 	    'section'     => 'comment_section_colors',
-	    'default'     => __( '<hr><h2>Comments Section Headline</h2>', 'lathom'),
+	    'default'     => __( '<hr><h2>Comments Section Headline</h2>', 'understrap'),
 	    'priority'    => 5,
 	) );
 
 	// comments-title color default: accent
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_title_text_color',
-		'label'       => esc_attr__( 'Comments Title Text', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Title Text', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
 		'default'     => 'rgba(' . hex2rgb($accent_color) . ',1)',
 		'priority'    => 10,
@@ -1718,14 +1718,14 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// comments title background default: primary
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_title_background_color',
-		'label'       => esc_attr__( 'Comments Title Background', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Title Background', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => get_theme_mod( 'topbar_background' ),
+		'default'     => 'rgba(255,255,255,0.25)',
 		'priority'    => 20,
 		'output'      => array(
 			array(
@@ -1744,12 +1744,12 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'radio-image',
 		'settings'    => 'comment_avater_config',
-		'label'       => esc_attr__( 'Avatar Style', 'lathom' ),
-		'description' => esc_attr__( 'You can choose if you want your Avatars displayed rounded, circle or standard.', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Avatar Style', 'understrap' ),
+		'description' => esc_attr__( 'You can choose if you want your Avatars displayed rounded, circle or standard.', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
 		'default'     => 'img-circle',
 		'priority'    => 22,
@@ -1762,23 +1762,23 @@ if ( class_exists( 'Kirki' ) ) {
 
 
 	// comment content even top color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'commentsevencolor_config',
 	    'label'       => '',
 	    'section'     => 'comment_section_colors',
-	    'default'     => __( '<hr><h2>Comments Even</h2>', 'lathom'),
+	    'default'     => __( '<hr><h2>Comments Even</h2>', 'understrap'),
 	    'priority'    => 25,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_content_even_title_text_color',
-		'label'       => esc_attr__( 'Comments Even Titletext', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Even Titletext', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => '#ffffff',
+		'default'     => '#222222',
 		'priority'    => 30,
 		'output'      => array(
 			array(
@@ -1797,14 +1797,14 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// comment content even top background inverse article_background_color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_content_even_title_background_color',
-		'label'       => esc_attr__( 'Comments Even Title Background', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Even Title Background', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => 'rgba( ' .invertRGBa(get_theme_mod( 'article_background_color' )) . ')',
+		'default'     => 'rgba(255,255,255,0.250)',
 		'priority'    => 40,
 		'output'      => array(
 			array(
@@ -1823,12 +1823,12 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// comment content even content color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_content_even_content_text_color',
-		'label'       => esc_attr__( 'Comments Even Text', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Even Text', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
 		'default'     => '#222222',
 		'priority'    => 50,
@@ -1849,14 +1849,14 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// comment content even content background article_background_color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_content_even_content_background_color',
-		'label'       => esc_attr__( 'Comments Even Background', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Even Background', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => get_theme_mod( 'article_background_color' ),
+		'default'     => 'rgba(0,0,0,0.125)',
 		'priority'    => 60,
 		'output'      => array(
 			array(
@@ -1876,20 +1876,20 @@ if ( class_exists( 'Kirki' ) ) {
 
 
 	// comment content odd top color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'commentsodd_config',
 	    'label'       => '',
 	    'section'     => 'comment_section_colors',
-	    'default'     => __( '<hr><h2>Comments Odd</h2>', 'lathom'),
+	    'default'     => __( '<hr><h2>Comments Odd</h2>', 'understrap'),
 	    'priority'    => 99,
 	) );
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_content_odd_title_text_color',
-		'label'       => esc_attr__( 'Comments Odd Titletext', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Odd Titletext', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
 		'default'     => '#000000',
 		'priority'    => 100,
@@ -1909,12 +1909,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 	// comment content odd top background article_background_color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_content_odd_title_background_color',
-		'label'       => esc_attr__( 'Comments Odd Title Background', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Odd Title Background', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
 		'default'     => get_theme_mod( 'article_background_color' ),
 		'priority'    => 110,
@@ -1934,12 +1934,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 	// comment content odd content color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_content_odd_content_text_color',
-		'label'       => esc_attr__( 'Comments Odd Text', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Odd Text', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
 		'default'     => '#dddddd',
 		'priority'    => 120,
@@ -1959,14 +1959,14 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 	// comment content odd content background inverse article_background_color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_content_odd_content_background_color',
-		'label'       => esc_attr__( 'Comments Odd Background', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Odd Background', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => 'rgba( ' .invertRGBa(get_theme_mod( 'article_background_color' )) . ')',
+		'default'     => 'rgba(255,255,255,0.250)',
 		'priority'    => 130,
 		'output'      => array(
 			array(
@@ -1984,20 +1984,20 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 	// comment content bypostauthor color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'commentsbypostauthor_config',
 	    'label'       => '',
 	    'section'     => 'comment_section_colors',
-	    'default'     => __( '<hr><h2>Comments Postauthor</h2>', 'lathom'),
+	    'default'     => __( '<hr><h2>Comments Postauthor</h2>', 'understrap'),
 	    'priority'    => 150,
 	) );
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_content_bypostauthor_content_text_color',
-		'label'       => esc_attr__( 'Comments Postauthor Text', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Postauthor Text', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
 		'default'     => '#dddddd',
 		'priority'    => 160,
@@ -2017,12 +2017,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 	// comment content bypostauthor background default: primary
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'comments_content_bypostauthor_content_background_color',
-		'label'       => esc_attr__( 'Comments Postauthor Background', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Comments Postauthor Background', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
 		// 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 		'default'     => 'rgba( '.hex2rgb(get_theme_mod( 'topbar_background' )) .',0.35)',
@@ -2050,12 +2050,12 @@ if ( class_exists( 'Kirki' ) ) {
 
 	//article_sticky_config
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'sticky_headline_color',
-		'label'       => esc_attr__( 'Header Background Color', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Header Background Color', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'article_sticky_config',
 		'default'     => 'rgba(' . hex2rgb($primary_color) . ',0.75)',
 		'priority'    => 10,
@@ -2075,23 +2075,23 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'sticky_use_prefix_icon',
-	    'label'       => __( 'Use Prefix Icon for Headline?', 'lathom' ),
-	    'description' => __( 'You can choose any of <a href="https://fortawesome.github.io/Font-Awesome/cheatsheet/" target="_blank">Fontawesomes 593 Icons</a> as a Prefix Icon for the Headline.', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Use Prefix Icon for Headline?', 'understrap' ),
+	    'description' => __( 'You can choose any of <a href="https://fortawesome.github.io/Font-Awesome/cheatsheet/" target="_blank">Fontawesomes 593 Icons</a> as a Prefix Icon for the Headline.', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_sticky_config',
 	    'default'     => '1',
 	    'priority'    => 20,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'select',
 	    'settings'    => 'sticky_prefix_icon',
-	    'label'       => __( 'Fontawesome Icon', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Fontawesome Icon', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_sticky_config',
 	    'default'     => 'bullhorn',
 	    'priority'    => 30,
@@ -2106,7 +2106,7 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	$sticky_prefix_icon_css = '\\' . get_theme_mod( 'sticky_prefix_icon') . '\00a0';
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'custom',
 	    'settings'    => 'sticky_prefix_icon_css',
 	    'label'       => '',
@@ -2130,12 +2130,12 @@ if ( class_exists( 'Kirki' ) ) {
 		'active_callback' => '__return_false',
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'sticky_background_color',
-		'label'       => esc_attr__( 'Background Color', 'lathom' ),
-		'description' => esc_attr__( 'Background Color can be used if you dont want to use a Gradient and will be used by Browsers that do NOT support Background Gradients as a Fallback Solution.', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Background Color', 'understrap' ),
+		'description' => esc_attr__( 'Background Color can be used if you dont want to use a Gradient and will be used by Browsers that do NOT support Background Gradients as a Fallback Solution.', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'article_sticky_config',
 		'default'     => 'rgba(255,255,255,0)',
 		'priority'    => 40,
@@ -2155,23 +2155,23 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'display_sticky_gradient',
-	    'label'       => __( 'Use Background Gradient?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( 'If you want to use Background Gradients, you will have to set up two Colors below. Notice: Linear Gradients are not well supported by some older browser like IE8 & IE9.', 'lathom' ),
+	    'label'       => __( 'Use Background Gradient?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( 'If you want to use Background Gradients, you will have to set up two Colors below. Notice: Linear Gradients are not well supported by some older browser like IE8 & IE9.', 'understrap' ),
 	    'section'     => 'article_sticky_config',
 	    'default'     => '1',
 	    'priority'    => 50,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'sticky_gradient_color_1',
-		'label'       => esc_attr__( 'Gradient Color #1', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Gradient Color #1', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'article_sticky_config',
 		'default'     => 'rgba(0,0,0,0.035)',
 		'priority'    => 60,
@@ -2184,12 +2184,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'sticky_gradient_color_2',
-		'label'       => esc_attr__( 'Gradient Color #2', 'lathom' ),
-		'description' => esc_attr__( '', 'lathom' ),
-		'help'        => esc_attr__( '', 'lathom' ),
+		'label'       => esc_attr__( 'Gradient Color #2', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'article_sticky_config',
 		'default'     => 'rgba(255,255,255,0)',
 		'priority'    => 70,
@@ -2202,11 +2202,11 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'slider',
 	    'settings'    => 'sticky_gradient_rotation',
-	    'label'       => __( 'Gradient Rotation', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Gradient Rotation', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'article_sticky_config',
 	    'default'     => 135,
 	    'priority'    => 80,
@@ -2228,22 +2228,22 @@ if ( class_exists( 'Kirki' ) ) {
 	 * Sidebar Settings
 	 */
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'show_sidebar',
-	    'label'       => __( 'Show Sidebar?', 'lathom' ),
-	    'description' => __( '<strong>Notice:</strong> You can still show the Sidebar via a per-Page Template even if the Sidebar is switched off here. But it will never show on Blog Posts then.', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Show Sidebar?', 'understrap' ),
+	    'description' => __( '<strong>Notice:</strong> You can still show the Sidebar via a per-Page Template even if the Sidebar is switched off here. But it will never show on Blog Posts then.', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'sidebar_config',
 	    'default'     => '0',
 	    'priority'    => 10,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'sidebar_background_color',
-	    'label'       => __( 'Sidebar Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Sidebar Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'sidebar_config',
 	    'default'     => 'rgba(255,255,255,0.2)',
 	    'priority'    => 10,
@@ -2270,11 +2270,11 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'sidebar_widget_background_color',
-	    'label'       => __( 'Widget Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Widget Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'sidebar_config',
 	    'default'     => 'rgba(255,255,255,0.2)',
 	    'priority'    => 20,
@@ -2301,11 +2301,11 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'sidebar_widget_title_background_color',
-	    'label'       => __( 'Sidebar Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Sidebar Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'sidebar_config',
 	    'default'     => 'rgba(' . hex2rgb($primary_color) . ',1)',
 	    'priority'    => 30,
@@ -2332,11 +2332,11 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'sidebar_widget_text_color',
-	    'label'       => __( 'Sidebar Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Sidebar Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'sidebar_config',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 40,
@@ -2364,11 +2364,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// widget link color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'sidebar_widget_text_link_color',
-	    'label'       => __( 'Sidebar Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Sidebar Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'sidebar_config',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 50,
@@ -2396,11 +2396,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// widget link hover color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'sidebar_widget_text_link_hover_color',
-	    'label'       => __( 'Widget Link Hover Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Widget Link Hover Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'sidebar_config',
 	    'default'     => 'rgba(' . hex2rgb($primary_color) . ',1)',
 	    'priority'    => 60,
@@ -2431,23 +2431,23 @@ if ( class_exists( 'Kirki' ) ) {
 	 * Footer Widget Settings
 	 */
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'toggle_footer_widgets',
-	    'label'       => __( 'Show Footer Widget Area?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Show Footer Widget Area?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'footerwidgets_settings',
 	    'default'     => 'true',
 	    'priority'    => 5,
 	) );
 
 	// footer widget background
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'footer_widget_background_color',
-	    'label'       => __( 'Footer Widget Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Footer Widget Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'footerwidgets_settings',
 	    'default'     => '#2d2f33',
 	    'priority'    => 10,
@@ -2475,11 +2475,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// footer widget headline color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'footer_widget_headline_color',
-	    'label'       => __( 'Footer Headline Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Footer Headline Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'footerwidgets_settings',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 20,
@@ -2507,11 +2507,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// footer widget headline background color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'footer_widget_headline_background_color',
-	    'label'       => __( 'Footer Widget Headline Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Footer Widget Headline Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'footerwidgets_settings',
 	    //'default'     => '#607D8B',
 	    'default'     => 'rgba(' . hex2rgb($primary_color) . ',0.75)',
@@ -2540,11 +2540,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// footer widget text color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'footer_widget_text_color',
-	    'label'       => __( 'Footer Widget Text Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Footer Widget Text Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'footerwidgets_settings',
 	    'default'     => '#aaaaaa',
 	    'priority'    => 50,
@@ -2572,11 +2572,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// footer widget link color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'footer_widget_link_color',
-	    'label'       => __( 'Footer Widget Link Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Footer Widget Link Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'footerwidgets_settings',
 	    'default'     => '#aaaaaa',
 	    'priority'    => 60,
@@ -2604,12 +2604,12 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// footer widget link color hover
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'footer_widget_link_hover_color',
-	    'label'       => __( 'Footer Widget Link Hover Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'lathom' ),
+	    'label'       => __( 'Footer Widget Link Hover Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
 	    'section'     => 'footerwidgets_settings',
 	    'default'     => '#ffffff',
 	    'priority'    => 70,
@@ -2642,11 +2642,11 @@ if ( class_exists( 'Kirki' ) ) {
 	 */
 
 	// footer background
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'footer_background_color',
-	    'label'       => __( 'Footer Background Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Footer Background Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'footer_settings',
 	    'default'     => '#000000',
 	    'priority'    => 10,
@@ -2667,11 +2667,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// footer text color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'footer_text_color',
-	    'label'       => __( 'Footer Text Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Footer Text Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'footer_settings',
 	    'default'     => '#aaaaaa',
 	    'priority'    => 20,
@@ -2692,11 +2692,11 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// footer link color
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'footer_link_color',
-	    'label'       => __( 'Footer Link Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
+	    'label'       => __( 'Footer Link Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
 	    'section'     => 'footer_settings',
 	    'default'     => '#aaaaaa',
 	    'priority'    => 30,
@@ -2717,12 +2717,12 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// footer link color hover
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'footer_link_hover_color',
-	    'label'       => __( 'Footer Link Hover Color', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'lathom' ),
+	    'label'       => __( 'Footer Link Hover Color', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
 	    'section'     => 'footer_settings',
 	    'default'     => '#ffffff',
 	    'priority'    => 40,
@@ -2743,35 +2743,35 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// Display WP Credit
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'footer_show_wp_credits',
-	    'label'       => __( 'Show some &#x2764; for Wordpress?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Show some &#x2764; for Wordpress?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'footer_settings',
 	    'default'     => 'true',
 	    'priority'    => 50,
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'footer_show_custom_footer_text',
-	    'label'       => __( 'Display Custom Footer Text?', 'lathom' ),
-	    'description' => __( '', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
+	    'label'       => __( 'Display Custom Footer Text?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'footer_settings',
 	    'default'     => 'true',
 	    'priority'    => 55,
 	) );
 	// Display custom footer text
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'text',
 	    'settings'    => 'footer_custom_footer_text',
-	    'label'       => __( 'Custom Footer Text', 'lathom' ),
-	    'description' => __( '<strong>Notice:</strong> The copyright and year will be included automatically', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
-	    'default'     => __( 'Theme by Thomas A. Reinert | TARThemes.com', 'lathom' ),
+	    'label'       => __( 'Custom Footer Text', 'understrap' ),
+	    'description' => __( '<strong>Notice:</strong> The copyright and year will be included automatically', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
+	    'default'     => __( 'Theme by Thomas A. Reinert | TARThemes.com', 'understrap' ),
 	    'section'     => 'footer_settings',
 	    'priority'    => 60,
 	    'required'    => array(
@@ -2784,13 +2784,13 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	// Display custom footer text
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 	    'type'        => 'text',
 	    'settings'    => 'footer_custom_footer_text_link',
-	    'label'       => __( 'Footer Text Link', 'lathom' ),
-	    'description' => __( '<strong>Notice:</strong> Do not forget to include "<strong>http(s)://</strong>"" at the beginning. Leave blank if you dont want the Custom Footer Text linked.', 'lathom' ),
-	    'help'        => __( '', 'lathom' ),
-	    'default'     => __( 'http://www.tarthemes.com', 'lathom' ),
+	    'label'       => __( 'Footer Text Link', 'understrap' ),
+	    'description' => __( '<strong>Notice:</strong> Do not forget to include "<strong>http(s)://</strong>"" at the beginning. Leave blank if you dont want the Custom Footer Text linked.', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
+	    'default'     => __( 'http://www.tarthemes.com', 'understrap' ),
 	    'section'     => 'footer_settings',
 	    'priority'    => 70,
 	    'required'    => array(
@@ -2802,12 +2802,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'code',
 		'settings'    => 'css_code',
-		'label'       => esc_attr__( 'Insert custom CSS', 'lathom' ),
-		'help'        => esc_attr__( 'Pure CSS please. It will get wrapped in style-Tags automagically.', 'lathom' ),
-		'description' => esc_attr__( 'This will override any other styles as it gets inserted last just before the closing head-Tag.', 'lathom' ),
+		'label'       => esc_attr__( 'Insert custom CSS', 'understrap' ),
+		'help'        => esc_attr__( 'Pure CSS please. It will get wrapped in style-Tags automagically.', 'understrap' ),
+		'description' => esc_attr__( 'This will override any other styles as it gets inserted last just before the closing head-Tag.', 'understrap' ),
 		'section'     => 'custom_code',
 		'default'     => ' ',
 		'priority'    => 10,
@@ -2818,12 +2818,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'code',
 		'settings'    => 'javascript_header_code',
-		'label'       => esc_attr__( 'Insert custom &lt;head&gt;-Javascript', 'lathom' ),
-		'help'        => esc_attr__( 'Pure Javascript please. It will get wrapped in script-Tags automagically.', 'lathom' ),
-		'description' => esc_attr__( 'Please notice that this Javascript will be embedded in the head of the Document. Do NOT insert any jQuery calls here. Do it in the Footer Script Area instead.', 'lathom' ),
+		'label'       => esc_attr__( 'Insert custom &lt;head&gt;-Javascript', 'understrap' ),
+		'help'        => esc_attr__( 'Pure Javascript please. It will get wrapped in script-Tags automagically.', 'understrap' ),
+		'description' => esc_attr__( 'Please notice that this Javascript will be embedded in the head of the Document. Do NOT insert any jQuery calls here. Do it in the Footer Script Area instead.', 'understrap' ),
 		'section'     => 'custom_code',
 		'default'     => ' ',
 		'priority'    => 20,
@@ -2834,12 +2834,12 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'lathom', array(
+	Kirki::add_field( 'understrap', array(
 		'type'        => 'code',
 		'settings'    => 'javascript_footer_code',
-		'label'       => esc_attr__( 'Insert custom &lt;footer&gt;-Javascript', 'lathom' ),
-		'help'        => esc_attr__( 'Pure Javascript please. It will get wrapped in script-Tags automagically.', 'lathom' ),
-		'description' => esc_attr__( 'Insert your Google-Adsense Snippet or whatever you want. Please notice that this Javascript will be embedded just before the closing body of the document, so jQuery calls should just be fine.', 'lathom' ),
+		'label'       => esc_attr__( 'Insert custom &lt;footer&gt;-Javascript', 'understrap' ),
+		'help'        => esc_attr__( 'Pure Javascript please. It will get wrapped in script-Tags automagically.', 'understrap' ),
+		'description' => esc_attr__( 'Insert your Google-Adsense Snippet or whatever you want. Please notice that this Javascript will be embedded just before the closing body of the document, so jQuery calls should just be fine.', 'understrap' ),
 		'section'     => 'custom_code',
 		'default'     => ' ',
 		'priority'    => 20,

@@ -1,20 +1,27 @@
-# Copyright (C) 2014 Automattic
-# This file is distributed under the GNU General Public License v2 or later.
+# Loco Gettext template
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
 "POT-Creation-Date: 2015-09-01 21:23+0200\n"
+"POT-Revision-Date: Wed Feb 24 2016 23:07:02 GMT+0100 (Mitteleuropäische "
+"Zeit)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_x;_nx;_e\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: footer.php\n"
 "X-Poedit-SearchPath-1: header.php\n"
@@ -37,283 +44,1857 @@ msgstr ""
 "X-Poedit-SearchPath-18: page.php\n"
 "X-Poedit-SearchPath-19: functions.php\n"
 "X-Poedit-SearchPath-20: page-templates\n"
-"X-Poedit-SearchPath-21: inc\n"
+"X-Poedit-SearchPath-21: inc"
 
-#: 404.php:15
+#: ../404.php:18
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:19
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+#: ../404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
 
-#: 404.php:27
+#: ../404.php:30
 msgid "Most Used Categories"
 msgstr ""
 
 #. translators: %1$s: smiley
-#: 404.php:44
+#: ../404.php:47
+#, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: comments.php:28
+#: ../comment-form.php:5
+msgid "Write Comment."
+msgstr ""
+
+#: ../comment-form.php:5
+msgid "*Mandatory"
+msgstr ""
+
+#: ../comment-form.php:13 ../inc/custom-comments.php:12
+msgid "Name"
+msgstr ""
+
+#: ../comment-form.php:19
+msgid "E-Mail"
+msgstr ""
+
+#: ../comment-form.php:19
+msgid "Not public."
+msgstr ""
+
+#: ../comment-form.php:24 ../inc/custom-comments.php:16
+msgid "Website"
+msgstr ""
+
+#: ../comment-form.php:29
+msgid "Your Comment"
+msgstr ""
+
+#: ../comment-form.php:36
+msgid "Send comment."
+msgstr ""
+
+#: ../footer.php:31
+msgid "Footer Widgets"
+msgstr ""
+
+#: ../footer.php:78 ../footer.php:78
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: ../footer.php:78
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: ../footer.php:100
+msgid "Secondary Navigation"
+msgstr ""
+
+#: ../footer.php:120
+msgid "To Top"
+msgstr ""
+
+#: ../header.php:74
+msgid "Skip to content"
+msgstr ""
+
+#: ../header.php:111 ../header.php:112
+msgid "Search for:"
+msgstr ""
+
+#: ../header.php:112
+msgid "Search .."
+msgstr ""
+
+#: ../header.php:114
+msgid "Search"
+msgstr ""
+
+#: ../search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../functions.php:62
+msgid "The theme description."
+msgstr ""
+
+#: ../comments.php:28
+#, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:35 comments.php:52
+#: ../comments.php:35 ../comments.php:63
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:36 comments.php:53
-msgid "&larr; Older Comments"
+#: ../comments.php:37 ../comments.php:65
+msgid "<span class=\"fa fa-backward\"></span> Older Comments"
 msgstr ""
 
-#: comments.php:37 comments.php:54
-msgid "Newer Comments &rarr;"
+#: ../comments.php:38 ../comments.php:66
+msgid "Newer Comments <span class=\"fa fa-forward\"></span>"
 msgstr ""
 
-#: comments.php:64
+#: ../comments.php:77
 msgid "Comments are closed."
 msgstr ""
 
-#: content-none.php:13
-msgid "Nothing Found"
-msgstr ""
-
-#: content-none.php:19
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: content-none.php:23
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
-
-#: content-none.php:28
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
-
-#: content-page.php:18 content-single.php:20 content.php:29
+#: ../loop-templates/content-single.php:29 ../loop-templates/content-page.php:25 .
+#: ./loop-templates/content.php:33
 msgid "Pages:"
 msgstr ""
 
-#: content-page.php:25 inc/template-tags.php:122
+#: ../loop-templates/content-single.php:46
+msgid "Author Info:"
+msgstr ""
+
+#: ../loop-templates/content-single.php:63
+msgid "Contact"
+msgstr ""
+
+#: ../loop-templates/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: ../loop-templates/content-none.php:23
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../loop-templates/content-none.php:27
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../loop-templates/content-none.php:32
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../loop-templates/content-page.php:34 ../inc/bootstrap-comment-walker.php:59 ..
+#: /inc/template-tags.php:122
 msgid "Edit"
 msgstr ""
 
-#. translators: %s: Name of current post
-#: content.php:22
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+#: ../inc/bootstrap-comment-walker.php:45
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
 msgstr ""
 
-#: footer.php:15
-msgid "http://wordpress.org/"
+#: ../inc/bootstrap-comment-walker.php:51
+msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: footer.php:15
-msgid "Proudly powered by %s"
-msgstr ""
-
-#: footer.php:17
-msgid "Theme: %1$s by %2$s."
-msgstr ""
-
-#: functions.php:53 header.php:31
-msgid "Primary Menu"
-msgstr ""
-
-#: functions.php:88
-msgid "Sidebar"
-msgstr ""
-
-#: header.php:22
-msgid "Skip to content"
-msgstr ""
-
-#: inc/extras.php:64
-msgid "Page %s"
-msgstr ""
-
-#: inc/template-tags.php:21
+#: ../inc/template-tags.php:21
 msgid "Posts navigation"
 msgstr ""
 
-#: inc/template-tags.php:25
+#: ../inc/template-tags.php:25
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr ""
 
-#: inc/template-tags.php:29
+#: ../inc/template-tags.php:29
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/template-tags.php:52
+#: ../inc/template-tags.php:52
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:55
+#: ../inc/template-tags.php:55
 msgctxt "Previous post link"
 msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
 msgstr ""
 
-#: inc/template-tags.php:56
+#: ../inc/template-tags.php:56
 msgctxt "Next post link"
 msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/template-tags.php:82
+#: ../inc/template-tags.php:71
+msgid "last updated on"
+msgstr ""
+
+#: ../inc/template-tags.php:82
+#, php-format
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr ""
 
-#: inc/template-tags.php:87
+#: ../inc/template-tags.php:87
+#, php-format
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:104 inc/template-tags.php:110
+#: ../inc/template-tags.php:104 ../inc/template-tags.php:110
 msgid ", "
 msgstr ""
 
-#: inc/template-tags.php:106
+#: ../inc/template-tags.php:106
+#, php-format
 msgid "Posted in %1$s"
 msgstr ""
 
-#: inc/template-tags.php:112
+#: ../inc/template-tags.php:112
+#, php-format
 msgid "Tagged %1$s"
 msgstr ""
 
-#: inc/template-tags.php:118
+#: ../inc/template-tags.php:118
 msgid "Leave a comment"
 msgstr ""
 
-#: inc/template-tags.php:118
+#: ../inc/template-tags.php:118
 msgid "1 Comment"
 msgstr ""
 
-#: inc/template-tags.php:118
+#: ../inc/template-tags.php:118
+#, php-format
 msgid "% Comments"
 msgstr ""
 
-#: inc/template-tags.php:139
+#: ../inc/template-tags.php:139
+#, php-format
 msgid "Category: %s"
 msgstr ""
 
-#: inc/template-tags.php:141
+#: ../inc/template-tags.php:141
+#, php-format
 msgid "Tag: %s"
 msgstr ""
 
-#: inc/template-tags.php:143
+#: ../inc/template-tags.php:143
+#, php-format
 msgid "Author: %s"
 msgstr ""
 
-#: inc/template-tags.php:145
+#: ../inc/template-tags.php:145
+#, php-format
 msgid "Year: %s"
 msgstr ""
 
-#: inc/template-tags.php:145
+#: ../inc/template-tags.php:145
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: inc/template-tags.php:147
+#: ../inc/template-tags.php:147
+#, php-format
 msgid "Month: %s"
 msgstr ""
 
-#: inc/template-tags.php:147
+#: ../inc/template-tags.php:147
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr ""
 
-#: inc/template-tags.php:149
+#: ../inc/template-tags.php:149
+#, php-format
 msgid "Day: %s"
 msgstr ""
 
-#: inc/template-tags.php:149
+#: ../inc/template-tags.php:149
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr ""
 
-#: inc/template-tags.php:151
+#: ../inc/template-tags.php:151
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr ""
 
-#: inc/template-tags.php:153
+#: ../inc/template-tags.php:153
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr ""
 
-#: inc/template-tags.php:155
+#: ../inc/template-tags.php:155
 msgctxt "post format archive title"
 msgid "Images"
 msgstr ""
 
-#: inc/template-tags.php:157
+#: ../inc/template-tags.php:157
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr ""
 
-#: inc/template-tags.php:159
+#: ../inc/template-tags.php:159
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr ""
 
-#: inc/template-tags.php:161
+#: ../inc/template-tags.php:161
 msgctxt "post format archive title"
 msgid "Links"
 msgstr ""
 
-#: inc/template-tags.php:163
+#: ../inc/template-tags.php:163
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr ""
 
-#: inc/template-tags.php:165
+#: ../inc/template-tags.php:165
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr ""
 
-#: inc/template-tags.php:167
+#: ../inc/template-tags.php:167
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr ""
 
-#: inc/template-tags.php:169
+#: ../inc/template-tags.php:169
+#, php-format
 msgid "Archives: %s"
 msgstr ""
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
-#: inc/template-tags.php:173
+#: ../inc/template-tags.php:173
+#, php-format
 msgid "%1$s: %2$s"
 msgstr ""
 
-#: inc/template-tags.php:175
+#: ../inc/template-tags.php:175
 msgid "Archives"
 msgstr ""
 
-#: search.php:16
-msgid "Search Results for: %s"
+#: ../inc/custom-comments.php:14
+msgid "Email"
 msgstr ""
 
-#. Theme Name of the plugin/theme
-msgid "_s"
+#: ../inc/custom-comments.php:25
+msgctxt "noun"
+msgid "Comment"
 msgstr ""
 
-#. Theme URI of the plugin/theme
-msgid "http://underscores.me/"
+#: ../inc/custom-comments.php:27
+msgid "You may use the following HTML-Tags: "
 msgstr ""
 
-#. Description of the plugin/theme
-msgid "Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for."
+#: ../inc/setup.php:48
+msgid "Primary Menu"
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "Automattic"
+#: ../inc/setup.php:49
+msgid "Short Footer Menu"
 msgstr ""
 
-#. Author URI of the plugin/theme
-msgid "http://automattic.com/"
+#: ../inc/setup.php:99
+msgid "Read More..."
+msgstr ""
+
+#: ../inc/extras.php:60
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../inc/widgets.php:10
+msgid "Sidebar"
+msgstr ""
+
+#: ../inc/widgets.php:20
+msgid "Hero Slider"
+msgstr ""
+
+#: ../inc/widgets.php:30
+msgid "Static Hero"
+msgstr ""
+
+#: ../inc/widgets.php:40
+msgid "Off Canvas Top"
+msgstr ""
+
+#: ../inc/widgets.php:49
+msgid "Off Canvas Bottom"
+msgstr ""
+
+#: ../inc/widgets.php:58
+msgid "Footer Widget 1"
+msgstr ""
+
+#: ../inc/widgets.php:67
+msgid "Footer Widget 2"
+msgstr ""
+
+#: ../inc/widgets.php:76
+msgid "Footer Widget 3"
+msgstr ""
+
+#: ../inc/widgets.php:85
+msgid "Footer Widget 4"
+msgstr ""
+
+#: ../inc/customizer-options.php:14
+msgid "Font Settings"
+msgstr ""
+
+#: ../inc/customizer-options.php:15
+msgid ""
+"Configure Font Settings. You can also type the desired Font into the Select "
+"Box if you are looking for a special one."
+msgstr ""
+
+#: ../inc/customizer-options.php:23
+msgid "Topbar"
+msgstr ""
+
+#: ../inc/customizer-options.php:28
+msgid "Topbar Features"
+msgstr ""
+
+#: ../inc/customizer-options.php:29
+msgid "Configure Settings for the Topbar"
+msgstr ""
+
+#: ../inc/customizer-options.php:36
+msgid "Topbar Colors"
+msgstr ""
+
+#: ../inc/customizer-options.php:37
+msgid "Configure Color Settings for the Topbar"
+msgstr ""
+
+#: ../inc/customizer-options.php:50
+msgid "Offcanvas Menu Settings"
+msgstr ""
+
+#: ../inc/customizer-options.php:59
+msgid "Content Settings"
+msgstr ""
+
+#: ../inc/customizer-options.php:60
+msgid "My Description"
+msgstr ""
+
+#: ../inc/customizer-options.php:64
+msgid "Content Features"
+msgstr ""
+
+#: ../inc/customizer-options.php:72
+msgid "Article Features"
+msgstr ""
+
+#: ../inc/customizer-options.php:80
+msgid "Article Colors"
+msgstr ""
+
+#: ../inc/customizer-options.php:88
+msgid "Comment Section"
+msgstr ""
+
+#: ../inc/customizer-options.php:96
+msgid "Sticky Article Settings"
+msgstr ""
+
+#: ../inc/customizer-options.php:104
+msgid "Sidebar Settings"
+msgstr ""
+
+#: ../inc/customizer-options.php:105
+msgid "Configure Sidebar Settings"
+msgstr ""
+
+#: ../inc/customizer-options.php:113
+msgid "Footer Configuration"
+msgstr ""
+
+#: ../inc/customizer-options.php:118
+msgid "Footer Widgets Settings"
+msgstr ""
+
+#: ../inc/customizer-options.php:119
+msgid "Configure Settings for the Footer Widgets Area"
+msgstr ""
+
+#: ../inc/customizer-options.php:126
+msgid "Footer Settings"
+msgstr ""
+
+#: ../inc/customizer-options.php:127
+msgid "Configure Settings for the Footer"
+msgstr ""
+
+#: ../inc/customizer-options.php:134
+msgid "Custom Code"
+msgstr ""
+
+#: ../inc/customizer-options.php:135
+msgid ""
+"You can inject your own CSS and Javascript without modifying any of the "
+"theme files or having the need to create a Child-Theme to ensure that this "
+"Theme still remains updatable."
+msgstr ""
+
+#: ../inc/customizer-options.php:160
+msgid "Base Typography"
+msgstr ""
+
+#: ../inc/customizer-options.php:161
+msgid "Configures the overall Font for the whole Site."
+msgstr ""
+
+#: ../inc/customizer-options.php:194
+msgid "Headline Typography"
+msgstr ""
+
+#: ../inc/customizer-options.php:195
+msgid "Configures Headline Fonts for the Site."
+msgstr ""
+
+#: ../inc/customizer-options.php:229
+msgid "Display Brand Image?"
+msgstr ""
+
+#: ../inc/customizer-options.php:239
+msgid "Choose or upload your brand image"
+msgstr ""
+
+#: ../inc/customizer-options.php:240
+msgid ""
+"Notice: Please use an Image with 50px maximum height to avoid overhead. "
+"Image will get scaled down proportionally to 50px height anyway."
+msgstr ""
+
+#: ../inc/customizer-options.php:259
+msgid "Blog title size"
+msgstr ""
+
+#: ../inc/customizer-options.php:290
+msgid "Display Blog Slug?"
+msgstr ""
+
+#: ../inc/customizer-options.php:301
+msgid "Blog slug size"
+msgstr ""
+
+#: ../inc/customizer-options.php:339
+msgid "Menu Button Text"
+msgstr ""
+
+#: ../inc/customizer-options.php:341
+msgid "MENU"
+msgstr ""
+
+#: ../inc/customizer-options.php:349
+msgid "Topbar color settings"
+msgstr ""
+
+#: ../inc/customizer-options.php:361
+msgid "Topbar Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:362 ../inc/customizer-options.php:620
+msgid "Notice: Topbar transparency should be used carefully!"
+msgstr ""
+
+#: ../inc/customizer-options.php:386
+msgid "Activate Dropshow?"
+msgstr ""
+
+#: ../inc/customizer-options.php:398
+msgid "Topbar Dropshadow Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:417 ../inc/customizer-options.php:674
+msgid "Dropshadow size"
+msgstr ""
+
+#: ../inc/customizer-options.php:436
+msgid "Topbar text colors"
+msgstr ""
+
+#: ../inc/customizer-options.php:449
+msgid "Blog title color"
+msgstr ""
+
+#: ../inc/customizer-options.php:474
+msgid "Blog title hover color"
+msgstr ""
+
+#: ../inc/customizer-options.php:499
+msgid "Blog slug color"
+msgstr ""
+
+#: ../inc/customizer-options.php:528
+msgid "Menubutton colors"
+msgstr ""
+
+#: ../inc/customizer-options.php:541
+msgid "Menubutton Text Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:566
+msgid "Menu Text Hover Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:568 ../inc/customizer-options.php:982 ..
+#: /inc/customizer-options.php:1032 ../inc/customizer-options.php:1417 ..
+#: /inc/customizer-options.php:1552 ../inc/customizer-options.php:1637 ..
+#: /inc/customizer-options.php:1662 ../inc/customizer-options.php:2612 ..
+#: /inc/customizer-options.php:2725
+msgid ""
+"<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of "
+"the Customizer or to be viewed on the frontpage.."
+msgstr ""
+
+#: ../inc/customizer-options.php:591
+msgid "Menu Button Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:619
+msgid "Offcancas Menu Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:644
+msgid "Activate Menu Dropshow?"
+msgstr ""
+
+#: ../inc/customizer-options.php:656
+msgid "Menu Dropshadow Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:697
+msgid "Menu Item Colors"
+msgstr ""
+
+#: ../inc/customizer-options.php:710
+msgid "Close Button Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:735
+msgid "Menu Linktext Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:759
+msgid "Menu Linktext Hover Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:783
+msgid "Menu Item Background Hover Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:804
+msgid "Searchbox Colors"
+msgstr ""
+
+#: ../inc/customizer-options.php:817
+msgid "Searchbox Text Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:842
+msgid "Searchbox Placeholder Text Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:866
+msgid "Searchbox Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:891
+msgid "Focused Searchbox Text Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:916
+msgid "Focused Searchbox Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:942
+msgid "Activate Searchbox Pointer?"
+msgstr ""
+
+#: ../inc/customizer-options.php:954
+msgid "Searchbutton Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:980
+msgid "Searchbutton Hover Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1006
+msgid "Searchbutton Text Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1030
+msgid "Searchbutton Text Hover Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1059
+msgid "Content Width Configuration"
+msgstr ""
+
+#: ../inc/customizer-options.php:1060
+msgid ""
+"Choose if you want your Website Content shown in a Fullwidth or a Boxed "
+"Layout."
+msgstr ""
+
+#: ../inc/customizer-options.php:1074
+msgid "Use Background Image?"
+msgstr ""
+
+#: ../inc/customizer-options.php:1084
+msgid "Choose or upload your Background Image"
+msgstr ""
+
+#: ../inc/customizer-options.php:1085
+msgid ""
+"Your Background Image should be at least 1600 Pixels wide and 900 Pixel high "
+"if you want it to cover the whole Screen."
+msgstr ""
+
+#: ../inc/customizer-options.php:1103 ../inc/customizer-options.php:2136 ..
+#: /inc/kirki/includes/class-kirki-toolkit.php:48
+msgid "Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1127
+msgid "Display a \"To Top\" Button?"
+msgstr ""
+
+#: ../inc/customizer-options.php:1138
+msgid "\"To Top\" Button Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1173
+msgid "Show featured image above single article view?"
+msgstr ""
+
+#: ../inc/customizer-options.php:1174
+msgid ""
+"<strong>Notice:</strong> This may lead to super-huge Images when you switch "
+"the Sidebar off <b>and</b> activate Fullwidth Layout according to your "
+"Monitors Resolution. Anyway, Images will be resized to 1140x641 Pixels and "
+"then scaled up to match the Articles Width."
+msgstr ""
+
+#: ../inc/customizer-options.php:1185
+msgid "Caption Text Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1217
+msgid "Caption Text Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1252
+msgid "Article Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1277
+msgid "Activate Article Dropshow?"
+msgstr ""
+
+#: ../inc/customizer-options.php:1289
+msgid "Article Dropshadow Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1308
+msgid "Article Dropshadow size"
+msgstr ""
+
+#: ../inc/customizer-options.php:1327
+msgid "Article Header Colors"
+msgstr ""
+
+#: ../inc/customizer-options.php:1340
+msgid "Articleheader Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1365
+msgid "Articleheader Text Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1390
+msgid "Articleheader Linktext Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1415
+msgid "Articleheader Linktext Hover Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1437
+msgid "Article Content Colors"
+msgstr ""
+
+#: ../inc/customizer-options.php:1450
+msgid "Article Content Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1475
+msgid "Article Headline Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1500
+msgid "Article Text Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1525
+msgid "Article Linktext Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1550
+msgid "Article Linktext Hover Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1572
+msgid "Article Footer Colors"
+msgstr ""
+
+#: ../inc/customizer-options.php:1585
+msgid "Articlefooter Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1610
+msgid "Articlefooter Text Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1635
+msgid "Articlefooter Linktext Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1660
+msgid "Articlefooter Linktext Hover Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:1690
+msgid "<hr><h2>Comments Section Headline</h2>"
+msgstr ""
+
+#: ../inc/customizer-options.php:1698
+msgid "Comments Title Text"
+msgstr ""
+
+#: ../inc/customizer-options.php:1724
+msgid "Comments Title Background"
+msgstr ""
+
+#: ../inc/customizer-options.php:1750
+msgid "Avatar Style"
+msgstr ""
+
+#: ../inc/customizer-options.php:1751
+msgid ""
+"You can choose if you want your Avatars displayed rounded, circle or "
+"standard."
+msgstr ""
+
+#: ../inc/customizer-options.php:1770
+msgid "<hr><h2>Comments Even</h2>"
+msgstr ""
+
+#: ../inc/customizer-options.php:1777
+msgid "Comments Even Titletext"
+msgstr ""
+
+#: ../inc/customizer-options.php:1803
+msgid "Comments Even Title Background"
+msgstr ""
+
+#: ../inc/customizer-options.php:1829
+msgid "Comments Even Text"
+msgstr ""
+
+#: ../inc/customizer-options.php:1855
+msgid "Comments Even Background"
+msgstr ""
+
+#: ../inc/customizer-options.php:1884
+msgid "<hr><h2>Comments Odd</h2>"
+msgstr ""
+
+#: ../inc/customizer-options.php:1890
+msgid "Comments Odd Titletext"
+msgstr ""
+
+#: ../inc/customizer-options.php:1915
+msgid "Comments Odd Title Background"
+msgstr ""
+
+#: ../inc/customizer-options.php:1940
+msgid "Comments Odd Text"
+msgstr ""
+
+#: ../inc/customizer-options.php:1965
+msgid "Comments Odd Background"
+msgstr ""
+
+#: ../inc/customizer-options.php:1992
+msgid "<hr><h2>Comments Postauthor</h2>"
+msgstr ""
+
+#: ../inc/customizer-options.php:1998
+msgid "Comments Postauthor Text"
+msgstr ""
+
+#: ../inc/customizer-options.php:2023
+msgid "Comments Postauthor Background"
+msgstr ""
+
+#: ../inc/customizer-options.php:2056
+msgid "Header Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2081
+msgid "Use Prefix Icon for Headline?"
+msgstr ""
+
+#: ../inc/customizer-options.php:2082
+msgid ""
+"You can choose any of <a href=\"https://fortawesome.github.io/Font-"
+"Awesome/cheatsheet/\" target=\"_blank\">Fontawesomes 593 Icons</a> as a Prefix "
+"Icon for the Headline."
+msgstr ""
+
+#: ../inc/customizer-options.php:2092
+msgid "Fontawesome Icon"
+msgstr ""
+
+#: ../inc/customizer-options.php:2137
+msgid ""
+"Background Color can be used if you dont want to use a Gradient and will be "
+"used by Browsers that do NOT support Background Gradients as a Fallback "
+"Solution."
+msgstr ""
+
+#: ../inc/customizer-options.php:2161
+msgid "Use Background Gradient?"
+msgstr ""
+
+#: ../inc/customizer-options.php:2163
+msgid ""
+"If you want to use Background Gradients, you will have to set up two Colors "
+"below. Notice: Linear Gradients are not well supported by some older browser "
+"like IE8 & IE9."
+msgstr ""
+
+#: ../inc/customizer-options.php:2172
+msgid "Gradient Color #1"
+msgstr ""
+
+#: ../inc/customizer-options.php:2190
+msgid "Gradient Color #2"
+msgstr ""
+
+#: ../inc/customizer-options.php:2208
+msgid "Gradient Rotation"
+msgstr ""
+
+#: ../inc/customizer-options.php:2234
+msgid "Show Sidebar?"
+msgstr ""
+
+#: ../inc/customizer-options.php:2235
+msgid ""
+"<strong>Notice:</strong> You can still show the Sidebar via a per-Page "
+"Template even if the Sidebar is switched off here. But it will never show on "
+"Blog Posts then."
+msgstr ""
+
+#: ../inc/customizer-options.php:2245 ../inc/customizer-options.php:2307 ..
+#: /inc/customizer-options.php:2338 ../inc/customizer-options.php:2370
+msgid "Sidebar Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2276
+msgid "Widget Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2402
+msgid "Widget Link Hover Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2437
+msgid "Show Footer Widget Area?"
+msgstr ""
+
+#: ../inc/customizer-options.php:2449
+msgid "Footer Widget Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2481
+msgid "Footer Headline Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2513
+msgid "Footer Widget Headline Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2546
+msgid "Footer Widget Text Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2578
+msgid "Footer Widget Link Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2610
+msgid "Footer Widget Link Hover Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2648
+msgid "Footer Background Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2673
+msgid "Footer Text Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2698
+msgid "Footer Link Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2723
+msgid "Footer Link Hover Color"
+msgstr ""
+
+#: ../inc/customizer-options.php:2749
+msgid "Show some &#x2764; for Wordpress?"
+msgstr ""
+
+#: ../inc/customizer-options.php:2760
+msgid "Display Custom Footer Text?"
+msgstr ""
+
+#: ../inc/customizer-options.php:2771
+msgid "Custom Footer Text"
+msgstr ""
+
+#: ../inc/customizer-options.php:2772
+msgid ""
+"<strong>Notice:</strong> The copyright and year will be included "
+"automatically"
+msgstr ""
+
+#: ../inc/customizer-options.php:2774
+msgid "Theme by Thomas A. Reinert | TARThemes.com"
+msgstr ""
+
+#: ../inc/customizer-options.php:2790
+msgid "Footer Text Link"
+msgstr ""
+
+#: ../inc/customizer-options.php:2791
+msgid ""
+"<strong>Notice:</strong> Do not forget to include \"<strong>http(s):"
+"//</strong>\"\" at the beginning. Leave blank if you dont want the Custom "
+"Footer Text linked."
+msgstr ""
+
+#: ../inc/customizer-options.php:2793
+msgid "http://www.tarthemes.com"
+msgstr ""
+
+#: ../inc/customizer-options.php:2808
+msgid "Insert custom CSS"
+msgstr ""
+
+#: ../inc/customizer-options.php:2809
+msgid "Pure CSS please. It will get wrapped in style-Tags automagically."
+msgstr ""
+
+#: ../inc/customizer-options.php:2810
+msgid ""
+"This will override any other styles as it gets inserted last just before the "
+"closing head-Tag."
+msgstr ""
+
+#: ../inc/customizer-options.php:2824
+msgid "Insert custom &lt;head&gt;-Javascript"
+msgstr ""
+
+#: ../inc/customizer-options.php:2825 ../inc/customizer-options.php:2841
+msgid "Pure Javascript please. It will get wrapped in script-Tags automagically."
+msgstr ""
+
+#: ../inc/customizer-options.php:2826
+msgid ""
+"Please notice that this Javascript will be embedded in the head of the "
+"Document. Do NOT insert any jQuery calls here. Do it in the Footer Script "
+"Area instead."
+msgstr ""
+
+#: ../inc/customizer-options.php:2840
+msgid "Insert custom &lt;footer&gt;-Javascript"
+msgstr ""
+
+#: ../inc/customizer-options.php:2842
+msgid ""
+"Insert your Google-Adsense Snippet or whatever you want. Please notice that "
+"this Javascript will be embedded just before the closing body of the "
+"document, so jQuery calls should just be fine."
+msgstr ""
+
+#: ../inc/customizer.php:24
+msgid "Slider Settings"
+msgstr ""
+
+#: ../inc/customizer.php:33
+msgid "Number of slides displaying at once"
+msgstr ""
+
+#: ../inc/customizer.php:45
+msgid "Slider Time (in ms)"
+msgstr ""
+
+#: ../inc/customizer.php:57
+msgid "Loop Slider Content"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:82 ../inc/CMB2/tests/test-cmb-field.php:244
+msgid "Test Metabox"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:93 ../inc/CMB2/example-functions.php:380
+msgid "Test Text"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:94 ../inc/CMB2/example-functions.php:106 ..
+#: /inc/CMB2/example-functions.php:114 ../inc/CMB2/example-functions.php:122 ..
+#: /inc/CMB2/example-functions.php:131 ../inc/CMB2/example-functions.php:139 ..
+#: /inc/CMB2/example-functions.php:153 ../inc/CMB2/example-functions.php:160 ..
+#: /inc/CMB2/example-functions.php:168 ../inc/CMB2/example-functions.php:185 ..
+#: /inc/CMB2/example-functions.php:194 ../inc/CMB2/example-functions.php:202 ..
+#: /inc/CMB2/example-functions.php:209 ../inc/CMB2/example-functions.php:216 ..
+#: /inc/CMB2/example-functions.php:230 ../inc/CMB2/example-functions.php:243 ..
+#: /inc/CMB2/example-functions.php:256 ../inc/CMB2/example-functions.php:268 ..
+#: /inc/CMB2/example-functions.php:277 ../inc/CMB2/example-functions.php:285 ..
+#: /inc/CMB2/example-functions.php:294 ../inc/CMB2/example-functions.php:301 ..
+#: /inc/CMB2/example-functions.php:315 ../inc/CMB2/example-functions.php:381 ..
+#: /inc/CMB2/example-functions.php:476 ../inc/CMB2/example-functions.php:484 ..
+#: /inc/CMB2/example-functions.php:491 ../inc/CMB2/example-functions.php:498 ..
+#: /inc/CMB2/example-functions.php:505 ../inc/CMB2/example-functions.php:512 ..
+#: /inc/CMB2/example-functions.php:519 ../inc/CMB2/example-functions.php:557 ..
+#: /inc/CMB2/tests/test-cmb-field.php:256
+msgid "field description (optional)"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:105
+msgid "Test Text Small"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:113
+msgid "Test Text Medium"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:121
+msgid "Website URL"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:130
+msgid "Test Text Email"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:138
+msgid "Test Time"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:145 ../inc/CMB2/example-functions.php:146
+msgid "Time zone"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:152
+msgid "Test Date Picker"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:159
+msgid "Test Date Picker (UNIX timestamp)"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:167
+msgid "Test Date/Time Picker Combo (UNIX timestamp)"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:184
+msgid "Test Money"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:193
+msgid "Test Color Picker"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:201
+msgid "Test Text Area"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:208
+msgid "Test Text Area Small"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:215
+msgid "Test Text Area for Code"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:222
+msgid "Test Title Weeeee"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:223
+msgid "This is a title description"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:229
+msgid "Test Select"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:235 ../inc/CMB2/example-functions.php:248 ..
+#: /inc/CMB2/example-functions.php:260
+msgid "Option One"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:236 ../inc/CMB2/example-functions.php:249 ..
+#: /inc/CMB2/example-functions.php:261
+msgid "Option Two"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:237 ../inc/CMB2/example-functions.php:250 ..
+#: /inc/CMB2/example-functions.php:262
+msgid "Option Three"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:242
+msgid "Test Radio inline"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:255
+msgid "Test Radio"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:267
+msgid "Test Taxonomy Radio"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:276
+msgid "Test Taxonomy Select"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:284
+msgid "Test Taxonomy Multi Checkbox"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:293
+msgid "Test Checkbox"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:300 ../inc/CMB2/tests/test-cmb-field.php:255
+msgid "Test Multi Checkbox"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:306 ../inc/CMB2/tests/test-cmb-field.php:261
+msgid "Check One"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:307 ../inc/CMB2/tests/test-cmb-field.php:262
+msgid "Check Two"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:308 ../inc/CMB2/tests/test-cmb-field.php:263
+msgid "Check Three"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:314
+msgid "Test wysiwyg"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:322
+msgid "Test Image"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:323
+msgid "Upload an image or enter a URL."
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:329
+msgid "Multiple Files"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:330
+msgid "Upload or add multiple images/attachments."
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:337
+msgid "oEmbed"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:338
+msgid ""
+"Enter a youtube, twitter, or instagram URL. Supports services listed at <a "
+"href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress."
+"org/Embeds</a>."
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:371
+msgid "About Page Metabox"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:402
+msgid "Repeating Field Group"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:410
+msgid "Generates reusable form entries"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:412
+msgid "Entry {#}"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:413
+msgid "Add Another Entry"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:414
+msgid "Remove Entry"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:427
+msgid "Entry Title"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:434
+msgid "Description"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:435
+msgid "Write a short description for this entry"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:441
+msgid "Entry Image"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:447
+msgid "Image Caption"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:468
+msgid "User Profile Metabox"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:475
+msgid "Extra Info"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:483
+msgid "Avatar"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:490
+msgid "Facebook URL"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:497
+msgid "Twitter URL"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:504
+msgid "Google+ URL"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:511
+msgid "Linkedin URL"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:518
+msgid "User Field"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:541
+msgid "Theme Options Metabox"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:556
+msgid "Site Background Color"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2.php:120
+msgid "Metabox configuration is required to have an ID parameter"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2.php:332
+msgid "Click to toggle"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_Field.php:955
+msgid "Add Group"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_Field.php:956
+msgid "Remove Group"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_Field.php:978 ../inc/CMB2/includes/CMB2_Field.php:
+#: 982 ../inc/CMB2/tests/test-cmb-field.php:216
+msgid "None"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_Ajax.php:40
+msgid "Please Try Again"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_Ajax.php:135 ../inc/CMB2/tests/test-cmb-types.php:811
+msgid "Remove Embed"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_Ajax.php:139 ../inc/CMB2/tests/test-cmb-types.php:812
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:86 ../inc/CMB2/includes/CMB2_JS.php:119
+msgid "Clear"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:87
+msgid "Default"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:88
+msgid "Select Color"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:89
+msgid "Current Color"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:109
+msgctxt "Valid formatDate string for jquery-ui datepicker"
+msgid "mm/dd/yy"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:110
+msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:111
+msgid "Su, Mo, Tu, We, Th, Fr, Sa"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:112
+msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:113
+msgid ""
+"January, February, March, April, May, June, July, August, September, October,"
+" November, December"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:114
+msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:115
+msgid "Next"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:116
+msgid "Prev"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:117
+msgid "Today"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:118 ../inc/CMB2/includes/CMB2_JS.php:128
+msgid "Done"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:122
+msgid "Choose Time"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:123
+msgid "Time"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:124
+msgid "Hour"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:125
+msgid "Minute"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:126
+msgid "Second"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:127
+msgid "Now"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:129
+msgctxt ""
+"Valid formatting string, as per http://trentrichardson."
+"com/examples/timepicker/"
+msgid "hh:mm TT"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:135
+msgid "Use this file"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:136
+msgid "Use these files"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:137 ../inc/CMB2/includes/CMB2_Types.php:1004
+msgid "Remove Image"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:138 ../inc/CMB2/includes/CMB2_Types.php:357 ..
+#: /inc/CMB2/includes/CMB2_Types.php:1023 ../inc/CMB2/tests/test-cmb-types.php:
+#: 155 ../inc/CMB2/tests/test-cmb-types.php:163 ../inc/CMB2/tests/test-cmb-types.
+#: php:760 ../inc/CMB2/tests/test-cmb-types.php:785 ../inc/kirki/includes/class-
+#: kirki-toolkit.php:107
+msgid "Remove"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:139 ../inc/CMB2/includes/CMB2_Types.php:1018 .
+#: ./inc/CMB2/tests/test-cmb-types.php:761 ../inc/CMB2/tests/test-cmb-types.php:786
+msgid "File:"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:140 ../inc/CMB2/includes/CMB2_Types.php:1021 .
+#: ./inc/CMB2/tests/test-cmb-types.php:759 ../inc/CMB2/tests/test-cmb-types.php:784
+msgid "Download"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_JS.php:141
+msgid "Select / Deselect All"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_Types.php:298
+msgid "Add Row"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_Types.php:749 ../inc/CMB2/includes/CMB2_Types.php:797
+msgid "No terms"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_Types.php:864 ../inc/CMB2/tests/test-cmb-types.php:
+#: 736 ../inc/CMB2/tests/test-cmb-types.php:762
+msgid "Add or Upload Files"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_Types.php:926 ../inc/CMB2/tests/test-cmb-types.php:
+#: 772 ../inc/CMB2/tests/test-cmb-types.php:787
+msgid "Add or Upload File"
+msgstr ""
+
+#: ../inc/CMB2/includes/helper-functions.php:250
+msgid "Save"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:49
+msgid "Background Image"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:50
+msgid "No Repeat"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:51
+msgid "Repeat All"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:52
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:53
+msgid "Repeat Vertically"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:54
+msgid "Inherit"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:55
+msgid "Background Repeat"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:56
+msgid "Cover"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:57
+msgid "Contain"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:58
+msgid "Background Size"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:59
+msgid "Fixed"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:60
+msgid "Scroll"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:61
+msgid "Background Attachment"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:62
+msgid "Left Top"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:63
+msgid "Left Center"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:64
+msgid "Left Bottom"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:65
+msgid "Right Top"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:66
+msgid "Right Center"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:67
+msgid "Right Bottom"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:68
+msgid "Center Top"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:69
+msgid "Center Center"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:70
+msgid "Center Bottom"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:71
+msgid "Background Position"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:72
+msgid "Background Opacity"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:73
+msgid "ON"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:74
+msgid "OFF"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:75
+msgid "All"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:76
+msgid "Cyrillic"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:77
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:78
+msgid "Devanagari"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:79
+msgid "Greek"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:80
+msgid "Greek Extended"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:81
+msgid "Khmer"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:82
+msgid "Latin"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:83
+msgid "Latin Extended"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:84
+msgid "Vietnamese"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:85
+msgid "Hebrew"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:86
+msgid "Arabic"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:87
+msgid "Bengali"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:88
+msgid "Gujarati"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:89
+msgid "Tamil"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:90
+msgid "Telugu"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:91
+msgid "Thai"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:92
+msgctxt "font style"
+msgid "Serif"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:93
+msgctxt "font style"
+msgid "Sans Serif"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:94
+msgctxt "font style"
+msgid "Monospace"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:95
+msgid "Font Family"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:96
+msgid "Font Size"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:97
+msgid "Font Weight"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:98
+msgid "Line Height"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:99
+msgid "Letter Spacing"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:100
+msgid "Top"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:101
+msgid "Bottom"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:102
+msgid "Left"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:103
+msgid "Right"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:104
+msgid "Color"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:105
+msgid "Add Image"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:106
+msgid "Change Image"
+msgstr ""
+
+#: ../inc/kirki/includes/class-kirki-toolkit.php:108
+msgid "No Image Selected"
+msgstr ""
+
+#: ../inc/kirki/includes/controls/class-kirki-controls-repeater-control.php:28
+msgid "Add new row"
+msgstr ""
+
+#: ../inc/kirki/tests/test-kirki.php:55 ../inc/kirki/tests/test-kirki.php:64 ..
+#: /inc/kirki/tests/test-kirki.php:73 ../inc/kirki/tests/test-kirki.php:131
+msgid "My custom control"
+msgstr ""
+
+#: ../inc/kirki/tests/test-kirki.php:142
+msgid "My custom control 2"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width Page"
+msgstr ""
+
+#. Name of the theme
+msgid "CustoMaterial"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://tarthemes.com"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"\"CustoMaterial\" is a fully responsive, highly performant and configurable "
+"Bootstrap-based Wordpress Theme following Googles \"Material Design\" "
+"Guidelines. Combination of Automattic´s _s theme and Bootstrap SASS. "
+"Including Font Awesome support, build-in widget slider and much more you "
+"need for basic websites."
+msgstr ""
+
+#. Author of the theme
+msgid "Thomas A. Reinert"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.tarcgn.de/portfolio/"
 msgstr ""
