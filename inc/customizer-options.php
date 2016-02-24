@@ -1804,7 +1804,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'lathom' ),
 		'help'        => esc_attr__( '', 'lathom' ),
 		'section'     => 'comment_section_colors',
-		'default'     => 'rgba( ' .invertRGBa(get_theme_mod( 'article_background_color' )) . ')',
+		'default'     => 'rgba(255,255,255,0.250)',
 		'priority'    => 40,
 		'output'      => array(
 			array(
@@ -1966,7 +1966,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'lathom' ),
 		'help'        => esc_attr__( '', 'lathom' ),
 		'section'     => 'comment_section_colors',
-		'default'     => 'rgba( ' .invertRGBa(get_theme_mod( 'article_background_color' )) . ')',
+		'default'     => 'rgba(255,255,255,0.250)',
 		'priority'    => 130,
 		'output'      => array(
 			array(

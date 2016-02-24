@@ -6,14 +6,14 @@
 
 get_header(); ?>
 <div class="wrapper" id="404-wrapper">
-    
+
     <div  id="content" class="container">
-        
+
         <div id="primary" class="content-area">
-            <main id="main" class="site-main" role="main">
+            <main id="main" class="site-main" role="main" tabindex="-1">
 
                 <section class="error-404 not-found">
-                    
+
                     <header class="page-header">
                         <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'understrap' ); ?></h1>
                     </header><!-- .page-header -->
@@ -51,15 +51,15 @@ get_header(); ?>
                         <?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
 
                     </div><!-- .page-content -->
-                    
+
                 </section><!-- .error-404 -->
 
             </main><!-- #main -->
-            
+
         </div><!-- #primary -->
-        
+
     </div><!-- Container end -->
-    
+
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
