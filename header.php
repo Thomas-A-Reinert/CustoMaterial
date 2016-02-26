@@ -108,10 +108,10 @@
 
     <form role="search" method="get" class="form-wrapper cf" action="<?php echo home_url( '/' ); ?>">
         <label>
-            <span class="sr-only"><?php echo __( 'Search for:', 'understrap' ) ?></span>
-            <input type="search" placeholder="<?php echo __( 'Search ..', 'understrap' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo __( 'Search for:', 'understrap' ) ?>">
+            <label for="searchbox" class="sr-only"><?php echo __( 'Search for:', 'understrap' ) ?></label>
+            <input type="search" placeholder="<?php echo __( 'Search ..', 'understrap' ) ?>" value="<?php echo get_search_query() ?>" name="s" id="searchbox" title="<?php echo __( 'Search for:', 'understrap' ) ?>">
         </label>
-        <button type="submit" class="search-submit"><?php echo __( 'Search', 'understrap' ) ?></button>
+        <button type="submit" class="submit" id="search-submit"><?php echo __( 'Search', 'understrap' ) ?></button>
     </form>
 
     <?php if ( is_active_sidebar( 'off-canvas-top-widget' ) ) : ?>

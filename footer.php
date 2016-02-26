@@ -22,7 +22,10 @@
     if (is_active_sidebar( 'footer-widget-4' )) {
         $col_counter = $col_counter+1;
     }
-    $col_width = 12 / $col_counter;
+    if ($col_counter != 0) {
+        $col_width = 12 / $col_counter;
+    }
+     if ($col_counter != 0) {
 ?>
 <section id="footer-widgets">
 <h1 class="sr-only"><?php echo esc_html__( 'Footer Widgets', 'lathom' ) ?></h1>
@@ -62,7 +65,8 @@
 
     </div>
 </section><!-- #footer-widgets -->
-<?php } ?>
+<?php }
+}?>
 
 
 <div class="" id="wrapper-footer">
