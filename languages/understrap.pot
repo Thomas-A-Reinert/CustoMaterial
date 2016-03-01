@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
 "POT-Creation-Date: 2015-09-01 21:23+0200\n"
-"POT-Revision-Date: Wed Feb 24 2016 23:07:02 GMT+0100 (Mitteleuropäische "
+"POT-Revision-Date: Tue Mar 01 2016 12:15:27 GMT+0100 (Mitteleuropäische "
 "Zeit)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -56,14 +56,79 @@ msgid ""
 "below or a search?"
 msgstr ""
 
-#: ../404.php:30
+#: ../404.php:27 ../404.php:28 ../header.php:117 ../header.php:118
+msgid "Search for:"
+msgstr ""
+
+#: ../404.php:28 ../header.php:118
+msgid "Search .."
+msgstr ""
+
+#: ../404.php:29 ../header.php:119
+msgid "Search"
+msgstr ""
+
+#: ../404.php:39
 msgid "Most Used Categories"
 msgstr ""
 
 #. translators: %1$s: smiley
-#: ../404.php:47
+#: ../404.php:60
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: ../single-portfolio.php:91
+msgctxt "Projektdetails"
+msgid "Project Details"
+msgstr ""
+
+#: ../single-portfolio.php:97
+msgctxt "Projekttitel:"
+msgid "Project Title: "
+msgstr ""
+
+#: ../single-portfolio.php:107
+msgctxt "Projektlogo"
+msgid "Project Logo"
+msgstr ""
+
+#: ../single-portfolio.php:121
+msgctxt "Information zum Kunden"
+msgid "Client Information: "
+msgstr ""
+
+#: ../single-portfolio.php:127
+msgid "Links: "
+msgstr ""
+
+#: ../single-portfolio.php:142
+msgctxt "Projektdauer"
+msgid "Project Duration: "
+msgstr ""
+
+#: ../single-portfolio.php:144
+msgctxt " bis "
+msgid "until "
+msgstr ""
+
+#: ../single-portfolio.php:158
+msgctxt "Projektaufgaben:"
+msgid "Project Tasks: "
+msgstr ""
+
+#: ../single-portfolio.php:173
+msgctxt "Projektbeschreigung:"
+msgid "Project Description: "
+msgstr ""
+
+#: ../single-portfolio.php:183
+msgid "Project Attachments: "
+msgstr ""
+
+#: ../single-portfolio.php:198 ../loop-templates/content-single.php:29 ../loop-
+#: templates/content-page.php:25 ../loop-templates/content.php:33
+msgid "Pages:"
 msgstr ""
 
 #: ../comment-form.php:5
@@ -119,20 +184,8 @@ msgstr ""
 msgid "To Top"
 msgstr ""
 
-#: ../header.php:74
+#: ../header.php:81
 msgid "Skip to content"
-msgstr ""
-
-#: ../header.php:111 ../header.php:112
-msgid "Search for:"
-msgstr ""
-
-#: ../header.php:112
-msgid "Search .."
-msgstr ""
-
-#: ../header.php:114
-msgid "Search"
 msgstr ""
 
 #: ../search.php:21
@@ -168,11 +221,6 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: ../loop-templates/content-single.php:29 ../loop-templates/content-page.php:25 .
-#: ./loop-templates/content.php:33
-msgid "Pages:"
-msgstr ""
-
 #: ../loop-templates/content-single.php:46
 msgid "Author Info:"
 msgstr ""
@@ -203,7 +251,7 @@ msgid ""
 msgstr ""
 
 #: ../loop-templates/content-page.php:34 ../inc/bootstrap-comment-walker.php:59 ..
-#: /inc/template-tags.php:122
+#: inc/template-tags.php:122
 msgid "Edit"
 msgstr ""
 
@@ -222,11 +270,11 @@ msgid "Posts navigation"
 msgstr ""
 
 #: ../inc/template-tags.php:25
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgid "<span class=\"fa fa-backward\"></span> Older posts"
 msgstr ""
 
 #: ../inc/template-tags.php:29
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgid "Newer posts <span class=\"fa fa-forward\"></span>"
 msgstr ""
 
 #: ../inc/template-tags.php:52
@@ -235,12 +283,12 @@ msgstr ""
 
 #: ../inc/template-tags.php:55
 msgctxt "Previous post link"
-msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+msgid "<span class=\"fa fa-backward\"></span>&nbsp;%title"
 msgstr ""
 
 #: ../inc/template-tags.php:56
 msgctxt "Next post link"
-msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+msgid "%title&nbsp;<span class=\"fa fa-forward\"></span>"
 msgstr ""
 
 #: ../inc/template-tags.php:71
@@ -389,7 +437,126 @@ msgid "%1$s: %2$s"
 msgstr ""
 
 #: ../inc/template-tags.php:175
+msgctxt "Archive"
 msgid "Archives"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:51
+msgctxt "Post Type General Name"
+msgid "Portfolio items"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:52
+msgctxt "Post Type Singular Name"
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:53 ../inc/custom_posttypes.php:54 ..
+#: inc/custom_posttypes.php:55 ../inc/custom_posttypes.php:57
+msgctxt "Portfolioartikel"
+msgid "Portfolio Items"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:56
+msgctxt "Portfolio"
+msgid "Portfolio"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:58
+msgctxt "Neuen Portfolioartikel hinzufügen"
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:59
+msgctxt "Element hinzufügen"
+msgid "Add Item"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:60
+msgctxt "Neuer Portfolioartikel"
+msgid "New Portfolio Item"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:61
+msgctxt "Portfolioartikel editieren"
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:62
+msgctxt "Portfolioartikel aktualisieren"
+msgid "Update Portfolio Item"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:63
+msgctxt "Portfolioartikel ansehen"
+msgid "View Portfolio Item"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:64
+msgctxt "Portfolioartikel durchsuchen"
+msgid "Search Portfolio Item"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:65
+msgctxt "Nicht gefunden"
+msgid "Not found"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:66
+msgctxt "Im Papierkorb nicht gefunden"
+msgid "Not found in Trash"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:67
+msgctxt "Beitragsbild"
+msgid "Featured Image"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:68
+msgctxt "Beitragsbild festlegen"
+msgid "Set featured image"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:69
+msgctxt "Beitragsbild entfernen"
+msgid "Remove featured image"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:70
+msgctxt "Verwende Beitragsbild"
+msgid "Use as featured image"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:71
+msgctxt "Portfolioelement einfügen"
+msgid "Insert into Portfolio item"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:72
+msgctxt "Zu diesem Portfolioelement hochgeladen"
+msgid "Uploaded to this Portfolio item"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:73
+msgctxt "Portfolioartikel-Liste"
+msgid "Portfolio Items list"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:74
+msgctxt "Portfolioartikel-Liste Navigation"
+msgid "Portfolio Items list navigation"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:75
+msgid "Filter Portfolio items list"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:78
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../inc/custom_posttypes.php:79
+msgid "Set up your Portfolio items easily to display them in an unusual way."
 msgstr ""
 
 #: ../inc/custom-comments.php:14
@@ -413,7 +580,7 @@ msgstr ""
 msgid "Short Footer Menu"
 msgstr ""
 
-#: ../inc/setup.php:99
+#: ../inc/setup.php:110
 msgid "Read More..."
 msgstr ""
 
@@ -422,43 +589,169 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
+#: ../inc/metaboxes.php:23
+msgctxt "Portfolio Metabox"
+msgid "Portfolio Metabox"
+msgstr ""
+
+#: ../inc/metaboxes.php:31
+msgctxt "Anwendungshinweis"
+msgid "Usage instructions"
+msgstr ""
+
+#: ../inc/metaboxes.php:32
+msgctxt ""
+"Du musst <b><u>überhaupt keine</u></b> Informationen angeben, lediglich die, "
+"die Du benötigst. Leere Felder werden im Portfoliobeitrag nicht angezeigt."
+msgid ""
+"You do not have to enter <b><u>any</u></b> info at all, just the ones you "
+"need. Empty values won´t be displayed."
+msgstr ""
+
+#: ../inc/metaboxes.php:46
+msgctxt "Portfoliolayout-Auswahl"
+msgid "Portfolio Layout Selection"
+msgstr ""
+
+#: ../inc/metaboxes.php:53
+msgctxt "Galerie auf der linken Seite"
+msgid "Gallery on the left"
+msgstr ""
+
+#: ../inc/metaboxes.php:54
+msgctxt "Galerie auf der rechten Seite"
+msgid "Gallery on the right"
+msgstr ""
+
+#: ../inc/metaboxes.php:59
+msgid "Project Title"
+msgstr ""
+
+#: ../inc/metaboxes.php:60
+msgid "Enter the Projects title here."
+msgstr ""
+
+#: ../inc/metaboxes.php:78
+msgid "Client Name"
+msgstr ""
+
+#: ../inc/metaboxes.php:79
+msgid "Enter the Clients Name here."
+msgstr ""
+
+#: ../inc/metaboxes.php:86 ../inc/CMB2/example-functions.php:119
+msgid "Website URL"
+msgstr ""
+
+#: ../inc/metaboxes.php:87
+msgid "Must begin with \"http://\" or \"https://\""
+msgstr ""
+
+#: ../inc/metaboxes.php:96
+msgid "Project Start Date"
+msgstr ""
+
+#: ../inc/metaboxes.php:97
+msgid "When did the project begin?"
+msgstr ""
+
+#: ../inc/metaboxes.php:103
+msgid "Project End Date"
+msgstr ""
+
+#: ../inc/metaboxes.php:104
+msgid "When did it end?"
+msgstr ""
+
+#: ../inc/metaboxes.php:110
+msgid "Project Tasks"
+msgstr ""
+
+#: ../inc/metaboxes.php:111
+msgid "What were your responsibilities/tasks on that project?"
+msgstr ""
+
+#: ../inc/metaboxes.php:118
+msgid "Project Description"
+msgstr ""
+
+#: ../inc/metaboxes.php:128
+msgid "Project Gallery"
+msgstr ""
+
+#: ../inc/metaboxes.php:129
+msgid ""
+"Attach as many image files as you like. They will be displayed in a custom "
+"Gallery.<br> Please do <b><u>NOT</u></b> include any downloadable files here "
+"as this will break the Gallery!<br> Use the \"Project Attachments\" field for "
+"this instead."
+msgstr ""
+
+#: ../inc/metaboxes.php:136
+msgid "Project Attachments"
+msgstr ""
+
+#: ../inc/metaboxes.php:137
+msgid ""
+"Attach as many downloadable files as you like.<br>\n"
+"	    	<u>Accepted filetypes:</u><br>\n"
+"	    	<b>Images</b>: .jpg, .jpeg, .png, .gif, .ico, .svg<br>\n"
+"	    	<b>Documents</b>: .pdf, .doc, .docx, .ppt, .pptx, .pps, .ppsx, .odt, ."
+"xls, .xlsx, .psd<br>\n"
+"	    	<b>Audio</b>: .mp3, .m4a, .ogg, .wav<br>\n"
+"	    	<b>Video</b>: .mp4, .m4v, .mov, .wmv, .avi, .mpg, .ogv, .3gp, .3g2<br>"
+msgstr ""
+
+#: ../inc/metaboxes.php:205
+msgid "File Type: "
+msgstr ""
+
 #: ../inc/widgets.php:10
 msgid "Sidebar"
 msgstr ""
 
 #: ../inc/widgets.php:20
+msgctxt "Hero Slidre"
 msgid "Hero Slider"
 msgstr ""
 
 #: ../inc/widgets.php:30
+msgctxt "Statischer Hero-Bereich"
 msgid "Static Hero"
 msgstr ""
 
 #: ../inc/widgets.php:40
+msgctxt "Offcanvas Menü oben"
 msgid "Off Canvas Top"
 msgstr ""
 
 #: ../inc/widgets.php:49
+msgctxt "Offcanvas Menü unten"
 msgid "Off Canvas Bottom"
 msgstr ""
 
 #: ../inc/widgets.php:58
+msgctxt "Fußzeilenwidget 1"
 msgid "Footer Widget 1"
 msgstr ""
 
 #: ../inc/widgets.php:67
+msgctxt "Fußzeilenwidget 2"
 msgid "Footer Widget 2"
 msgstr ""
 
 #: ../inc/widgets.php:76
+msgctxt "Fußzeilenwidget 3"
 msgid "Footer Widget 3"
 msgstr ""
 
 #: ../inc/widgets.php:85
+msgctxt "Fußzeilenwidget 4"
 msgid "Footer Widget 4"
 msgstr ""
 
 #: ../inc/customizer-options.php:14
+msgctxt "Schrifteinstellungen"
 msgid "Font Settings"
 msgstr ""
 
@@ -481,6 +774,7 @@ msgid "Configure Settings for the Topbar"
 msgstr ""
 
 #: ../inc/customizer-options.php:36
+msgctxt "Topbar Farben"
 msgid "Topbar Colors"
 msgstr ""
 
@@ -489,10 +783,12 @@ msgid "Configure Color Settings for the Topbar"
 msgstr ""
 
 #: ../inc/customizer-options.php:50
+msgctxt "Offcanvas-Menüeinstellungen"
 msgid "Offcanvas Menu Settings"
 msgstr ""
 
 #: ../inc/customizer-options.php:59
+msgctxt "Contenteinstellungen"
 msgid "Content Settings"
 msgstr ""
 
@@ -521,6 +817,7 @@ msgid "Sticky Article Settings"
 msgstr ""
 
 #: ../inc/customizer-options.php:104
+msgctxt "Sidebar-Einstellungen"
 msgid "Sidebar Settings"
 msgstr ""
 
@@ -662,10 +959,10 @@ msgid "Menu Text Hover Color"
 msgstr ""
 
 #: ../inc/customizer-options.php:568 ../inc/customizer-options.php:982 ..
-#: /inc/customizer-options.php:1032 ../inc/customizer-options.php:1417 ..
-#: /inc/customizer-options.php:1552 ../inc/customizer-options.php:1637 ..
-#: /inc/customizer-options.php:1662 ../inc/customizer-options.php:2612 ..
-#: /inc/customizer-options.php:2725
+#: inc/customizer-options.php:1032 ../inc/customizer-options.php:1417 ..
+#: inc/customizer-options.php:1552 ../inc/customizer-options.php:1637 ..
+#: inc/customizer-options.php:1662 ../inc/customizer-options.php:2612 ..
+#: inc/customizer-options.php:2725
 msgid ""
 "<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of "
 "the Customizer or to be viewed on the frontpage.."
@@ -776,7 +1073,7 @@ msgid ""
 msgstr ""
 
 #: ../inc/customizer-options.php:1103 ../inc/customizer-options.php:2136 ..
-#: /inc/kirki/includes/class-kirki-toolkit.php:48
+#: inc/kirki/includes/class-kirki-toolkit.php:48
 msgid "Background Color"
 msgstr ""
 
@@ -1023,7 +1320,7 @@ msgid ""
 msgstr ""
 
 #: ../inc/customizer-options.php:2245 ../inc/customizer-options.php:2307 ..
-#: /inc/customizer-options.php:2338 ../inc/customizer-options.php:2370
+#: inc/customizer-options.php:2338 ../inc/customizer-options.php:2370
 msgid "Sidebar Background Color"
 msgstr ""
 
@@ -1172,59 +1469,56 @@ msgstr ""
 msgid "Loop Slider Content"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:82 ../inc/CMB2/tests/test-cmb-field.php:244
+#: ../inc/CMB2/example-functions.php:80
 msgid "Test Metabox"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:93 ../inc/CMB2/example-functions.php:380
+#: ../inc/CMB2/example-functions.php:91 ../inc/CMB2/example-functions.php:383
 msgid "Test Text"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:94 ../inc/CMB2/example-functions.php:106 ..
-#: /inc/CMB2/example-functions.php:114 ../inc/CMB2/example-functions.php:122 ..
-#: /inc/CMB2/example-functions.php:131 ../inc/CMB2/example-functions.php:139 ..
-#: /inc/CMB2/example-functions.php:153 ../inc/CMB2/example-functions.php:160 ..
-#: /inc/CMB2/example-functions.php:168 ../inc/CMB2/example-functions.php:185 ..
-#: /inc/CMB2/example-functions.php:194 ../inc/CMB2/example-functions.php:202 ..
-#: /inc/CMB2/example-functions.php:209 ../inc/CMB2/example-functions.php:216 ..
-#: /inc/CMB2/example-functions.php:230 ../inc/CMB2/example-functions.php:243 ..
-#: /inc/CMB2/example-functions.php:256 ../inc/CMB2/example-functions.php:268 ..
-#: /inc/CMB2/example-functions.php:277 ../inc/CMB2/example-functions.php:285 ..
-#: /inc/CMB2/example-functions.php:294 ../inc/CMB2/example-functions.php:301 ..
-#: /inc/CMB2/example-functions.php:315 ../inc/CMB2/example-functions.php:381 ..
-#: /inc/CMB2/example-functions.php:476 ../inc/CMB2/example-functions.php:484 ..
-#: /inc/CMB2/example-functions.php:491 ../inc/CMB2/example-functions.php:498 ..
-#: /inc/CMB2/example-functions.php:505 ../inc/CMB2/example-functions.php:512 ..
-#: /inc/CMB2/example-functions.php:519 ../inc/CMB2/example-functions.php:557 ..
-#: /inc/CMB2/tests/test-cmb-field.php:256
+#: ../inc/CMB2/example-functions.php:92 ../inc/CMB2/example-functions.php:104 ..
+#: inc/CMB2/example-functions.php:112 ../inc/CMB2/example-functions.php:120 ..
+#: inc/CMB2/example-functions.php:129 ../inc/CMB2/example-functions.php:137 ..
+#: inc/CMB2/example-functions.php:152 ../inc/CMB2/example-functions.php:160 ..
+#: inc/CMB2/example-functions.php:168 ../inc/CMB2/example-functions.php:185 ..
+#: inc/CMB2/example-functions.php:194 ../inc/CMB2/example-functions.php:207 ..
+#: inc/CMB2/example-functions.php:214 ../inc/CMB2/example-functions.php:221 ..
+#: inc/CMB2/example-functions.php:235 ../inc/CMB2/example-functions.php:248 ..
+#: inc/CMB2/example-functions.php:261 ../inc/CMB2/example-functions.php:273 ..
+#: inc/CMB2/example-functions.php:282 ../inc/CMB2/example-functions.php:290 ..
+#: inc/CMB2/example-functions.php:299 ../inc/CMB2/example-functions.php:306 ..
+#: inc/CMB2/example-functions.php:320 ../inc/CMB2/example-functions.php:384 ..
+#: inc/CMB2/example-functions.php:475 ../inc/CMB2/example-functions.php:483 ..
+#: inc/CMB2/example-functions.php:490 ../inc/CMB2/example-functions.php:497 ..
+#: inc/CMB2/example-functions.php:504 ../inc/CMB2/example-functions.php:511 ..
+#: inc/CMB2/example-functions.php:518 ../inc/CMB2/example-functions.php:545 ..
+#: inc/CMB2/example-functions.php:553 ../inc/CMB2/example-functions.php:560 ..
+#: inc/CMB2/example-functions.php:597
 msgid "field description (optional)"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:105
+#: ../inc/CMB2/example-functions.php:103
 msgid "Test Text Small"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:113
+#: ../inc/CMB2/example-functions.php:111
 msgid "Test Text Medium"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:121
-msgid "Website URL"
-msgstr ""
-
-#: ../inc/CMB2/example-functions.php:130
+#: ../inc/CMB2/example-functions.php:128
 msgid "Test Text Email"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:138
+#: ../inc/CMB2/example-functions.php:136
 msgid "Test Time"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:145 ../inc/CMB2/example-functions.php:146
+#: ../inc/CMB2/example-functions.php:144 ../inc/CMB2/example-functions.php:145
 msgid "Time zone"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:152
+#: ../inc/CMB2/example-functions.php:151
 msgid "Test Date Picker"
 msgstr ""
 
@@ -1244,230 +1538,252 @@ msgstr ""
 msgid "Test Color Picker"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:201
+#: ../inc/CMB2/example-functions.php:206
 msgid "Test Text Area"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:208
+#: ../inc/CMB2/example-functions.php:213
 msgid "Test Text Area Small"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:215
+#: ../inc/CMB2/example-functions.php:220
 msgid "Test Text Area for Code"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:222
+#: ../inc/CMB2/example-functions.php:227
 msgid "Test Title Weeeee"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:223
+#: ../inc/CMB2/example-functions.php:228
 msgid "This is a title description"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:229
+#: ../inc/CMB2/example-functions.php:234
 msgid "Test Select"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:235 ../inc/CMB2/example-functions.php:248 ..
-#: /inc/CMB2/example-functions.php:260
+#: ../inc/CMB2/example-functions.php:240 ../inc/CMB2/example-functions.php:253 ..
+#: inc/CMB2/example-functions.php:265
 msgid "Option One"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:236 ../inc/CMB2/example-functions.php:249 ..
-#: /inc/CMB2/example-functions.php:261
+#: ../inc/CMB2/example-functions.php:241 ../inc/CMB2/example-functions.php:254 ..
+#: inc/CMB2/example-functions.php:266
 msgid "Option Two"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:237 ../inc/CMB2/example-functions.php:250 ..
-#: /inc/CMB2/example-functions.php:262
+#: ../inc/CMB2/example-functions.php:242 ../inc/CMB2/example-functions.php:255 ..
+#: inc/CMB2/example-functions.php:267
 msgid "Option Three"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:242
+#: ../inc/CMB2/example-functions.php:247
 msgid "Test Radio inline"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:255
+#: ../inc/CMB2/example-functions.php:260
 msgid "Test Radio"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:267
+#: ../inc/CMB2/example-functions.php:272
 msgid "Test Taxonomy Radio"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:276
+#: ../inc/CMB2/example-functions.php:281
 msgid "Test Taxonomy Select"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:284
+#: ../inc/CMB2/example-functions.php:289
 msgid "Test Taxonomy Multi Checkbox"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:293
+#: ../inc/CMB2/example-functions.php:298
 msgid "Test Checkbox"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:300 ../inc/CMB2/tests/test-cmb-field.php:255
+#: ../inc/CMB2/example-functions.php:305
 msgid "Test Multi Checkbox"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:306 ../inc/CMB2/tests/test-cmb-field.php:261
+#: ../inc/CMB2/example-functions.php:311
 msgid "Check One"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:307 ../inc/CMB2/tests/test-cmb-field.php:262
+#: ../inc/CMB2/example-functions.php:312
 msgid "Check Two"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:308 ../inc/CMB2/tests/test-cmb-field.php:263
+#: ../inc/CMB2/example-functions.php:313
 msgid "Check Three"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:314
+#: ../inc/CMB2/example-functions.php:319
 msgid "Test wysiwyg"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:322
+#: ../inc/CMB2/example-functions.php:327
 msgid "Test Image"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:323
+#: ../inc/CMB2/example-functions.php:328
 msgid "Upload an image or enter a URL."
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:329
+#: ../inc/CMB2/example-functions.php:334
 msgid "Multiple Files"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:330
+#: ../inc/CMB2/example-functions.php:335
 msgid "Upload or add multiple images/attachments."
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:337
+#: ../inc/CMB2/example-functions.php:342
 msgid "oEmbed"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:338
+#: ../inc/CMB2/example-functions.php:343
 msgid ""
 "Enter a youtube, twitter, or instagram URL. Supports services listed at <a "
 "href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress."
 "org/Embeds</a>."
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:371
+#: ../inc/CMB2/example-functions.php:374
 msgid "About Page Metabox"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:402
+#: ../inc/CMB2/example-functions.php:403
 msgid "Repeating Field Group"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:410
+#: ../inc/CMB2/example-functions.php:411
 msgid "Generates reusable form entries"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:412
+#: ../inc/CMB2/example-functions.php:413
 msgid "Entry {#}"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:413
+#: ../inc/CMB2/example-functions.php:414
 msgid "Add Another Entry"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:414
+#: ../inc/CMB2/example-functions.php:415
 msgid "Remove Entry"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:427
+#: ../inc/CMB2/example-functions.php:428
 msgid "Entry Title"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:434
+#: ../inc/CMB2/example-functions.php:435
 msgid "Description"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:435
+#: ../inc/CMB2/example-functions.php:436
 msgid "Write a short description for this entry"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:441
+#: ../inc/CMB2/example-functions.php:442
 msgid "Entry Image"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:447
+#: ../inc/CMB2/example-functions.php:448
 msgid "Image Caption"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:468
+#: ../inc/CMB2/example-functions.php:467
 msgid "User Profile Metabox"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:475
+#: ../inc/CMB2/example-functions.php:474 ../inc/CMB2/example-functions.php:544
 msgid "Extra Info"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:483
+#: ../inc/CMB2/example-functions.php:482
 msgid "Avatar"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:490
+#: ../inc/CMB2/example-functions.php:489
 msgid "Facebook URL"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:497
+#: ../inc/CMB2/example-functions.php:496
 msgid "Twitter URL"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:504
+#: ../inc/CMB2/example-functions.php:503
 msgid "Google+ URL"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:511
+#: ../inc/CMB2/example-functions.php:510
 msgid "Linkedin URL"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:518
+#: ../inc/CMB2/example-functions.php:517
 msgid "User Field"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:541
+#: ../inc/CMB2/example-functions.php:537
+msgid "Category Metabox"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:552
+msgid "Term Image"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:559
+msgid "Arbitrary Term Field"
+msgstr ""
+
+#: ../inc/CMB2/example-functions.php:581
 msgid "Theme Options Metabox"
 msgstr ""
 
-#: ../inc/CMB2/example-functions.php:556
+#: ../inc/CMB2/example-functions.php:596
 msgid "Site Background Color"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2.php:120
+#: ../inc/CMB2/includes/CMB2_hookup.php:120
+msgid ""
+"Term Metadata is a WordPress > 4.4 feature. Please upgrade your WordPress "
+"install."
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2_hookup.php:124
+msgid "Term metaboxes configuration requires a 'taxonomies' parameter"
+msgstr ""
+
+#: ../inc/CMB2/includes/CMB2.php:122
 msgid "Metabox configuration is required to have an ID parameter"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2.php:332
+#: ../inc/CMB2/includes/CMB2.php:375
 msgid "Click to toggle"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_Field.php:955
+#: ../inc/CMB2/includes/CMB2_Field.php:1030
 msgid "Add Group"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_Field.php:956
+#: ../inc/CMB2/includes/CMB2_Field.php:1031
 msgid "Remove Group"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_Field.php:978 ../inc/CMB2/includes/CMB2_Field.php:
-#: 982 ../inc/CMB2/tests/test-cmb-field.php:216
+#: ../inc/CMB2/includes/CMB2_Field.php:1053 ../inc/CMB2/includes/CMB2_Field.php:
+#: 1057
 msgid "None"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_Ajax.php:40
+#: ../inc/CMB2/includes/CMB2_Ajax.php:65
 msgid "Please Try Again"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_Ajax.php:135 ../inc/CMB2/tests/test-cmb-types.php:811
+#: ../inc/CMB2/includes/CMB2_Ajax.php:155
 msgid "Remove Embed"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_Ajax.php:139 ../inc/CMB2/tests/test-cmb-types.php:812
+#: ../inc/CMB2/includes/CMB2_Ajax.php:159
 #, php-format
 msgid "No oEmbed Results Found for %s. View more info at"
 msgstr ""
@@ -1570,25 +1886,21 @@ msgstr ""
 msgid "Use these files"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_JS.php:137 ../inc/CMB2/includes/CMB2_Types.php:1004
+#: ../inc/CMB2/includes/CMB2_JS.php:137 ../inc/CMB2/includes/CMB2_Types.php:1021
 msgid "Remove Image"
 msgstr ""
 
 #: ../inc/CMB2/includes/CMB2_JS.php:138 ../inc/CMB2/includes/CMB2_Types.php:357 ..
-#: /inc/CMB2/includes/CMB2_Types.php:1023 ../inc/CMB2/tests/test-cmb-types.php:
-#: 155 ../inc/CMB2/tests/test-cmb-types.php:163 ../inc/CMB2/tests/test-cmb-types.
-#: php:760 ../inc/CMB2/tests/test-cmb-types.php:785 ../inc/kirki/includes/class-
-#: kirki-toolkit.php:107
+#: inc/CMB2/includes/CMB2_Types.php:1040 ../inc/kirki/includes/class-kirki-
+#: toolkit.php:107
 msgid "Remove"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_JS.php:139 ../inc/CMB2/includes/CMB2_Types.php:1018 .
-#: ./inc/CMB2/tests/test-cmb-types.php:761 ../inc/CMB2/tests/test-cmb-types.php:786
+#: ../inc/CMB2/includes/CMB2_JS.php:139 ../inc/CMB2/includes/CMB2_Types.php:1035
 msgid "File:"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_JS.php:140 ../inc/CMB2/includes/CMB2_Types.php:1021 .
-#: ./inc/CMB2/tests/test-cmb-types.php:759 ../inc/CMB2/tests/test-cmb-types.php:784
+#: ../inc/CMB2/includes/CMB2_JS.php:140 ../inc/CMB2/includes/CMB2_Types.php:1038
 msgid "Download"
 msgstr ""
 
@@ -1600,17 +1912,15 @@ msgstr ""
 msgid "Add Row"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_Types.php:749 ../inc/CMB2/includes/CMB2_Types.php:797
+#: ../inc/CMB2/includes/CMB2_Types.php:768 ../inc/CMB2/includes/CMB2_Types.php:816
 msgid "No terms"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_Types.php:864 ../inc/CMB2/tests/test-cmb-types.php:
-#: 736 ../inc/CMB2/tests/test-cmb-types.php:762
+#: ../inc/CMB2/includes/CMB2_Types.php:884
 msgid "Add or Upload Files"
 msgstr ""
 
-#: ../inc/CMB2/includes/CMB2_Types.php:926 ../inc/CMB2/tests/test-cmb-types.php:
-#: 772 ../inc/CMB2/tests/test-cmb-types.php:787
+#: ../inc/CMB2/includes/CMB2_Types.php:945
 msgid "Add or Upload File"
 msgstr ""
 
@@ -1862,7 +2172,7 @@ msgid "Add new row"
 msgstr ""
 
 #: ../inc/kirki/tests/test-kirki.php:55 ../inc/kirki/tests/test-kirki.php:64 ..
-#: /inc/kirki/tests/test-kirki.php:73 ../inc/kirki/tests/test-kirki.php:131
+#: inc/kirki/tests/test-kirki.php:73 ../inc/kirki/tests/test-kirki.php:131
 msgid "My custom control"
 msgstr ""
 

@@ -6,6 +6,13 @@
  *
  * @package understrap
  */
+
+if ( get_theme_mod( 'content_width') == 'fullwidth') {
+    $postfix = "-fluid";
+} else {
+    $postfix = "";
+}
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -41,7 +48,7 @@
         $article_dropshadow_size = get_theme_mod( 'article_dropshadow_size', '3');
         $article_dropshadow_options = '' .$article_dropshadow_size . 'px ' . $article_dropshadow_size . 'px ' . $article_dropshadow_size*2 . 'px ' . $article_dropshadow_color;
     ?>
-        article, .author-bio {box-shadow: <?php echo $article_dropshadow_options; ?>;}
+        article, .author-bio, .breadcrumb {box-shadow: <?php echo $article_dropshadow_options; ?>;}
     <?php   }
     if (get_theme_mod( 'toggle_searchbox_pointer', 'true') == true ) {  // Searchbox Pointer ?>
         .form-wrapper button:before {border-color: transparent <?php echo get_theme_mod( 'menu_searchbutton_color'); ?> transparent;}
@@ -70,7 +77,7 @@
 
 <body <?php body_class(); ?> id="top">
 
-<nav id="site-navigation" class="main-navigation" role="navigation">
+<nav id="site-navigation" class="main-navigation" role="navigation" style="z-index: 999">
     <a class="skip-link sr-only" href="#content"><?php echo __( 'Skip to content', 'understrap' ); ?></a>
 
     <ul class="main-menu">
@@ -107,10 +114,8 @@
     </ul>
 
     <form role="search" method="get" class="form-wrapper cf" action="<?php echo home_url( '/' ); ?>">
-        <label>
-            <label for="searchbox" class="sr-only"><?php echo __( 'Search for:', 'understrap' ) ?></label>
-            <input type="search" placeholder="<?php echo __( 'Search ..', 'understrap' ) ?>" value="<?php echo get_search_query() ?>" name="s" id="searchbox" title="<?php echo __( 'Search for:', 'understrap' ) ?>">
-        </label>
+        <label for="searchbox" class="sr-only"><?php echo __( 'Search for:', 'understrap' ) ?></label>
+        <input type="search" placeholder="<?php echo __( 'Search ..', 'understrap' ) ?>" value="<?php echo get_search_query() ?>" name="s" id="searchbox" title="<?php echo __( 'Search for:', 'understrap' ) ?>">
         <button type="submit" class="submit" id="search-submit"><?php echo __( 'Search', 'understrap' ) ?></button>
     </form>
 
@@ -138,13 +143,5 @@
         <a id="nav-expander" class="nav-expander fixed withripple"><span class="menutext"><?php echo get_theme_mod( 'topbar_menu_text', 'MENU');?></span> &nbsp;<span class="fa fa-align-left fa-lg menuicon"></span></a>
 </div>
 <!-- End Navigation -->
-
-<?php
-    if ( get_theme_mod( 'content_width') == 'fullwidth') {
-        $postfix = "-fluid";
-    } else {
-        $postfix = "";
-    }
-?>
 
 <div id="page" class="hfeed site">
