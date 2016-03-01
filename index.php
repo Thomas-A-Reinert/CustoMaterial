@@ -11,7 +11,9 @@
  * @package understrap
  */
 
-get_header(); ?>
+get_header();
+
+?>
 
     <?php get_template_part('hero'); ?>
 
@@ -19,9 +21,9 @@ get_header(); ?>
 
     <div class="wrapper" id="wrapper-index">
 
-	   <div id="content" class="container">
+	   <div id="content" class="container<?php echo $postfix; ?>">
 
-	       <div id="primary" class="<?php if ( ( is_active_sidebar( 'sidebar-1' ) ) && (get_theme_mod( 'show_sidebar', 'true')) ) : ?>col-md-8<?php else : ?>col-md-12<?php endif; ?> content-area">
+	       <div id="primary" class="<?php echo $contentwidth ?> content-area">
 
                 <main id="main" class="site-main" role="main" tabindex="-1">
 

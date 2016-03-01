@@ -162,13 +162,13 @@ if ( class_exists( 'Kirki' ) ) {
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'typography',
 		'default'     => array(
-			'font-style'     => array( 'bold', 'italic' ),
+			'font-style'     => array( 'bold'),
 			'font-family'    => 'Open Sans',
-			'font-size'      => '16',
+			'font-size'      => '16px',
 			'font-weight'    => '400',
 			'line-height'    => '1.5',
-			'letter-spacing' => '-0.004',
-			// 'word-spacing'   => '0.125',
+			'letter-spacing' => '-0.004em',
+			//'word-spacing'   => '0.125em',
 		),
 		'priority'    => 10,
 		'choices'     => array(
@@ -178,8 +178,8 @@ if ( class_exists( 'Kirki' ) ) {
 			'font-weight'    => true,
 			'line-height'    => true,
 			'letter-spacing' => true,
-			// 'word-spacing'   => true,
-			'units'          => array( 'px', 'rem' ),
+			//'word-spacing'   => true,
+			'units'          => array( 'px', 'em', 'rem' ),
 		),
 		'output' => array(
 			array(
@@ -199,8 +199,8 @@ if ( class_exists( 'Kirki' ) ) {
 			'font-style'     => array( 'bold' ),
 			'font-family'    => 'Titillium Web',
 			'font-weight'    => '900',
-			'letter-spacing' => '0.125',
-			//'word-spacing'   => '0.125',
+			'letter-spacing' => '0.125px',
+			//'word-spacing'   => '0.125em',
 		),
 		'priority'    => 10,
 		'choices'     => array(
@@ -209,7 +209,7 @@ if ( class_exists( 'Kirki' ) ) {
 			'font-weight'    => true,
 			'letter-spacing' => true,
 			//'word-spacing'   => true,
-			'units'          => array( 'px', 'rem' ),
+			'units'          => array( 'px', 'em', 'rem' ),
 		),
 		'output' => array(
 			array(
@@ -301,7 +301,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'label'       => __( 'Blog slug size', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
 	    'section'     => 'topbar_features',
-	    'default'     => 16,
+	    'default'     => 28,
 	    'priority'    => 50,
 	    'choices'     => array(
 	        'min'  => 12,
@@ -1257,14 +1257,14 @@ if ( class_exists( 'Kirki' ) ) {
 	    'priority'    => 10,
 	    'output'      => array(
 			array(
-				'element'  => 'article, .author-description',
+				'element'  => 'article, .author-description, .breadcrumb',
 				'property' => 'background',
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => 'article, .author-description',
+				'element'  => 'article, .author-description, .breadcrumb',
 				'function' => 'css',
 				'property' => 'background',
 			),
@@ -1278,7 +1278,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => 'false',
+	    'default'     => 'true',
 	    'priority'    => 20,
 	) );
 

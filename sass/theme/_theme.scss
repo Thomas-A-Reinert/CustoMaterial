@@ -168,6 +168,8 @@ a.nav-expander.fixed {
 
 .nav-expanded #site-navigation {
     right: 0;
+    z-index: 9999;
+    //z-index: 100!important;
 }
 
 .icon:before {
@@ -191,14 +193,14 @@ a.nav-expander.fixed {
     font-size: 15px;
     top: 0;
     width: 20em;
-    z-index: 2000;
+    z-index: 9999;
     color: #6f7d8c;
     transition: right 0.3s ease-in-out 0s;
 
     aside,
     .form-wrapper {
         font-size: 18px;
-        padding: 6px 15px 6px;
+        padding: 0 15px;
     }
 
     #nav-close {
@@ -382,11 +384,14 @@ a.nav-expander.fixed {
 
     .closebutton {
         padding: 8px 12px;
+        margin-top: 25px;
     }
 
 }
 
 .form-wrapper {
+
+    margin-top: 15px;
 
     button {
         overflow: visible;
@@ -444,9 +449,9 @@ a.nav-expander.fixed {
     }
 
     input {
-        width: 160px;
+        width: 150px;
         height: 40px;
-        padding: 10px 5px;
+        padding: 0 5px;
         float: left;
         font: bold 15px;
         border: 0;
@@ -633,6 +638,9 @@ article {
             }
         }
     }
+    .entry-content {
+
+    }
 
     .entry-content,
     .entry-summary,
@@ -654,7 +662,9 @@ article {
  */
 .attachment-header-image {
     position: relative;
+    margin: 0;
 }
+
 .attachment-header-image-caption {
     position: absolute;
     bottom: 20px;
@@ -671,6 +681,56 @@ article {
     }
     p {
         margin-bottom: 8px
+    }
+}
+
+
+/*
+ * Custom Posttype "Portfolio"
+ */
+
+.portfolio {
+
+    .project-info {
+        padding: 0 25px 0 0;
+
+        ul {
+            margin-left: 0
+        }
+    }
+
+    .owl-carousel {
+
+        .owl-item {
+
+            figure {
+                position: relative;
+            }
+
+            figure figcaption {
+                position: absolute;
+                bottom: 25px;
+                width: 100%;
+                display: block;
+                color: #000000;
+                background: rgba(255,255,255,0.5);
+                text-align: center;
+
+                .h3  {
+                    text-transfrom: lowercase;
+                    font-variant:small-caps;
+                    margin-top: 5px;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .owl-dots {
+            position: absolute!important;
+            bottom: 25px;
+            color: black;
+            z-index: 10;
+        }
     }
 }
 
@@ -809,9 +869,11 @@ article {
 .comment-navigation .nav-previous,
 .post-navigation .nav-previous,
 .posts-navigation .nav-previous,
+.nav-links .nav-previous,
 .comment-navigation .nav-next,
 .post-navigation .nav-next,
-.posts-navigation .nav-next {
+.posts-navigation .nav-next,
+.nav-links .nav-next {
     width: 48%;
 }
 
@@ -904,4 +966,17 @@ article {
 
 .sow-slider-base .sow-slide-nav a {
     border: 0;
+}
+
+/*
+ * Yoast SEO Plugin Breadcrumbs
+ */
+
+.breadcrumb {
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.25);
+    padding: 3px inherit;
+    p {
+        margin: 5px 0;
+    }
 }
