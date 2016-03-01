@@ -8,11 +8,21 @@
 get_header(); ?>
 <div class="wrapper" id="single-wrapper">
 
-    <div  id="content" class="container">
+    <div  id="content" class="container<?php echo $postfix; ?>">
 
-        <div id="primary" class="<?php if ( ( is_active_sidebar( 'sidebar-1' ) ) && (get_theme_mod( 'show_sidebar', 'true')) ) : ?>col-md-8<?php else : ?>col-md-12<?php endif; ?> content-area">
+        <div id="primary" class="content-area <?php echo $contentwidth ?>">
 
             <main id="main" class="site-main" role="main" tabindex="-1">
+
+            <?php if ( function_exists('yoast_breadcrumb') ) {
+                $yoast_links_options = get_option( 'wpseo_internallinks' );
+                $yoast_bc_enabled=$yoast_links_options['breadcrumbs-enable'];
+                    if ($yoast_bc_enabled) { ?>
+                        <div class="breadcrumb">
+                            <?php yoast_breadcrumb('<p id="breadcrumbs"> <i class="fa fa-home"></i> ','</p>'); ?>
+                        </div>
+                <?php }
+            } ?>
 
                 <?php while ( have_posts() ) : the_post(); ?>
 

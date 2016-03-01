@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
 "POT-Creation-Date: 2015-09-01 21:23+0200\n"
-"PO-Revision-Date: Fri Feb 26 2016 05:02:46 GMT+0100 (Mitteleuropäische Zeit)\n"
+"PO-Revision-Date: Tue Mar 01 2016 11:59:36 GMT+0100 (Mitteleuropäische Zeit)\n"
 "Last-Translator: TAR <symbian60.mobi@gmail.com>\n"
 "Language-Team: \n"
 "Language: German\n"
@@ -751,13 +751,716 @@ msgstr ""
 msgid "My custom control 2"
 msgstr ""
 
-#. Author of the theme
-msgid "Thomas A. Reinert"
-msgstr ""
+#: ../404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ooooops! Die Seite wurde nicht gefunden."
 
-#. Author URI of the theme
-msgid "http://www.tarcgn.de/portfolio/"
+#: ../404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
+"Es scheint das hier nichts gefunden wurde. Versuch doch einen der Links "
+"unten oder die Suchfunktion."
+
+#: ../404.php:30
+msgid "Most Used Categories"
+msgstr "Am häufigsten genutzte Kategorie"
+
+#: ../404.php:47
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Versuch im monatlichen Archiv zu schauen. %1$s"
+
+#: ../comment-form.php:5
+msgid "Write Comment."
+msgstr "Kommentar schreiben"
+
+#: ../comment-form.php:5
+msgid "*Mandatory"
+msgstr "*Pflichtfeld"
+
+#: ../comment-form.php:13 ../inc/custom-comments.php:12
+msgid "Name"
+msgstr "Name"
+
+#: ../comment-form.php:19
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: ../comment-form.php:19
+msgid "Not public."
+msgstr "Nicht öffentlich"
+
+#: ../comment-form.php:24 ../inc/custom-comments.php:16
+msgid "Website"
+msgstr "Webseite"
+
+#: ../comment-form.php:29
+msgid "Your Comment"
+msgstr "Dein Kommentar"
+
+#: ../comment-form.php:36
+msgid "Send comment."
+msgstr "Kommentar senden"
+
+#: ../footer.php:31
+msgid "Footer Widgets"
+msgstr "Fußzeilen-Widgets"
+
+#: ../footer.php:78 ../footer.php:78
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Proudly powered by %s"
+
+#: ../footer.php:78
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: ../footer.php:100
+msgid "Secondary Navigation"
+msgstr "Zweite Navigation"
+
+#: ../footer.php:120
+msgid "To Top"
+msgstr "Zum Seitenanfang"
+
+#: ../header.php:74
+msgid "Skip to content"
+msgstr "Zum Inhalt springen"
+
+#: ../header.php:111 ../header.php:112
+msgid "Search for:"
+msgstr "Suche nach:"
+
+#: ../header.php:112
+msgid "Search .."
+msgstr "Suche .."
+
+#: ../header.php:114
+msgid "Search"
+msgstr "Suche"
+
+#: ../search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchergebnis für: %s"
+
+#: ../functions.php:62
+msgid "The theme description."
+msgstr "Die Theme Beschreibung."
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Ein Kommentar zu &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:35 ../comments.php:63
+msgid "Comment navigation"
+msgstr "Kommentar Navigation"
+
+#: ../comments.php:37 ../comments.php:65
+msgid "<span class=\"fa fa-backward\"></span> Older Comments"
+msgstr "<span class=\"fa fa-backward\"></span> Ältere Kommentare"
+
+#: ../comments.php:38 ../comments.php:66
+msgid "Newer Comments <span class=\"fa fa-forward\"></span>"
+msgstr "Neuere Kommentare <span class=\"fa fa-forward\"></span>"
+
+#: ../comments.php:77
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen"
+
+#: ../loop-templates/content-single.php:29 ../loop-templates/content-page.php:25 .
+#: ./loop-templates/content.php:33
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: ../loop-templates/content-single.php:46
+msgid "Author Info:"
+msgstr "Informationen zum Autor"
+
+#: ../loop-templates/content-single.php:63
+msgid "Contact"
+msgstr "Kontakt"
+
+#: ../loop-templates/content-none.php:15
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: ../loop-templates/content-none.php:23
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Bereit deinen ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Fang hier "
+"an</a>."
+
+#: ../loop-templates/content-none.php:27
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Entschuldigung, leider wurde nichts zu deinem Suchbegriff gefunden. Versuch "
+"etwas anderes aus!"
+
+#: ../loop-templates/content-none.php:32
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Es scheint das wir nicht herausfinden konnten wonach du gesucht hast. Suchen "
+"könnte helfen!"
+
+#: ../loop-templates/content-page.php:34 ../inc/bootstrap-comment-walker.php:59 ..
+#: inc/template-tags.php:122
+msgid "Edit"
+msgstr "Editieren"
+
+#: ../inc/bootstrap-comment-walker.php:45
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s um %2$s"
+
+#: ../inc/bootstrap-comment-walker.php:51
+msgid "Your comment is awaiting moderation."
+msgstr "Ihr Kommentar muss vor der Veröffentlichung moderiert werden."
+
+#: ../inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr "Beitrag´s Navigation"
+
+#: ../inc/template-tags.php:25
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Ältere Beiträge"
+
+#: ../inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Neuere Beiträge <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../inc/template-tags.php:52
+msgid "Post navigation"
+msgstr "Beitrag´s Navigation"
+
+#: ../inc/template-tags.php:55
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+msgstr "<span class=\"meta-nav\"></span>&nbsp;%title"
+
+#: ../inc/template-tags.php:56
+msgctxt "Next post link"
+msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title&nbsp;<span class=\"meta-nav\"></span>"
+
+#: ../inc/template-tags.php:71
+msgid "last updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#: ../inc/template-tags.php:82
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Veröffentlicht am %s"
+
+#: ../inc/template-tags.php:87
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "von %s"
+
+#: ../inc/template-tags.php:104 ../inc/template-tags.php:110
+msgid ", "
+msgstr ", "
+
+#: ../inc/template-tags.php:106
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Geposted in %1$s"
+
+#: ../inc/template-tags.php:112
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Getagt mit: %1$s"
+
+#: ../inc/template-tags.php:118
+msgid "Leave a comment"
+msgstr "Hinterlasse ein Kommentar"
+
+#: ../inc/template-tags.php:118
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: ../inc/template-tags.php:118
+#, php-format
+msgid "% Comments"
+msgstr "% Kommentare"
+
+#: ../inc/template-tags.php:139
+#, php-format
+msgid "Category: %s"
+msgstr "Kategorie: %s"
+
+#: ../inc/template-tags.php:141
+#, php-format
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+#: ../inc/template-tags.php:143
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: ../inc/template-tags.php:145
+#, php-format
+msgid "Year: %s"
+msgstr "Jahr: %s"
+
+#: ../inc/template-tags.php:145
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: ../inc/template-tags.php:147
+#, php-format
+msgid "Month: %s"
+msgstr "Monat: %s"
+
+#: ../inc/template-tags.php:147
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: ../inc/template-tags.php:149
+#, php-format
+msgid "Day: %s"
+msgstr "Tag: %s"
+
+#: ../inc/template-tags.php:149
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: ../inc/template-tags.php:151
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Asides"
+
+#: ../inc/template-tags.php:153
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Galerien"
+
+#: ../inc/template-tags.php:155
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Bilder"
+
+#: ../inc/template-tags.php:157
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Videos"
+
+#: ../inc/template-tags.php:159
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Zitate"
+
+#: ../inc/template-tags.php:161
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Links"
+
+#: ../inc/template-tags.php:163
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Statusmeldung"
+
+#: ../inc/template-tags.php:165
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Audio"
+
+#: ../inc/template-tags.php:167
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Chats"
+
+#: ../inc/template-tags.php:169
+#, php-format
+msgid "Archives: %s"
+msgstr "Archive: %s"
+
+#: ../inc/template-tags.php:173
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: ../inc/template-tags.php:175
+msgid "Archives"
+msgstr "Archive"
+
+#: ../inc/custom-comments.php:14
+msgid "Email"
+msgstr "E-Mail"
+
+#: ../inc/custom-comments.php:25
+msgctxt "noun"
+msgid "Comment"
+msgstr "Kommentare"
+
+#: ../inc/custom-comments.php:27
+msgid "You may use the following HTML-Tags: "
+msgstr "Du kannst folgende HTML-Tags nutzen: "
+
+#: ../inc/setup.php:48
+msgid "Primary Menu"
+msgstr "Hauptmenü"
+
+#: ../inc/setup.php:49
+msgid "Short Footer Menu"
+msgstr "Kurzes Footermenü"
+
+#: ../inc/setup.php:99
+msgid "Read More..."
+msgstr "Weiterlesen..."
+
+#: ../inc/extras.php:60
+#, php-format
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: ../inc/widgets.php:10
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: ../inc/widgets.php:20
+msgid "Hero Slider"
+msgstr "Hero Slider"
+
+#: ../inc/widgets.php:30
+msgid "Static Hero"
+msgstr "Static Hero"
+
+#: ../inc/widgets.php:40
+msgid "Off Canvas Top"
+msgstr "OffCanvas Menü oben"
+
+#: ../inc/widgets.php:49
+msgid "Off Canvas Bottom"
+msgstr "OffCanvas Menü unten"
+
+#: ../inc/widgets.php:58
+msgid "Footer Widget 1"
+msgstr "Fußzeilenwidget 1"
+
+#: ../inc/widgets.php:67
+msgid "Footer Widget 2"
+msgstr "Fußzeilenwidget 2"
+
+#: ../inc/widgets.php:76
+msgid "Footer Widget 3"
+msgstr "Fußzeilenwidget 3"
+
+#: ../inc/widgets.php:85
+msgid "Footer Widget 4"
+msgstr "Fußzeilenwidget 4"
+
+#: ../inc/customizer-options.php:14
+msgid "Font Settings"
+msgstr "Schrifteinstellungen"
+
+#: ../inc/customizer-options.php:15
+msgid ""
+"Configure Font Settings. You can also type the desired Font into the Select "
+"Box if you are looking for a special one."
+msgstr ""
+"Hier kannst Du die die Schrifteinstellungen konfigurieren. In die Auswahlbox "
+"kannst Du außerdem eine Schrift eintippen, falls Du eine bestimmte suchst."
+
+#: ../inc/customizer-options.php:23
+msgid "Topbar"
+msgstr "Topbalken"
+
+#: ../inc/customizer-options.php:28
+msgid "Topbar Features"
+msgstr "Topbalken Einstellungen"
+
+#: ../inc/customizer-options.php:29
+msgid "Configure Settings for the Topbar"
+msgstr "Hier kannst Du die Einstellungen für den Topbalken konfigurieren."
+
+#: ../inc/customizer-options.php:36
+msgid "Topbar Colors"
+msgstr "Topbalken Farben"
+
+#: ../inc/customizer-options.php:37
+msgid "Configure Color Settings for the Topbar"
+msgstr "Konfiguriere hier die Farben für den Topbalken"
+
+#: ../inc/customizer-options.php:50
+msgid "Offcanvas Menu Settings"
+msgstr "OffCanvas Menü Einstellungen"
+
+#: ../inc/customizer-options.php:59
+msgid "Content Settings"
+msgstr "Inhaltseinstellungen"
+
+#: ../inc/customizer-options.php:60
+msgid "My Description"
+msgstr "Meine Beschreibung"
+
+#: ../inc/customizer-options.php:64
+msgid "Content Features"
+msgstr "Contentfeatures"
+
+#: ../inc/customizer-options.php:72
+msgid "Article Features"
+msgstr "Artikelfeatures"
+
+#: ../inc/customizer-options.php:80
+msgid "Article Colors"
+msgstr "Artikelfarben"
+
+#: ../inc/customizer-options.php:88
+msgid "Comment Section"
+msgstr "Kommentarbereich"
+
+#: ../inc/customizer-options.php:96
+msgid "Sticky Article Settings"
+msgstr "\"Sticky\" Artikeleinstellungen"
+
+#: ../inc/customizer-options.php:104
+msgid "Sidebar Settings"
+msgstr "Sidebareinstellungen"
+
+#: ../inc/customizer-options.php:105
+msgid "Configure Sidebar Settings"
+msgstr "Hier kannst Du die Einstellungen für den Sidebar tätigen."
+
+#: ../inc/customizer-options.php:113
+msgid "Footer Configuration"
+msgstr "Footereinstellungen"
+
+#: ../inc/customizer-options.php:118
+msgid "Footer Widgets Settings"
+msgstr "Footerwidgeteinstellungen"
+
+#: ../inc/customizer-options.php:119
+msgid "Configure Settings for the Footer Widgets Area"
+msgstr "Hier kannst Du die Einstellungen für den Fußzeilenwidgetbereich ändern."
+
+#: ../inc/customizer-options.php:126
+msgid "Footer Settings"
+msgstr "Fußzeileneinstellungen"
+
+#: ../inc/customizer-options.php:127
+msgid "Configure Settings for the Footer"
+msgstr "Hier kannst Du die Einstellungen für die Fußzeilen ändern."
+
+#: ../inc/customizer-options.php:134
+msgid "Custom Code"
+msgstr "Individueller Code"
+
+#: ../inc/customizer-options.php:135
+msgid ""
+"You can inject your own CSS and Javascript without modifying any of the "
+"theme files or having the need to create a Child-Theme to ensure that this "
+"Theme still remains updatable."
+msgstr ""
+"Hier kannst Du Deinen eigenen CSS und Javascript-Code injizieren, ohne Deine "
+"Theme-Dateien zu ändern oder ein Child-Theme zu erstellen. Dein Theme bleibt "
+"dabei trotz dieser Änderungen updatebar."
+
+#: ../inc/customizer-options.php:160
+msgid "Base Typography"
+msgstr "Grundschriftart"
+
+#: ../inc/customizer-options.php:161
+msgid "Configures the overall Font for the whole Site."
+msgstr "Konfiguriert die Einstellungen der Schrift für den Content."
+
+#: ../inc/customizer-options.php:194
+msgid "Headline Typography"
+msgstr "Überschriftenschriftart"
+
+#: ../inc/customizer-options.php:195
+msgid "Configures Headline Fonts for the Site."
+msgstr "Konfiguriert die Einstellungen der Schrift für alle Überschriften."
+
+#: ../inc/customizer-options.php:229
+msgid "Display Brand Image?"
+msgstr "Logo im Header anzeigen?"
+
+#: ../inc/customizer-options.php:239
+msgid "Choose or upload your brand image"
+msgstr "Wähle oder lade Dein Logo hoch."
+
+#: ../inc/customizer-options.php:240
+msgid ""
+"Notice: Please use an Image with 50px maximum height to avoid overhead. "
+"Image will get scaled down proportionally to 50px height anyway."
+msgstr ""
+"Anmerkung: Verwende ein Bild mit maximal 50 Pixeln Höhe um zu lange "
+"Ladezeiten zu vermeiden. Aber auch zu große Bilder werden automatisch auf 50 "
+"Pixel Höhe herunterskaliert. Dies wirkt sich allerdings suboptimal auf Dein "
+"Ranking bei Google Pagespeed Insights und vergleichbaren Diensten aus!"
+
+#: ../inc/customizer-options.php:259
+msgid "Blog title size"
+msgstr "Größe des Blogtitels"
+
+#: ../inc/customizer-options.php:290
+msgid "Display Blog Slug?"
+msgstr "Willst Du den Blog-Untertitel anzeigen?"
+
+#: ../inc/customizer-options.php:301
+msgid "Blog slug size"
+msgstr "Größe des Bloguntertitels"
+
+#: ../inc/customizer-options.php:339
+msgid "Menu Button Text"
+msgstr "Text des Menübuttons"
+
+#: ../inc/customizer-options.php:341
+msgid "MENU"
+msgstr "MENÜ"
+
+#: ../inc/customizer-options.php:349
+msgid "Topbar color settings"
+msgstr "Topbalken Farbeinstellungen"
+
+#: ../inc/customizer-options.php:361
+msgid "Topbar Background Color"
+msgstr "Topbalken Hintergrundfarbe"
+
+#: ../inc/customizer-options.php:362 ../inc/customizer-options.php:620
+msgid "Notice: Topbar transparency should be used carefully!"
+msgstr ""
+"Achtung: Die Transparenz für den Topbalken sollte mit Vorsicht gewählt "
+"werden!"
+
+#: ../inc/customizer-options.php:386
+msgid "Activate Dropshow?"
+msgstr "Schlagschatten aktivieren?"
+
+#: ../inc/customizer-options.php:398
+msgid "Topbar Dropshadow Color"
+msgstr "Topbar Schlagschattenfarbe"
+
+#: ../inc/customizer-options.php:417 ../inc/customizer-options.php:674
+msgid "Dropshadow size"
+msgstr "Schlagschatten-Größe"
+
+#: ../inc/customizer-options.php:436
+msgid "Topbar text colors"
+msgstr "Topbalken Textfarbe"
+
+#: ../inc/customizer-options.php:449
+msgid "Blog title color"
+msgstr "Blogtitelfarbe"
+
+#: ../inc/customizer-options.php:474
+msgid "Blog title hover color"
+msgstr "Blogtitel Hover-Farbe"
+
+#: ../inc/customizer-options.php:499
+msgid "Blog slug color"
+msgstr "Bloguntertitel Farbe"
+
+#: ../inc/customizer-options.php:528
+msgid "Menubutton colors"
+msgstr "Menübutton-Farbe"
+
+#: ../inc/customizer-options.php:541
+msgid "Menubutton Text Color"
+msgstr "Menübutton Textfarbe"
+
+#: ../inc/customizer-options.php:566
+msgid "Menu Text Hover Color"
+msgstr "Menübutton Hover-Textfarbe"
+
+#: ../inc/customizer-options.php:591
+msgid "Menu Button Color"
+msgstr "Menübutton-Farbe"
+
+#: ../inc/customizer-options.php:619
+msgid "Offcancas Menu Background Color"
+msgstr "OffCanvas-Menü Hintergrundfarbe"
+
+#: ../inc/customizer-options.php:644
+msgid "Activate Menu Dropshow?"
+msgstr "Aktiviere Menü-Schlagschatten?"
+
+#: ../inc/customizer-options.php:656
+msgid "Menu Dropshadow Color"
+msgstr "Menü-Schlagschattenfarbe"
+
+#: ../inc/customizer-options.php:697
+msgid "Menu Item Colors"
+msgstr "Farbe der Menü-Inhalte"
+
+#: ../inc/customizer-options.php:710
+msgid "Close Button Color"
+msgstr "Farbe des \"Schließen\"-Buttons"
+
+#: ../inc/customizer-options.php:735
+msgid "Menu Linktext Color"
+msgstr "Farbe des Menülinktextes"
+
+#: ../inc/customizer-options.php:759
+msgid "Menu Linktext Hover Color"
+msgstr "Hover-Farbe des Menülinktextes"
+
+#: ../inc/customizer-options.php:783
+msgid "Menu Item Background Hover Color"
+msgstr "Hintegrundfarbe des Menülinktextes"
+
+#: ../inc/customizer-options.php:804
+msgid "Searchbox Colors"
+msgstr "Suchbox-Farben"
+
+#: ../inc/customizer-options.php:817
+msgid "Searchbox Text Color"
+msgstr "Suchbox Textfarbe"
+
+#: ../inc/customizer-options.php:842
+msgid "Searchbox Placeholder Text Color"
+msgstr "Farbe des Suchbox Platzhaltertextes"
+
+#: ../inc/customizer-options.php:866
+msgid "Searchbox Color"
+msgstr "Farbe der Suchbox"
+
+#: ../inc/customizer-options.php:891
+msgid "Focused Searchbox Text Color"
+msgstr "Textfarbe der aktivierten Suchbox"
+
+#: ../inc/customizer-options.php:916
+msgid "Focused Searchbox Color"
+msgstr "Farbe der aktivierten Suchbox"
+
+#: ../inc/customizer-options.php:942
+msgid "Activate Searchbox Pointer?"
+msgstr "Willst Du den Pfeil der Suchbox anzeigen?"
+
+#: ../inc/customizer-options.php:954
+msgid "Searchbutton Color"
+msgstr "Suchbutton-Farbe"
+
+#: ../inc/customizer-options.php:980
+msgid "Searchbutton Hover Color"
+msgstr "Suchbutton-Hoverfarbe"
+
+#: ../inc/customizer-options.php:1006
+msgid "Searchbutton Text Color"
+msgstr "Suchbutton Textfarbe"
+
+#: ../inc/customizer-options.php:1030
+msgid "Searchbutton Text Hover Color"
+msgstr "Suchbutton Hover-Textfarbe"
 
 #: ../inc/customizer-options.php:1059
 msgid "Content Width Configuration"
@@ -1203,6 +1906,22 @@ msgstr ""
 "Dokuments eingefügt wird, also sollten jQuery Befehle hier auch keine "
 "Problem sein."
 
+#: ../inc/customizer.php:24
+msgid "Slider Settings"
+msgstr "Slidereinstellungen"
+
+#: ../inc/customizer.php:33
+msgid "Number of slides displaying at once"
+msgstr "Anzahl der Slides die auf einmal angezeigt werden"
+
+#: ../inc/customizer.php:45
+msgid "Slider Time (in ms)"
+msgstr "Slider Zeit (in ms)"
+
+#: ../inc/customizer.php:57
+msgid "Loop Slider Content"
+msgstr "Slider Inhalt wiederholen?"
+
 #. Name of the template
 msgid "Full Width Page"
 msgstr "Seite in voller Breite"
@@ -1230,729 +1949,10 @@ msgstr ""
 "WidgetSlider und vieles mehr, um individuelle und hochmoderne Websites zu "
 "gestalten."
 
-#: ../footer.php:31
-msgid "Footer Widgets"
-msgstr "Fußzeilen-Widgets"
-
-#: ../footer.php:78
-msgid "https://wordpress.org/"
-msgstr "https://wordpress.org/"
-
-#: ../footer.php:100
-msgid "Secondary Navigation"
-msgstr "Zweite Navigation"
-
-#: ../footer.php:120
-msgid "To Top"
-msgstr "Zum Seitenanfang"
-
-#: ../header.php:111 ../header.php:112
-msgid "Search for:"
-msgstr "Suche nach:"
-
-#: ../header.php:112
-msgid "Search .."
-msgstr "Suche .."
-
-#: ../header.php:114
-msgid "Search"
-msgstr "Suche"
-
-#: ../functions.php:62
-msgid "The theme description."
-msgstr "Die Theme Beschreibung."
-
-#: ../comments.php:28
-#, php-format
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Ein Kommentar zu &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
-
-#: ../comments.php:37 ../comments.php:65
-msgid "<span class=\"fa fa-backward\"></span> Older Comments"
-msgstr "<span class=\"fa fa-backward\"></span> Ältere Kommentare"
-
-#: ../comments.php:38 ../comments.php:66
-msgid "Newer Comments <span class=\"fa fa-forward\"></span>"
-msgstr "Neuere Kommentare <span class=\"fa fa-forward\"></span>"
-
-#: ../loop-templates/content-single.php:46
-msgid "Author Info:"
-msgstr "Informationen zum Autor"
-
-#: ../loop-templates/content-single.php:63
-msgid "Contact"
-msgstr "Kontakt"
-
-#: ../inc/bootstrap-comment-walker.php:45
-#, php-format
-msgctxt "1: date, 2: time"
-msgid "%1$s at %2$s"
-msgstr "%1$s um %2$s"
-
-#: ../inc/bootstrap-comment-walker.php:51
-msgid "Your comment is awaiting moderation."
-msgstr "Ihr Kommentar muss vor der Veröffentlichung moderiert werden."
-
-#: ../inc/template-tags.php:55
-msgctxt "Previous post link"
-msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
-msgstr "<span class=\"meta-nav\"></span>&nbsp;%title"
-
-#: ../inc/template-tags.php:56
-msgctxt "Next post link"
-msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
-msgstr "%title&nbsp;<span class=\"meta-nav\"></span>"
-
-#: ../inc/template-tags.php:71
-msgid "last updated on"
-msgstr "Zuletzt aktualisiert am"
-
-#: ../inc/template-tags.php:82
-#, php-format
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr "Veröffentlicht am %s"
-
-#: ../inc/template-tags.php:87
-#, php-format
-msgctxt "post author"
-msgid "by %s"
-msgstr "von %s"
-
-#: ../inc/template-tags.php:145
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr "Y"
-
-#: ../inc/template-tags.php:147
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr "F Y"
-
-#: ../inc/template-tags.php:149
-msgctxt "daily archives date format"
-msgid "F j, Y"
-msgstr "F j, Y"
-
-#: ../inc/template-tags.php:151
-msgctxt "post format archive title"
-msgid "Asides"
-msgstr "Asides"
-
-#: ../inc/template-tags.php:153
-msgctxt "post format archive title"
-msgid "Galleries"
-msgstr "Galerien"
-
-#: ../inc/template-tags.php:155
-msgctxt "post format archive title"
-msgid "Images"
-msgstr "Bilder"
-
-#: ../inc/template-tags.php:157
-msgctxt "post format archive title"
-msgid "Videos"
-msgstr "Videos"
-
-#: ../inc/template-tags.php:159
-msgctxt "post format archive title"
-msgid "Quotes"
-msgstr "Zitate"
-
-#: ../inc/template-tags.php:161
-msgctxt "post format archive title"
-msgid "Links"
-msgstr "Links"
-
-#: ../inc/template-tags.php:163
-msgctxt "post format archive title"
-msgid "Statuses"
-msgstr "Statusmeldung"
-
-#: ../inc/template-tags.php:165
-msgctxt "post format archive title"
-msgid "Audio"
-msgstr "Audio"
-
-#: ../inc/template-tags.php:167
-msgctxt "post format archive title"
-msgid "Chats"
-msgstr "Chats"
-
-#: ../inc/custom-comments.php:25
-msgctxt "noun"
-msgid "Comment"
-msgstr "Kommentare"
-
-#: ../inc/custom-comments.php:27
-msgid "You may use the following HTML-Tags: "
-msgstr "Du kannst folgende HTML-Tags nutzen: "
-
-#: ../inc/setup.php:49
-msgid "Short Footer Menu"
-msgstr "Kurzes Footermenü"
-
-#: ../inc/widgets.php:20
-msgid "Hero Slider"
-msgstr "Hero Slider"
-
-#: ../inc/widgets.php:40
-msgid "Off Canvas Top"
-msgstr "OffCanvas Menü oben"
-
-#: ../inc/widgets.php:49
-msgid "Off Canvas Bottom"
-msgstr "OffCanvas Menü unten"
-
-#: ../inc/widgets.php:58
-msgid "Footer Widget 1"
-msgstr "Fußzeilenwidget 1"
-
-#: ../inc/widgets.php:67
-msgid "Footer Widget 2"
-msgstr "Fußzeilenwidget 2"
-
-#: ../inc/widgets.php:76
-msgid "Footer Widget 3"
-msgstr "Fußzeilenwidget 3"
-
-#: ../inc/widgets.php:85
-msgid "Footer Widget 4"
-msgstr "Fußzeilenwidget 4"
-
-#: ../inc/customizer-options.php:14
-msgid "Font Settings"
-msgstr "Schrifteinstellungen"
-
-#: ../inc/customizer-options.php:15
-msgid ""
-"Configure Font Settings. You can also type the desired Font into the Select "
-"Box if you are looking for a special one."
-msgstr ""
-"Hier kannst Du die die Schrifteinstellungen konfigurieren. In die Auswahlbox "
-"kannst Du außerdem eine Schrift eintippen, falls Du eine bestimmte suchst."
-
-#: ../inc/customizer-options.php:23
-msgid "Topbar"
-msgstr "Topbalken"
-
-#: ../inc/customizer-options.php:28
-msgid "Topbar Features"
-msgstr "Topbalken Einstellungen"
-
-#: ../inc/customizer-options.php:29
-msgid "Configure Settings for the Topbar"
-msgstr "Hier kannst Du die Einstellungen für den Topbalken konfigurieren."
-
-#: ../inc/customizer-options.php:36
-msgid "Topbar Colors"
-msgstr "Topbalken Farben"
-
-#: ../inc/customizer-options.php:37
-msgid "Configure Color Settings for the Topbar"
-msgstr "Konfiguriere hier die Farben für den Topbalken"
-
-#: ../inc/customizer-options.php:50
-msgid "Offcanvas Menu Settings"
-msgstr "OffCanvas Menü Einstellungen"
-
-#: ../inc/customizer-options.php:59
-msgid "Content Settings"
-msgstr "Inhaltseinstellungen"
-
-#: ../inc/customizer-options.php:60
-msgid "My Description"
-msgstr "Meine Beschreibung"
-
-#: ../inc/customizer-options.php:64
-msgid "Content Features"
-msgstr "Contentfeatures"
-
-#: ../inc/customizer-options.php:72
-msgid "Article Features"
-msgstr "Artikelfeatures"
-
-#: ../inc/customizer-options.php:80
-msgid "Article Colors"
-msgstr "Artikelfarben"
-
-#: ../inc/customizer-options.php:88
-msgid "Comment Section"
-msgstr "Kommentarbereich"
-
-#: ../inc/customizer-options.php:96
-msgid "Sticky Article Settings"
-msgstr "\"Sticky\" Artikeleinstellungen"
-
-#: ../inc/customizer-options.php:104
-msgid "Sidebar Settings"
-msgstr "Sidebareinstellungen"
-
-#: ../inc/customizer-options.php:105
-msgid "Configure Sidebar Settings"
-msgstr "Hier kannst Du die Einstellungen für den Sidebar tätigen."
-
-#: ../inc/customizer-options.php:113
-msgid "Footer Configuration"
-msgstr "Footereinstellungen"
-
-#: ../inc/customizer-options.php:118
-msgid "Footer Widgets Settings"
-msgstr "Footerwidgeteinstellungen"
-
-#: ../inc/customizer-options.php:119
-msgid "Configure Settings for the Footer Widgets Area"
-msgstr "Hier kannst Du die Einstellungen für den Fußzeilenwidgetbereich ändern."
-
-#: ../inc/customizer-options.php:126
-msgid "Footer Settings"
-msgstr "Fußzeileneinstellungen"
-
-#: ../inc/customizer-options.php:127
-msgid "Configure Settings for the Footer"
-msgstr "Hier kannst Du die Einstellungen für die Fußzeilen ändern."
-
-#: ../inc/customizer-options.php:134
-msgid "Custom Code"
-msgstr "Individueller Code"
-
-#: ../inc/customizer-options.php:135
-msgid ""
-"You can inject your own CSS and Javascript without modifying any of the "
-"theme files or having the need to create a Child-Theme to ensure that this "
-"Theme still remains updatable."
-msgstr ""
-"Hier kannst Du Deinen eigenen CSS und Javascript-Code injizieren, ohne Deine "
-"Theme-Dateien zu ändern oder ein Child-Theme zu erstellen. Dein Theme bleibt "
-"dabei trotz dieser Änderungen updatebar."
-
-#: ../inc/customizer-options.php:160
-msgid "Base Typography"
-msgstr "Grundschriftart"
-
-#: ../inc/customizer-options.php:161
-msgid "Configures the overall Font for the whole Site."
-msgstr "Konfiguriert die Einstellungen der Schrift für den Content."
-
-#: ../inc/customizer-options.php:194
-msgid "Headline Typography"
-msgstr "Überschriftenschriftart"
-
-#: ../inc/customizer-options.php:195
-msgid "Configures Headline Fonts for the Site."
-msgstr "Konfiguriert die Einstellungen der Schrift für alle Überschriften."
-
-#: ../inc/customizer-options.php:229
-msgid "Display Brand Image?"
-msgstr "Logo im Header anzeigen?"
-
-#: ../inc/customizer-options.php:239
-msgid "Choose or upload your brand image"
-msgstr "Wähle oder lade Dein Logo hoch."
-
-#: ../inc/customizer-options.php:240
-msgid ""
-"Notice: Please use an Image with 50px maximum height to avoid overhead. "
-"Image will get scaled down proportionally to 50px height anyway."
-msgstr ""
-"Anmerkung: Verwende ein Bild mit maximal 50 Pixeln Höhe um zu lange "
-"Ladezeiten zu vermeiden. Aber auch zu große Bilder werden automatisch auf 50 "
-"Pixel Höhe herunterskaliert. Dies wirkt sich allerdings suboptimal auf Dein "
-"Ranking bei Google Pagespeed Insights und vergleichbaren Diensten aus!"
-
-#: ../inc/customizer-options.php:259
-msgid "Blog title size"
-msgstr "Größe des Blogtitels"
-
-#: ../inc/customizer-options.php:290
-msgid "Display Blog Slug?"
-msgstr "Willst Du den Blog-Untertitel anzeigen?"
-
-#: ../inc/customizer-options.php:301
-msgid "Blog slug size"
-msgstr "Größe des Bloguntertitels"
-
-#: ../inc/customizer-options.php:339
-msgid "Menu Button Text"
-msgstr "Text des Menübuttons"
-
-#: ../inc/customizer-options.php:341
-msgid "MENU"
-msgstr "MENÜ"
-
-#: ../inc/customizer-options.php:349
-msgid "Topbar color settings"
-msgstr "Topbalken Farbeinstellungen"
-
-#: ../inc/customizer-options.php:361
-msgid "Topbar Background Color"
-msgstr "Topbalken Hintergrundfarbe"
-
-#: ../inc/customizer-options.php:362 ../inc/customizer-options.php:620
-msgid "Notice: Topbar transparency should be used carefully!"
-msgstr ""
-"Achtung: Die Transparenz für den Topbalken sollte mit Vorsicht gewählt "
-"werden!"
-
-#: ../inc/customizer-options.php:386
-msgid "Activate Dropshow?"
-msgstr "Schlagschatten aktivieren?"
-
-#: ../inc/customizer-options.php:398
-msgid "Topbar Dropshadow Color"
-msgstr "Topbar Schlagschattenfarbe"
-
-#: ../inc/customizer-options.php:417 ../inc/customizer-options.php:674
-msgid "Dropshadow size"
-msgstr "Schlagschatten-Größe"
-
-#: ../inc/customizer-options.php:436
-msgid "Topbar text colors"
-msgstr "Topbalken Textfarbe"
-
-#: ../inc/customizer-options.php:449
-msgid "Blog title color"
-msgstr "Blogtitelfarbe"
-
-#: ../inc/customizer-options.php:474
-msgid "Blog title hover color"
-msgstr "Blogtitel Hover-Farbe"
-
-#: ../inc/customizer-options.php:499
-msgid "Blog slug color"
-msgstr "Bloguntertitel Farbe"
-
-#: ../inc/customizer-options.php:528
-msgid "Menubutton colors"
-msgstr "Menübutton-Farbe"
-
-#: ../inc/customizer-options.php:541
-msgid "Menubutton Text Color"
-msgstr "Menübutton Textfarbe"
-
-#: ../inc/customizer-options.php:566
-msgid "Menu Text Hover Color"
-msgstr "Menübutton Hover-Textfarbe"
-
-#: ../inc/customizer-options.php:591
-msgid "Menu Button Color"
-msgstr "Menübutton-Farbe"
-
-#: ../inc/customizer-options.php:619
-msgid "Offcancas Menu Background Color"
-msgstr "OffCanvas-Menü Hintergrundfarbe"
-
-#: ../inc/customizer-options.php:644
-msgid "Activate Menu Dropshow?"
-msgstr "Aktiviere Menü-Schlagschatten?"
-
-#: ../inc/customizer-options.php:656
-msgid "Menu Dropshadow Color"
-msgstr "Menü-Schlagschattenfarbe"
-
-#: ../inc/customizer-options.php:697
-msgid "Menu Item Colors"
-msgstr "Farbe der Menü-Inhalte"
-
-#: ../inc/customizer-options.php:710
-msgid "Close Button Color"
-msgstr "Farbe des \"Schließen\"-Buttons"
-
-#: ../inc/customizer-options.php:735
-msgid "Menu Linktext Color"
-msgstr "Farbe des Menülinktextes"
-
-#: ../inc/customizer-options.php:759
-msgid "Menu Linktext Hover Color"
-msgstr "Hover-Farbe des Menülinktextes"
-
-#: ../inc/customizer-options.php:783
-msgid "Menu Item Background Hover Color"
-msgstr "Hintegrundfarbe des Menülinktextes"
-
-#: ../inc/customizer-options.php:804
-msgid "Searchbox Colors"
-msgstr "Suchbox-Farben"
-
-#: ../inc/customizer-options.php:817
-msgid "Searchbox Text Color"
-msgstr "Suchbox Textfarbe"
-
-#: ../inc/customizer-options.php:842
-msgid "Searchbox Placeholder Text Color"
-msgstr "Farbe des Suchbox Platzhaltertextes"
-
-#: ../inc/customizer-options.php:866
-msgid "Searchbox Color"
-msgstr "Farbe der Suchbox"
-
-#: ../inc/customizer-options.php:891
-msgid "Focused Searchbox Text Color"
-msgstr "Textfarbe der aktivierten Suchbox"
-
-#: ../inc/customizer-options.php:916
-msgid "Focused Searchbox Color"
-msgstr "Farbe der aktivierten Suchbox"
-
-#: ../inc/customizer-options.php:942
-msgid "Activate Searchbox Pointer?"
-msgstr "Willst Du den Pfeil der Suchbox anzeigen?"
-
-#: ../inc/customizer-options.php:954
-msgid "Searchbutton Color"
-msgstr "Suchbutton-Farbe"
-
-#: ../inc/customizer-options.php:980
-msgid "Searchbutton Hover Color"
-msgstr "Suchbutton-Hoverfarbe"
-
-#: ../inc/customizer-options.php:1006
-msgid "Searchbutton Text Color"
-msgstr "Suchbutton Textfarbe"
-
-#: ../inc/customizer-options.php:1030
-msgid "Searchbutton Text Hover Color"
-msgstr "Suchbutton Hover-Textfarbe"
-
-#: ../404.php:18
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Ooooops! Die Seite wurde nicht gefunden."
-
-#: ../404.php:22
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
-msgstr ""
-"Es scheint das hier nichts gefunden wurde. Versuch doch einen der Links "
-"unten oder die Suchfunktion."
-
-#: ../404.php:30
-msgid "Most Used Categories"
-msgstr "Am häufigsten genutzte Kategorie"
-
-#: ../404.php:47
-#, php-format
-msgid "Try looking in the monthly archives. %1$s"
-msgstr "Versuch im monatlichen Archiv zu schauen. %1$s"
-
-#: ../comment-form.php:5
-msgid "Write Comment."
-msgstr "Kommentar schreiben"
-
-#: ../comment-form.php:5
-msgid "*Mandatory"
-msgstr "*Pflichtfeld"
-
-#: ../comment-form.php:13 ../inc/custom-comments.php:12
-msgid "Name"
-msgstr "Name"
-
-#: ../comment-form.php:19
-msgid "E-Mail"
-msgstr "E-Mail"
-
-#: ../comment-form.php:19
-msgid "Not public."
-msgstr "Nicht öffentlich"
-
-#: ../comment-form.php:24 ../inc/custom-comments.php:16
-msgid "Website"
-msgstr "Webseite"
-
-#: ../comment-form.php:29
-msgid "Your Comment"
-msgstr "Dein Kommentar"
-
-#: ../comment-form.php:36
-msgid "Send comment."
-msgstr "Kommentar senden"
-
-#: ../footer.php:78 ../footer.php:78
-#, php-format
-msgid "Proudly powered by %s"
-msgstr "Proudly powered by %s"
-
-#: ../header.php:74
-msgid "Skip to content"
-msgstr "Zum Inhalt springen"
-
-#: ../search.php:21
-#, php-format
-msgid "Search Results for: %s"
-msgstr "Suchergebnis für: %s"
-
-#: ../comments.php:35 ../comments.php:63
-msgid "Comment navigation"
-msgstr "Kommentar Navigation"
-
-#: ../comments.php:77
-msgid "Comments are closed."
-msgstr "Kommentare sind geschlossen"
-
-#: ../loop-templates/content-single.php:29 ../loop-templates/content-page.php:25 .
-#: ./loop-templates/content.php:33
-msgid "Pages:"
-msgstr "Seiten:"
-
-#: ../loop-templates/content-none.php:15
-msgid "Nothing Found"
-msgstr "Nichts gefunden"
-
-#: ../loop-templates/content-none.php:23
-#, php-format
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Bereit deinen ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Fang hier "
-"an</a>."
-
-#: ../loop-templates/content-none.php:27
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-"Entschuldigung, leider wurde nichts zu deinem Suchbegriff gefunden. Versuch "
-"etwas anderes aus!"
-
-#: ../loop-templates/content-none.php:32
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-"Es scheint das wir nicht herausfinden konnten wonach du gesucht hast. Suchen "
-"könnte helfen!"
-
-#: ../loop-templates/content-page.php:34 ../inc/bootstrap-comment-walker.php:59 ..
-#: inc/template-tags.php:122
-msgid "Edit"
-msgstr "Editieren"
-
-#: ../inc/template-tags.php:21
-msgid "Posts navigation"
-msgstr "Beitrag´s Navigation"
-
-#: ../inc/template-tags.php:25
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Ältere Beiträge"
-
-#: ../inc/template-tags.php:29
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Neuere Beiträge <span class=\"meta-nav\">&rarr;</span>"
-
-#: ../inc/template-tags.php:52
-msgid "Post navigation"
-msgstr "Beitrag´s Navigation"
-
-#: ../inc/template-tags.php:104 ../inc/template-tags.php:110
-msgid ", "
-msgstr ", "
-
-#: ../inc/template-tags.php:106
-#, php-format
-msgid "Posted in %1$s"
-msgstr "Geposted in %1$s"
-
-#: ../inc/template-tags.php:112
-#, php-format
-msgid "Tagged %1$s"
-msgstr "Getagt mit: %1$s"
-
-#: ../inc/template-tags.php:118
-msgid "Leave a comment"
-msgstr "Hinterlasse ein Kommentar"
-
-#: ../inc/template-tags.php:118
-msgid "1 Comment"
-msgstr "1 Kommentar"
-
-#: ../inc/template-tags.php:118
-#, php-format
-msgid "% Comments"
-msgstr "% Kommentare"
-
-#: ../inc/template-tags.php:139
-#, php-format
-msgid "Category: %s"
-msgstr "Kategorie: %s"
-
-#: ../inc/template-tags.php:141
-#, php-format
-msgid "Tag: %s"
-msgstr "Tag: %s"
-
-#: ../inc/template-tags.php:143
-#, php-format
-msgid "Author: %s"
-msgstr "Autor: %s"
-
-#: ../inc/template-tags.php:145
-#, php-format
-msgid "Year: %s"
-msgstr "Jahr: %s"
-
-#: ../inc/template-tags.php:147
-#, php-format
-msgid "Month: %s"
-msgstr "Monat: %s"
-
-#: ../inc/template-tags.php:149
-#, php-format
-msgid "Day: %s"
-msgstr "Tag: %s"
-
-#: ../inc/template-tags.php:169
-#, php-format
-msgid "Archives: %s"
-msgstr "Archive: %s"
-
-#: ../inc/template-tags.php:173
-#, php-format
-msgid "%1$s: %2$s"
-msgstr "%1$s: %2$s"
-
-#: ../inc/template-tags.php:175
-msgid "Archives"
-msgstr "Archive"
-
-#: ../inc/custom-comments.php:14
-msgid "Email"
-msgstr "E-Mail"
-
-#: ../inc/setup.php:48
-msgid "Primary Menu"
-msgstr "Hauptmenü"
-
-#: ../inc/setup.php:99
-msgid "Read More..."
-msgstr "Weiterlesen..."
-
-#: ../inc/extras.php:60
-#, php-format
-msgid "Page %s"
-msgstr "Seite %s"
-
-#: ../inc/widgets.php:10
-msgid "Sidebar"
-msgstr "Sidebar"
-
-#: ../inc/widgets.php:30
-msgid "Static Hero"
-msgstr "Static Hero"
-
-#: ../inc/customizer.php:24
-msgid "Slider Settings"
-msgstr "Slidereinstellungen"
-
-#: ../inc/customizer.php:33
-msgid "Number of slides displaying at once"
-msgstr "Anzahl der Slides die auf einmal angezeigt werden"
-
-#: ../inc/customizer.php:45
-msgid "Slider Time (in ms)"
-msgstr "Slider Zeit (in ms)"
-
-#: ../inc/customizer.php:57
-msgid "Loop Slider Content"
-msgstr "Slider Inhalt wiederholen?"
+#. Author of the theme
+msgid "Thomas A. Reinert"
+msgstr "Thomas A. Reinert"
+
+#. Author URI of the theme
+msgid "http://www.tarcgn.de/portfolio/"
+msgstr "http://www.tarcgn.de/portfolio/"

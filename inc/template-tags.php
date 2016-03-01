@@ -22,11 +22,11 @@ function understrap_paging_nav() {
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'understrap' ) ); ?></div>
+			<div class="nav-previous btn btn-raised"><?php next_posts_link( __( '<span class="fa fa-backward"></span> Older posts', 'understrap' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'understrap' ) ); ?></div>
+			<div class="nav-next btn btn-raised"><?php previous_posts_link( __( 'Newer posts <span class="fa fa-forward"></span>', 'understrap' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -52,8 +52,8 @@ function understrap_post_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'understrap' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'understrap' ) );
-				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'understrap' ) );
+				previous_post_link( '<div class="nav-previous btn btn-raised">%link</div>', _x( '<span class="fa fa-backward"></span>&nbsp;%title', 'Previous post link', 'understrap' ) );
+				next_post_link(     '<div class="nav-next btn btn-raised">%link</div>',     _x( '%title&nbsp;<span class="fa fa-forward"></span>', 'Next post link',     'understrap' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->

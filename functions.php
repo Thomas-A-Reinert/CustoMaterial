@@ -93,12 +93,30 @@ class Lathom_Offcanvas_NavWalker extends wp_bootstrap_navwalker {
   }
 }
 
-function add_menuclass($ulclass) { // Add custom class to link in navmenu
-   return preg_replace('/<a /', '<a class="withripple"', $ulclass);
-}
-add_filter('wp_nav_menu','add_menuclass');
+// function add_menuclass($ulclass) { // Add custom class to link in navmenu
+//    return preg_replace('/<a /', '<a class="withripple" ', $ulclass);
+// }
+// add_filter('wp_nav_menu','add_menuclass');
 
 /**
 * Load WooCommerce functions.
 */
 require get_template_directory() . '/inc/woocommerce.php';
+
+
+if ( get_theme_mod( 'content_width') == 'fullwidth') {
+    $postfix = "-fluid";
+} else {
+    $postfix = "";
+}
+
+if ( ( is_active_sidebar( 'sidebar-1' ) ) && (get_theme_mod( 'show_sidebar', 'true')) ) {
+
+    if ($postfix =="-fluid") {
+        $contentwidth = "col-md-9";
+    } else {
+        $contentwidth = "col-md-8";
+    }
+} else {
+    $contentwidth = "col-md-12";
+}
