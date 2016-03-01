@@ -1,5 +1,5 @@
 "CustoMaterial" Material Design Wordpress Theme
-================================================
+===============================================
 
 About
 -----
@@ -12,7 +12,8 @@ Guidelines](https://www.google.com/design/spec/material-design/introduction.html
 License
 -------
 
-"*CustoMaterial*" is licensed under the [GNU General Public License (GPL), Version 2.0](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+"*CustoMaterial*" is licensed under the [GNU General Public License,
+version 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 Features
 --------
@@ -31,6 +32,8 @@ Features
 -   Fully customizable. From background image, topbar and countless
     others to every color setting with more than 120 Configuration
     options already included.
+-   Custom Post-Type "Portfolio" with custom metaboxes and embedded
+    OWL2-Slider
 -   Semantically correct HTML5 and crossbrowser-compatibel CSS3.
 -   SEO-optimized code.
 -   Fully accessible. Passes almost every "A" rule of the WCAG
@@ -47,7 +50,7 @@ ToDo - Soon come..
 -   Final WCAG 2.0 optimization to fulfill AA-Level.
 -   [Yoast-Seo](https://yoast.com/wordpress/plugins/seo/) support. Also
     supports Yoast-breadcrumbs.
--   Custom Page Templates for Portfolio etc.
+-   Custom Post Templates for Portfolio etc.
 -   Custom Metaboxes for certain Post-Types.
 -   Currently the GULP process is suboptimal. Needs *urgent*
     improvement!
@@ -56,7 +59,7 @@ Credits
 -------
 
 Full Credit goes to [Holger Könemann](https://github.com/holger1411) who
-built a solid foundation to "*CustoMaterial*" with his [Wordpress Starter
+built a solid foundation to "CustoMaterial" with his [Wordpress Starter
 Theme "Understrap"](https://github.com/holger1411/understrap).
 Understrap integrates Automattics \_s with Bootstrap, SCSS and has an
 optimized Workflow integrating [Bower](http://bower.io/) and
@@ -105,12 +108,35 @@ Slider, you should add a Widget to the "*Static Hero*" Widget.
 Changelog
 ---------
 
+### Version 0.2
+
+March 1st, 2016
+
+-   \*Update\* WCAG 2.0 compliance
+-   \*Update\* Change Gulp-file for more flexibility. (Needs \_urgent\_
+    improvement now!)
+-   \*Update\* Update Kirki Customizer Framework and CMB2 Custom
+    Metaboxes to latest version.
+-   \*Update\* Some layout improvements.
+-   \*Update\* Remove/improve some customizer illogicality.
+-   \*Update\* Default color changes in customizer.
+-   \*Update\* Update base language and translation strings.
+-   \*Update\* Integrate Yoast SEO Breadcrumbs into template if present.
+-   \*Update\* Improve 404 page output to better support grid and take
+    advantage of it.
+-   \*Update\* Clean up and addons to SASS/CSS styles.
+-   \*Fix\* Fix layout of the search-button in the offcanvas navigation.
+-   \*Fix\* Offcanvas navigation top-offset. Support admin-bar offset.
+-   \*NEW\* Integrate sidebar-switch and fullwidth/boxed layout.
+    Switching logic for columns implemented
+-   \*NEW\* Custom post-type "Portfolio" with embedded Owl-Slider and
+    custom Metaboxes
+
 ### Version 0.1
 
-February, 24th, 2016
+February 24th, 2016
 
 -   Initial commit.
 -   Some improvements to match WCAG 2.0 guidelines.
 
 \
-

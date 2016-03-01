@@ -28,7 +28,7 @@
      if ($col_counter != 0) {
 ?>
 <section id="footer-widgets">
-<h1 class="sr-only"><?php echo esc_html__( 'Footer Widgets', 'lathom' ) ?></h1>
+<h1 class="sr-only"><?php echo esc_html__( 'Footer Widgets', 'understrap' ) ?></h1>
     <div class="container-fluid">
 
         <?php if ( is_active_sidebar( 'footer-widget-1' ) ) { ?>
@@ -75,7 +75,7 @@
 
         <div class="pull-left">
         <?php if ( get_theme_mod( 'footer_show_wp_credits', 'true') == 'true' )  { ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/imgs/wordpress-icon.png" height="16" width="16" alt="<?php printf( esc_html__( 'Proudly powered by %s', 'lathom' ), 'WordPress' ); ?>"> <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lathom' ) ); ?>" target="_blank"><?php printf( esc_html__( 'Proudly powered by %s', 'lathom' ), 'WordPress' ); ?></a><?php
+                <img src="<?php echo get_template_directory_uri(); ?>/imgs/wordpress-icon.png" height="16" width="16" alt="<?php printf( esc_html__( 'Proudly powered by %s', 'understrap' ), 'WordPress' ); ?>"> <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'understrap' ) ); ?>" target="_blank"><?php printf( esc_html__( 'Proudly powered by %s', 'understrap' ), 'WordPress' ); ?></a><?php
         } ?>
 
         <?php if ( get_theme_mod( 'footer_show_custom_footer_text', 'true') =='true' )  { // Is Footer text activated?
@@ -97,7 +97,7 @@
 
         <?php if( has_nav_menu( 'footer' ) ) { ?>
             <nav id="footer-menu" class="pull-right">
-            <h1 class="sr-only"><?php echo esc_html__( 'Secondary Navigation', 'lathom' ) ?></h1>
+            <h1 class="sr-only"><?php echo esc_html__( 'Secondary Navigation', 'understrap' ) ?></h1>
             <?php
                 $footer_menu_parameters = array(
                     'theme_location'  => 'footer',
@@ -117,7 +117,7 @@
 </div><!-- #page -->
 
 <?php if (get_theme_mod('display_to_top_button') == true) { // To Top Button ?>
-    <a href="#top" class="page-scroll" id="topbutton"><span class="fa fa-arrow-circle-o-up"></span><span class="sr-only"><?php echo __( 'To Top', 'lathom' ); ?></span></a>
+    <a href="#top" class="page-scroll" id="topbutton"><span class="fa fa-arrow-circle-o-up"></span><span class="sr-only"><?php echo __( 'To Top', 'understrap' ); ?></span></a>
 <?php } ?>
 
 <?php wp_footer(); ?>

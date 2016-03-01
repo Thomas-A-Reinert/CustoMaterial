@@ -80,6 +80,17 @@ endif; // understrap_setup
 add_action( 'after_setup_theme', 'understrap_setup' );
 
 /**
+ * Integrate Custom metaboxes.
+ */
+require get_template_directory() . '/inc/metaboxes.php';
+
+/**
+ * Integrate Custom Post Types.
+ */
+require get_template_directory() . '/inc/custom_posttypes.php';
+
+
+/**
 * Adding the Read more link to excerpts
 */
 /*function new_excerpt_more( $more ) {
