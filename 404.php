@@ -23,10 +23,12 @@ get_header(); ?>
 
                         <?php //get_search_form(); ?>
 
-                        <form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
-                            <label for="searchbox" class="sr-only"><?php echo __( 'Search for:', 'understrap' ) ?></label>
-                            <input type="search" placeholder="<?php echo __( 'Search ..', 'understrap' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo __( 'Search for:', 'understrap' ) ?>" class="form-control">
-                            <button type="submit" class="submit btn btn-raised" ><?php echo __( 'Search', 'understrap' ) ?></button>
+                        <form role="search" method="get" action="<?php echo home_url( '/' ); ?>" class="row">
+                            <div class="col-sm-9">
+                                <label for="searchbox" class="sr-only"><?php echo __( 'Search for:', 'understrap' ) ?></label>
+                                <input type="search" placeholder="<?php echo __( 'Search ..', 'understrap' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo __( 'Search for:', 'understrap' ) ?>" class="form-control">
+                            </div>
+                            <div class="col-sm-3"><button type="submit" class="submit btn btn-raised" ><?php echo __( 'Search', 'understrap' ) ?></button></div>
                         </form>
 
                         <div class="row">
