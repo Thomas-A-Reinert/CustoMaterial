@@ -14,7 +14,7 @@ get_header(); ?>
 
 <div class="wrapper" id="page-wrapper">
 
-    <div  id="content" class="container">
+    <div  id="content" class="container<?php echo $postfix; ?>">
 
 	   <div id="primary" class="<?php echo $contentwidth ?> content-area">
 

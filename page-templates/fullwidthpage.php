@@ -10,9 +10,9 @@
 get_header(); ?>
 
 <div class="wrapper" id="page-wrapper">
-    
-    <div  id="content" class="container">
-        
+
+    <div  id="content" class="container<?php echo $postfix; ?>">
+
 	   <div id="primary" class="col-md-12 content-area">
 
             <main id="main" class="site-main" role="main">
@@ -26,18 +26,18 @@ get_header(); ?>
                         if ( comments_open() || get_comments_number() ) :
 
                             comments_template();
-                        
+
                         endif;
                     ?>
 
                 <?php endwhile; // end of the loop. ?>
 
             </main><!-- #main -->
-           
+
 	    </div><!-- #primary -->
-        
+
     </div><!-- Container end -->
-    
+
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
