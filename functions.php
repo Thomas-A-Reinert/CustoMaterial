@@ -120,3 +120,12 @@ if ( ( is_active_sidebar( 'sidebar-1' ) ) && (get_theme_mod( 'show_sidebar', 'tr
 } else {
     $contentwidth = "col-md-12";
 }
+
+function TAR_debug_info() {
+    if ( is_super_admin() ) {
+        global $template;
+        $script_runtime = timer_stop(0);
+        echo '<div class="debug-container">' . __( '<strong>Debug Info:</strong> ', 'lathom' ) . get_num_queries() . __( ' Queries in ', 'lathom' ) . $script_runtime . __( ' Seconds, ', 'lathom' ) . '<br>' . __( '<strong>Template:</strong> ', 'lathom' ) . $template . '</div> ' ;
+    }
+}
+add_action( 'wp_footer', 'TAR_debug_info' );
