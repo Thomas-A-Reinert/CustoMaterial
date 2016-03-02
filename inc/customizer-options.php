@@ -383,7 +383,7 @@ if ( class_exists( 'Kirki' ) ) {
 	Kirki::add_field( 'understrap', array(
 	    'type'        => 'switch',
 	    'settings'    => 'toggle_topbar_shadow',
-	    'label'       => __( 'Activate Dropshow?', 'understrap' ),
+	    'label'       => __( 'Activate Dropshadow?', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'topbar_color_settings',
