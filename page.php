@@ -20,7 +20,7 @@ get_header(); ?>
 
             <main id="main" class="site-main" role="main" tabindex="-1">
 
-                <?php if ( function_exists('yoast_breadcrumb') ) {
+                <?php if  ( ( function_exists('yoast_breadcrumb') ) && ( !is_front_page() ) ) {
                     $yoast_links_options = get_option( 'wpseo_internallinks' );
                     $yoast_bc_enabled=$yoast_links_options['breadcrumbs-enable'];
                         if ($yoast_bc_enabled) { ?>
