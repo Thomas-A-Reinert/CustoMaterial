@@ -12,13 +12,38 @@
 
 		<div class="entry-meta">
 
-			<?php understrap_posted_on(); ?>
+			<small><?php understrap_posted_on(); ?></small>
 
 		</div><!-- .entry-meta -->
 
 	</header><!-- .entry-header -->
 
-     <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+     <?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+     <?php
+	if (get_theme_mod( 'show_content_attachment_image', 'true') != '' ) { ?>
+		<?php if ( has_post_thumbnail() ) { ?>
+		<figure class="attachment-header-image">
+			<?php
+				if ( (get_theme_mod( 'show_sidebar') != 'true' ) || (get_theme_mod( 'content_width') == 'fullwidth') ) {
+					the_post_thumbnail('header-image-large', array( 'class' => 'img-responsive' ) );
+				} else {
+					the_post_thumbnail('header-image-medium', array( 'class' => 'img-responsive' ) );
+				}
+			?>
+			<figcaption class="attachment-header-image-caption" style="text-align: center">
+				<?php
+					// See http://www.bobz.co/how-to-get-attachment-image-caption-alt-or-description/
+					// and http://codex.wordpress.org/Function_Reference/wp_get_attachment_metadata#Usage
+					$thumb_img = get_post( get_post_thumbnail_id() ); // Get post by ID
+				?>
+					<div class="h2"><?php echo $thumb_img->post_title; // Display Caption ?></div>
+					<p><?php echo $thumb_img->post_excerpt; // Display Description ?></p>
+
+			</figcaption>
+		</figure>
+		<?php
+		}
+	} ?>
 
 	<div class="entry-content">
 
