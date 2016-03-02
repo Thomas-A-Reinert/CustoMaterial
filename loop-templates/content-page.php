@@ -14,10 +14,10 @@
 
 	</header><!-- .entry-header -->
 
-     <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<section>
+    <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
-
 		<?php the_content(); ?>
 
 		<?php
@@ -28,6 +28,7 @@
 		?>
 
 	</div><!-- .entry-content -->
+	</section>
 
 	<footer class="entry-footer">
 
