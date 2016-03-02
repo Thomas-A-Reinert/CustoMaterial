@@ -78,6 +78,7 @@ if ( get_theme_mod( 'content_width') == 'fullwidth') {
 <body <?php body_class(); ?> id="top">
 
 <nav id="site-navigation" class="main-navigation" role="navigation" style="z-index: 999">
+<h2 class="sr-only">Main Navigation</h2>
     <a class="skip-link sr-only" href="#content"><?php echo __( 'Skip to content', 'understrap' ); ?></a>
 
     <ul class="main-menu">
