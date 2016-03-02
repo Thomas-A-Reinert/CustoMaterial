@@ -119,7 +119,7 @@ h1.navbar-brand {
     a {
         margin: 0 10px 0 0;
         border: 0;
-        text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+        text-shadow: 1px 1px 1px $transparent_white;
     }
 }
 .site-description {
@@ -670,19 +670,28 @@ article {
  */
 .attachment-header-image {
     position: relative;
-    margin: 0;
+    margin: 25px 0 0 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.75);
+    text-align: center;
+
+    img {
+        display: block;
+        margin: auto;
+    }
 }
 
 .attachment-header-image-caption {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     width: 100%;
     color: #000000;
-    background: rgba(255,255,255,0.5);
+    //background-color: rgba(255,255,255,0.5);
+    background-color: $transparent_white;
     text-align: center;
+    text-shadow: rgba(255,255,255,0.5) 1px 1px 2px;
 
-    .h3  {
-        text-transfrom: lowercase;
+    .h2  {
+        //text-transfrom: lowercase;
         font-variant:small-caps;
         margin-top: 5px;
         font-weight: 900;
@@ -721,7 +730,8 @@ article {
                 width: 100%;
                 display: block;
                 color: #000000;
-                background: rgba(255,255,255,0.5);
+                //background-color: rgba(255,255,255,0.5);
+                background-color: $transparent_white;
                 text-align: center;
 
                 .h3  {
@@ -749,6 +759,10 @@ article {
 #comments {
     margin-top: 50px;
 
+    .comments-title {
+        padding: 3px 15px;
+    }
+
     #comment-nav-above {
         margin-bottom: 50px;
     }
@@ -762,6 +776,25 @@ article {
     .comment-bottom,
     .reply {
         padding: 5px 20px;
+    }
+
+    .form-control {
+        font-size: 16px;
+        padding: 2px 15px;
+        color: lighten($text-color, 15%);
+        transition: all 1s ease-in-out;
+    }
+    .form-control:focus,
+    .form-control:active {
+        //background-color: rgba(255,255,255,0.5);
+        background-color: $transparent_white;
+        color: $text-color;
+    }
+
+    .comment-meta {
+        img {
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+        }
     }
 
     .list-unstyled {
@@ -781,13 +814,6 @@ article {
         list-style: none;
     }
     .even {
-        // .comment-meta,
-        // .media-top,
-        // .comment-content,
-        // .comment-bottom {
-        //     padding: 10px;
-        //     margin: 0;
-        // }
 
         .media-top {
 
@@ -799,13 +825,6 @@ article {
     }
     .comment-meta,
     .odd {
-
-        // .media-top,
-        // .comment-content,
-        // .comment-bottom {
-        //     padding: 10px;
-        //     margin: 0;
-        // }
 
         .media-top {
 
@@ -849,6 +868,10 @@ article {
 
     .author-avatar {
         margin: 0 15px 15px 0;
+
+        img {
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.5)
+        }
     }
     ul.icons {
         list-style: none;
@@ -890,8 +913,9 @@ article {
 [class*="navigation"] .nav-next,
 #submit,
 input[type="submit"] {
-    border: 2px solid rgba(255,255,255,0.5);
-    background: rgba(255,255,255,0.5);
+    border: 2px solid $transparent_white;
+    //background-color: rgba(255,255,255,0.5);
+    background-color: $transparent_white;
     transition: all .3s ease-in-out;
     text-align: center;
     color: rgba(0,0,0,0.75);
@@ -953,11 +977,13 @@ input[type="submit"] {
  * Material Design Form Elements
  */
 .control-label {
-    background: rgba(0,0,0,0.5);
+    //background: rgba(0,0,0,0.5);
+    background:$transparent_black;
     padding: 3px 10px;
 }
 .help-block {
-    background: rgba(0,0,0,0.25);
+    //background: rgba(0,0,0,0.5);
+    background:$transparent_black;
     color: white;
     padding: 3px 5px;
 }
@@ -965,7 +991,8 @@ input[type="submit"] {
  * Contact Form 7 Material Styles
  */
 .wpcf7-form {
-    background: rgba(0,0,0,0.25);
+    //background: rgba(0,0,0,0.5);
+    background:$transparent_black;
     box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
     padding: 5px 15px 25px;
     margin-top: 25px;
@@ -984,7 +1011,8 @@ input[type="submit"] {
     }
     .form-group .form-control:focus,
     .form-group .form-control:active {
-        background-color: rgba(255,255,255,0.5);
+        //background-color: rgba(255,255,255,0.5);
+        background-color: $transparent_white;
         color: #000;
     }
 }
@@ -1019,7 +1047,8 @@ input[type="submit"] {
 
 .breadcrumb {
     box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
-    background: rgba(255,255,255,0.25);
+    //background-color: rgba(255,255,255,0.5);
+    background-color: $transparent_white;
     padding: 3px inherit;
     p {
         margin: 5px 0;
@@ -1048,4 +1077,13 @@ input[type="submit"] {
         border: 0;
         font-size: 14px;
     }
+}
+
+/*
+ * Debug info in footer - just visible for admins
+ */
+.debug-container {
+    color:white;
+    background:$accent_color;
+    padding:5px 25px
 }

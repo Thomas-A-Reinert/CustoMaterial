@@ -8,6 +8,20 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
+// Custom
+//$brand-primary:         #0CB4CE; // lightblue
+$brand-primary:         #bf1a3c; // lightblue
+// Basics of a navbar
+$navbar-height:                    60px;
+$navbar-margin-bottom:             0px;
+$navbar-border-radius:             0px;
+
+$primary_color: #8bc34a; // lime green
+//$accent_color: #607D8B; // mid greyblue
+//$accent_color: #2c6a8c; //dark blue
+$accent_color:	#bf1a3c; // violet
+
+
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
@@ -16,7 +30,7 @@ $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 //$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
-$brand-primary:         darken(#bf1a3c, 6.5%) !default;
+//$brand-primary:         darken(#bf1a3c, 6.5%) !default; // violet
 //
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
@@ -29,16 +43,16 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               #eee !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            lighten($accent_color, 15%) !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 
 //== Typography
@@ -71,20 +85,10 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 $headings-font-family:    inherit !default;
 $headings-font-weight:    900 !default;
 $headings-line-height:    1.1 !default;
-$headings-color:          inherit !default;
+//$headings-color:          inherit !default;
+$headings-color:          $accent_color !default;
 
-
-// Custom
-$brand-primary:         #0CB4CE; //#ff6d5a
-
-// Basics of a navbar
-$navbar-height:                    60px;
-$navbar-margin-bottom:             0px;
-$navbar-border-radius:             0px;
-
-$primary_color:		#8bc34a;
-//$accent_color:		#607D8B;
-$accent_color:		#bf1a3c;
-
+$transparent_white:	  rgba(255,255,255,0.125);
+$transparent_black:	  rgba(0,0,0,0.125);
 
 $grid-gutter-width:         30px !default;
