@@ -1,10 +1,13 @@
 <?php
 
-$primary_color = "#8bc34a";
-//$accent_color = "#607D8B";
-$accent_color = "#2c6a8c";
-$text_light = "#ffffff";
-$text_dark = "#000000";
+$primary_color = "#8bc34a"; // lime green
+//$accent_color = "#607D8B"; // mid greyblue
+//$accent_color = "#2c6a8c"; //dark blue
+$accent_color = "#bf1a3c"; // violet
+$text_light = "#eeeeee";
+$text_dark = "#333333";
+$transparent_black = "rgba(0,0,0,0.125)";
+$transparent_white = "rgba(255,255,255,0.125)";
 
 require get_template_directory() . '/inc/fontawesome_json.php';
 
@@ -417,7 +420,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'label'       => __( 'Dropshadow size', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
 	    'section'     => 'topbar_color_settings',
-	    'default'     => 2,
+	    'default'     => 1,
 	    'priority'    => 40,
 	    'choices'     => array(
 	        'min'  => 1,
@@ -657,7 +660,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'menu_settings',
-		'default'     => '#000000',
+		'default'     => 'rgba(0,0,0,0.75)',
 		'priority'    => 30,
 		'required'  => array(
 	        array(
@@ -783,7 +786,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'label'       => __( 'Menu Item Background Hover Color', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
-	    'default'     => '#222222',
+	    'default'     => $text_dark,
 	    'priority'    => 80,
 	    'output'      => array(
 			array(
@@ -1138,7 +1141,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'label'       => __( '"To Top" Button Color', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
 	    'section'     => 'content_features',
-	    'default'     => 'rgba( '.hex2rgb(get_theme_mod( 'topbar_background' )) .',0.75)',
+	    'default'     => 'rgba( '.hex2rgb($primary_color) .',0.75)',
 	    'priority'    => 70,
 	    'output'      => array(
 			array(
@@ -1186,7 +1189,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_features',
-	    'default'     => 'rgba(255,255,255,0.5)',
+	    'default'     => $transparent_black,
 	    'priority'    => 20,
 	    'output'      => array(
 			array(
@@ -1253,7 +1256,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => 'rgba(255,255,255,0.250)',
+	    'default'     => $transparent_white,
 	    'priority'    => 10,
 	    'output'      => array(
 			array(
@@ -1290,7 +1293,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'article_colors',
-		'default'     => 'rgba(0,0,0,0.5)',
+		'default'     => 'rgba(0,0,0,0.75)',
 		'priority'    => 30,
 		'required'  => array(
 	        array(
@@ -1341,7 +1344,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => 'rgba(0,0,0,0)',
+	    'default'     => $transparent_black,
 	    'priority'    => 60,
 	    'output'      => array(
 			array(
@@ -1366,7 +1369,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
+	    'default'     => 'rgba(' . hex2rgb($accent_color) . ',1)',
 	    'priority'    => 70,
 	    'output'      => array(
 			array(
@@ -1391,7 +1394,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
+	    'default'     => 'rgba(' . hex2rgb($accent_color) . ',1)',
 	    'priority'    => 80,
 	    'output'      => array(
 			array(
@@ -1416,7 +1419,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => 'rgba(' . hex2rgb($accent_color) . ',1)',
+	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 90,
 	    'output'      => array(
 			array(
@@ -1451,7 +1454,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => 'rgba(255,255,255,0)',
+	    'default'     => $transparent_white,
 	    'priority'    => 110,
 	    'output'      => array(
 			array(
@@ -1476,7 +1479,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
+	    'default'     => 'rgba(' . hex2rgb($accent_color) . ',1)',
 	    'priority'    => 115,
 	    'output'      => array(
 			array(
@@ -1501,7 +1504,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => '#222222',
+	    'default'     => $text_dark,
 	    'priority'    => 120,
 	    'output'      => array(
 			array(
@@ -1549,7 +1552,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'settings'    => 'article_content_text_link_hover_color',
 	    'label'       => __( 'Article Linktext Hover Color', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
+	    'help'        => '',
 	    'section'     => 'article_colors',
 	    'default'     => '#555555',
 	    'priority'    => 140,
@@ -1586,7 +1589,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => 'rgba(0,0,0,0.1)',
+	    'default'     => $transparent_black,
 	    'priority'    => 170,
 	    'output'      => array(
 			array(
@@ -1611,7 +1614,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
+	    'default'     => 'rgba(' . hex2rgb($accent_color) . ',1)',
 	    'priority'    => 190,
 	    'output'      => array(
 			array(
@@ -1634,7 +1637,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'settings'    => 'article_footer_text_link_color',
 	    'label'       => __( 'Articlefooter Linktext Color', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
+	    'help'        => '',
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
 	    'priority'    => 190,
@@ -1659,7 +1662,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'settings'    => 'article_footer_text_link_hover_color',
 	    'label'       => __( 'Articlefooter Linktext Hover Color', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
-	    'help'        => __( '<strong>Notice:</strong> This works - but is kinda buggy.<br>Needs reload of the Customizer or to be viewed on the frontpage..', 'understrap' ),
+	    'help'        => '',
 	    'section'     => 'article_colors',
 	    'default'     => 'rgba(' . hex2rgb($accent_color) . ',1)',
 	    'priority'    => 200,
@@ -1725,7 +1728,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => 'rgba(255,255,255,0.25)',
+		'default'     => $transparent_white,
 		'priority'    => 20,
 		'output'      => array(
 			array(
@@ -1778,7 +1781,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => '#222222',
+		'default'     => $text_dark,
 		'priority'    => 30,
 		'output'      => array(
 			array(
@@ -1804,7 +1807,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => 'rgba(255,255,255,0.250)',
+		'default'     => $transparent_white,
 		'priority'    => 40,
 		'output'      => array(
 			array(
@@ -1830,7 +1833,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => '#222222',
+		'default'     => $text_light,
 		'priority'    => 50,
 		'output'      => array(
 			array(
@@ -1856,7 +1859,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => 'rgba(0,0,0,0.125)',
+		'default'     => $transparent_black,
 		'priority'    => 60,
 		'output'      => array(
 			array(
@@ -1891,7 +1894,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => '#000000',
+		'default'     => $text_light,
 		'priority'    => 100,
 		'output'      => array(
 			array(
@@ -1916,7 +1919,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => get_theme_mod( 'article_background_color' ),
+		'default'     => $transparent_black,
 		'priority'    => 110,
 		'output'      => array(
 			array(
@@ -1941,7 +1944,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => '#dddddd',
+		'default'     => $text_dark,
 		'priority'    => 120,
 		'output'      => array(
 			array(
@@ -1966,7 +1969,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => 'rgba(255,255,255,0.250)',
+		'default'     => $transparent_white,
 		'priority'    => 130,
 		'output'      => array(
 			array(
@@ -1999,7 +2002,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
-		'default'     => '#dddddd',
+		'default'     => $text_dark,
 		'priority'    => 160,
 		'output'      => array(
 			array(
@@ -2025,7 +2028,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'comment_section_colors',
 		// 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
-		'default'     => 'rgba( '.hex2rgb(get_theme_mod( 'topbar_background' )) .',0.35)',
+		'default'     => 'rgba( '.hex2rgb($accent_color) .',0.35)',
 		'priority'    => 170,
 		'output'      => array(
 			array(
@@ -2137,7 +2140,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( 'Background Color can be used if you dont want to use a Gradient and will be used by Browsers that do NOT support Background Gradients as a Fallback Solution.', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'article_sticky_config',
-		'default'     => 'rgba(255,255,255,0)',
+		'default'     => $transparent_white,
 		'priority'    => 40,
 		'output'      => array(
 			array(
@@ -2173,7 +2176,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'article_sticky_config',
-		'default'     => 'rgba(0,0,0,0.035)',
+		'default'     => $transparent_black,
 		'priority'    => 60,
 		'required'    => array(
 			array(
@@ -2191,7 +2194,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( '', 'understrap' ),
 		'help'        => esc_attr__( '', 'understrap' ),
 		'section'     => 'article_sticky_config',
-		'default'     => 'rgba(255,255,255,0)',
+		'default'     => $transparent_white,
 		'priority'    => 70,
 		'required'    => array(
 			array(
@@ -2245,7 +2248,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'label'       => __( 'Sidebar Background Color', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
 	    'section'     => 'sidebar_config',
-	    'default'     => 'rgba(255,255,255,0.2)',
+	    'default'     => $transparent_white,
 	    'priority'    => 10,
 	    'output'      => array(
 			array(
@@ -2276,7 +2279,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'label'       => __( 'Widget Background Color', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
 	    'section'     => 'sidebar_config',
-	    'default'     => 'rgba(255,255,255,0.2)',
+	    'default'     => $transparent_white,
 	    'priority'    => 20,
 	    'output'      => array(
 			array(
