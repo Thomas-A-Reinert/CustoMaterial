@@ -30,7 +30,6 @@
 <section id="footer-widgets">
 <h1 class="sr-only"><?php echo esc_html__( 'Footer Widgets', 'understrap' ) ?></h1>
     <div class="container-fluid">
-
         <?php if ( is_active_sidebar( 'footer-widget-1' ) ) { ?>
             <div class="col-sm-6 col-md-<?php echo $col_width; ?>">
                 <aside class="footer-widget widget-area" role="complementary">
@@ -167,7 +166,7 @@
         jQuery('body').removeClass('nav-expanded');
       });
 
-      // Initialize navgoco with default options
+    // Initialize navgoco with default options
     jQuery(".main-menu").navgoco({
         caret: '',
         accordion: false,
@@ -186,7 +185,7 @@
 
   });
 
-
+// Close menu with escape key
 jQuery(document).keyup(function(e) {
     if (e.keyCode == 27) {
         if (jQuery('body').hasClass('nav-expanded')) {
@@ -196,32 +195,32 @@ jQuery(document).keyup(function(e) {
     }
 });
 
-
-jQuery(document).ready(function(){
-    jQuery('a').click(function(){
-         var href = jQuery(this).attr("href");
-         jQuery('body').animate({
-            scrollTop: jQuery(href).offset().top
-         }, 1000);
+// Topbutton fadein/out and scrolltop
+jQuery(document).ready(function () {
+    jQuery("#topbutton").hide();
+    jQuery(function () {
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 250) {
+                jQuery('#topbutton').fadeIn();
+            } else {
+                jQuery('#topbutton').fadeOut();
+            }
+        });
+        jQuery('a#topbutton').click(function () {
+            jQuery('body,html').animate({
+                scrollTop : 0
+            }, 800);
+            return false;
+        });
     });
 });
 
-
-
-jQuery(document).scroll(function() {
-    var y = jQuery(this).scrollTop();
-    if (y > 800) {
-        jQuery('#topbutton').fadeIn();
-    } else {
-        jQuery('#topbutton').fadeOut();
-    }
-});
 
 jQuery.material.init();
 jQuery.material.options = {
     "withRipples": "a, .submit,input[type=submit], .btn"
 }
-jQuery.material.ripples()
+jQuery.material.ripples();
 </script>
 <?php if (!ctype_space(get_theme_mod('javascript_footer_code', 'false') ) ) {
         echo get_theme_mod('javascript_footer_code');
