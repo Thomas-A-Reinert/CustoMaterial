@@ -119,7 +119,7 @@ if ( get_theme_mod( 'content_width') == 'fullwidth') {
         <button type="submit" class="submit" id="search-submit"><?php echo __( 'Search', 'understrap' ) ?></button>
     </form>
 
-    <?php if ( is_active_sidebar( 'off-canvas-top-widget' ) ) : ?>
+    <?php if ( is_active_sidebar( 'off-canvas-bottom-widget' ) ) : ?>
         <aside id="off-canvas-bottom-widget" class="off-canvas-bottom-widget widget-area" role="complementary">
             <?php dynamic_sidebar( 'off-canvas-bottom-widget' ); ?>
         </aside><!-- #off-canvas-top-widget-sidebar -->
