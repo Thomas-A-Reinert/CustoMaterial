@@ -46,7 +46,7 @@ get_header(); ?>
 								the_post_thumbnail('header-image-medium', array( 'class' => 'img-responsive', 'style' => 'width: 100%' ) );
 							}
 						?>
-						<figcaption class="attachment-header-image-caption" style="text-align: center">
+						<figcaption class="attachment-header-image-caption">
 							<?php
 								// See http://www.bobz.co/how-to-get-attachment-image-caption-alt-or-description/
 								// and http://codex.wordpress.org/Function_Reference/wp_get_attachment_metadata#Usage
