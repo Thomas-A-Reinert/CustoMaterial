@@ -13,6 +13,9 @@ body {
     }
 }
 
+.wrapper {
+    min-height: 90vh;
+}
 .admin-bar .topbar,
 .admin-bar a.nav-expander,
 .admin-bar #site-navigation {
@@ -393,6 +396,10 @@ a.nav-expander.fixed {
 
     margin-top: 15px;
 
+    input,
+    button {
+        font-size: 16px;
+    }
     button {
         overflow: visible;
         position: relative;
@@ -557,6 +564,7 @@ a.nav-expander.fixed {
     ol {
         padding-left: 20px;
         list-style: square;
+        margin: 25px inherit inherit 0;
     }
 
     h2 {
@@ -880,7 +888,8 @@ article {
 .btn-ghost,
 [class*="navigation"] .nav-previous,
 [class*="navigation"] .nav-next,
-#submit {
+#submit,
+input[type="submit"] {
     border: 2px solid rgba(255,255,255,0.5);
     background: rgba(255,255,255,0.5);
     transition: all .3s ease-in-out;
@@ -953,6 +962,42 @@ article {
     padding: 3px 5px;
 }
 /*
+ * Contact Form 7 Material Styles
+ */
+.wpcf7-form {
+    background: rgba(0,0,0,0.25);
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    padding: 5px 15px 25px;
+    margin-top: 25px;
+
+    .form-group.form-group-lg label.control-label {
+        padding: 3px 10px;
+        background: transparent;
+        font-weight: bold;
+        color: #000;
+    }
+    .form-group .form-control {
+        font-size: 16px;
+        padding: 2px 15px;
+        color: #444;
+        transition: all 1s ease-in-out;
+    }
+    .form-group .form-control:focus,
+    .form-group .form-control:active {
+        background-color: rgba(255,255,255,0.5);
+        color: #000;
+    }
+}
+
+/*
+ * CMB2 specific styles
+ */
+
+.lsow-testimonials-slider .lsow-testimonial-user .lsow-image-wrapper {
+    padding-right: 25px;
+}
+
+/*
  * Textselection Background
  */
 *::selection {
@@ -978,5 +1023,29 @@ article {
     padding: 3px inherit;
     p {
         margin: 5px 0;
+    }
+}
+
+/*
+ * Multilingual Press Flag Support for Widget in Offcanvas Menu
+ */
+#site-navigation .off-canvas-bottom-widget {
+
+    padding-top: 50px;
+
+    h3.widget-title {
+        background: none;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 1px solid;
+    }
+
+    .mlp_language_box a {
+        display: inline-block;
+        margin: 15px 10px 0 0;
+        border: 0;
+        font-size: 14px;
     }
 }
