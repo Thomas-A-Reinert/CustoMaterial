@@ -13,7 +13,7 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 
 			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
+				<small><?php understrap_posted_on(); ?></small>
 			</div><!-- .entry-meta -->
 
 		<?php endif; ?>

@@ -57,13 +57,14 @@ get_header(); ?>
 
 						</figcaption>
 					</figure>
-
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div>
-				<?php
+					<?php
 				} }
 				?>
+
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div>
+
 
 				<?php
 					// Display Gallery left or right based on Metabox selection
