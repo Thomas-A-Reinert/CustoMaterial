@@ -562,7 +562,7 @@ a.nav-expander.fixed {
 
     ul,
     ol {
-        padding-left: 20px;
+        padding-left: 0;
         list-style: square;
         margin: 25px inherit inherit 0;
     }
@@ -612,6 +612,9 @@ a.nav-expander.fixed {
 /*
  * Article Styling
  */
+.page-header {
+    border: 0;
+}
 .sticky {
     .entry-title a:before {
         font-family: 'FontAwesome';
@@ -688,7 +691,7 @@ article {
     //background-color: rgba(255,255,255,0.5);
     background-color: $transparent_white;
     text-align: center;
-    text-shadow: rgba(255,255,255,0.5) 1px 1px 2px;
+    text-shadow: rgba(255,255,255,1) 1px 1px 1px;
 
     .h2  {
         //text-transfrom: lowercase;
@@ -1039,6 +1042,45 @@ input[type="submit"] {
 
 .sow-slider-base .sow-slide-nav a {
     border: 0;
+}
+
+/*
+ * Siteorigin Widget: SiteOrigin Editor
+ */
+
+.so-widget-sow-editor {
+    .widget-title {
+        padding: 3px 15px;
+    }
+
+    .text-widget {
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+/*
+ * Siteorigin Widget: Features
+ */
+
+.sow-features-feature {
+
+    .textwidget {
+        color: $text-color;
+
+        h5 {
+            font-size: 18px;
+        }
+
+        p {
+            text-align: left;
+            hyphens: auto;
+        }
+
+    }
 }
 
 /*
