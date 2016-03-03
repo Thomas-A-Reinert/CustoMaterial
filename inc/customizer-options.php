@@ -2341,7 +2341,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'label'       => __( 'Sidebar Background Color', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
 	    'section'     => 'sidebar_config',
-	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
+	    'default'     => $text_dark,
 	    'priority'    => 40,
 	    'output'      => array(
 			array(
@@ -2370,7 +2370,7 @@ if ( class_exists( 'Kirki' ) ) {
 	Kirki::add_field( 'understrap', array(
 	    'type'        => 'color-alpha',
 	    'settings'    => 'sidebar_widget_text_link_color',
-	    'label'       => __( 'Sidebar Background Color', 'understrap' ),
+	    'label'       => __( 'Widget Background Color', 'understrap' ),
 	    'description' => __( '', 'understrap' ),
 	    'section'     => 'sidebar_config',
 	    'default'     => 'rgba(' . hex2rgb(adjustBrightness($accent_color, -50)) . ',1)',
