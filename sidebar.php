@@ -5,11 +5,11 @@
  * @package understrap
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
+if (!is_active_sidebar('sidebar-1')) {
+    return;
 }
 
-if ( get_theme_mod( 'content_width') == 'fullwidth') {
+if (get_theme_mod('content_width') == 'fullwidth') {
     $sidebarwidth = "col-md-3";
 } else {
     $sidebarwidth = "col-md-4";
@@ -18,6 +18,6 @@ if ( get_theme_mod( 'content_width') == 'fullwidth') {
 
 <div id="secondary" class="widget-area <?php echo $sidebarwidth; ?>" role="complementary">
 
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+    <?php dynamic_sidebar('sidebar-1'); ?>
 
 </div><!-- #secondary -->

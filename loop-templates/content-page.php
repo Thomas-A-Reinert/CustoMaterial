@@ -4,36 +4,39 @@
  *
  * @package understrap
  */
+
+$classes = get_post_class('content-page-item', get_the_ID());
+$classes = implode(" ", $classes);
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('content-page-item'); ?>>
+<article id="post-<?php the_ID(); ?>" class="<?php echo $classes; ?>">
 
-	<header class="entry-header">
+    <header class="entry-header">
 
-		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+        <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
 
-	</header><!-- .entry-header -->
+    </header><!-- .entry-header -->
 
-	<section>
-    <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+    <section>
+        <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
 
-	<div class="entry-content">
-		<?php the_content(); ?>
+        <div class="entry-content">
+            <?php the_content(); ?>
 
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-				'after'  => '</div>',
-			) );
-		?>
+            <?php
+            wp_link_pages(array(
+                'before' => '<div class="page-links">' . __('Pages:', 'understrap'),
+                'after' => '</div>',
+            ));
+            ?>
 
-	</div><!-- .entry-content -->
-	</section>
+        </div><!-- .entry-content -->
+    </section>
 
-	<footer class="entry-footer">
+    <footer class="entry-footer">
 
-		<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
+        <?php edit_post_link(__('Edit', 'understrap'), '<span class="edit-link">', '</span>'); ?>
 
-	</footer><!-- .entry-footer -->
+    </footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->

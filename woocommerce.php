@@ -13,24 +13,25 @@
 get_header(); ?>
 
 <div class="wrapper" id="woocommerce-wrapper">
-    
+
     <div class="container">
-        
-	   <div id="primary" class="<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>col-md-8<?php else : ?>col-md-12<?php endif; ?> content-area">
-	   
+
+        <div id="primary"
+             class="<?php if (is_active_sidebar('sidebar-1')) : ?>col-md-8<?php else : ?>col-md-12<?php endif; ?> content-area">
+
             <main id="main" class="site-main" role="main">
 
                 <!-- The WooCommerce loop -->
                 <?php woocommerce_content(); ?>
 
             </main><!-- #main -->
-           
-	    </div><!-- #primary -->
-        
+
+        </div><!-- #primary -->
+
         <?php get_sidebar(); ?>
-        
+
     </div><!-- Container end -->
-    
+
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
