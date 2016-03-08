@@ -1,0 +1,200 @@
+// If you want to quickstart with GULP.js :
+// http://emilrosenius.com/getting-started-with-gulp-js/
+// http://ilikekillnerds.com/2014/07/how-to-basic-tasks-in-gulp-js/
+
+var gulp            = require('gulp');
+var gutil           = require('gulp-util');
+var plumber         = require('gulp-plumber'); // Prevent pipe breaking, see: https://www.npmjs.com/package/gulp-plumber
+var sass            = require('gulp-sass');
+var autoprefixer    = require('gulp-autoprefixer');
+var minCss          = require('gulp-minify-css');
+var rename          = require('gulp-rename');
+var cssnano         = require('gulp-cssnano');
+var ignore          = require('gulp-ignore');
+var concat          = require('gulp-concat');
+var uglify          = require('gulp-uglify');
+var jshint          = require('gulp-jshint');
+var jsnotify        = require('gulp-notify');
+
+var onError = function(err) {
+    console.log(err);
+}
+
+var config = {
+   src_BS_SCSS :             './sass/bootstrap-sass/*.scss',	// Needs renaming of '_bootstrap.scss' to 'bootstrap.scss' to _understrap!
+   src_SCSS :                './sass/*.scss',					// Needs bootstrap to be removed from themes.scss!
+   uncompressedBuildCSS :   './css/uncompressed',
+   compressedBuildCSS :     './css',
+   uncompressedJSSRC :      './js/uncompressed/*.js',
+   compressedJSSRC :        './js/*.js',
+};
+
+
+gulp.task('build-bsCSS-from-SCSS', function(cb) {
+   gulp.src(config.src_BS_SCSS)
+   	.pipe(plumber())
+	// output non-minified Bootstrap-CSS file
+	.pipe(sass({
+		outputStyle : 'expanded'						// Output expanded, non-minified version for debugging or asset delivery first.
+	}).on('error', sass.logError))
+	.pipe(autoprefixer('last 2 versions'))				// Autoprefixes only for last 2 versions. Change if you need to.
+	.pipe(rename({										// Not neccessary, but for better readability and to make 150% sure..
+            basename: 'bootstrap',
+            extname: '.css'
+        }))
+	.pipe(gulp.dest(config.uncompressedBuildCSS))		// Goes into ./css/uncompressed
+
+	cb()
+});
+
+gulp.task('build-themeCSS-from-srcSCSS', function(cb) {
+   gulp.src(config.src_SCSS)
+   	.pipe(plumber())									// Prevent pipe breaking
+	// output non-minified Theme-CSS file
+	.pipe(sass({
+		outputStyle : 'expanded'						// Output expanded, non-minified version for debugging or asset delivery first.
+	}).on('error', sass.logError))
+	.pipe(autoprefixer('last 2 versions'))				// Autoprefixes only for last 2 versions. Change if you need to.
+	.pipe(rename({										// Not neccessary, but for better readability and to make 150% sure..
+            basename: 'theme',
+            extname: '.css'
+        }))
+	.pipe(gulp.dest(config.uncompressedBuildCSS))		// Goes into ./css/uncompressed
+
+	cb()
+});
+
+//
+// This one may seem a bit "special", because we want to concat and minify the following files in a _specific_ order.
+// For that you´ll want to put ANY CSS-files from third-hand plugins, addons etc into the './css/uncompressed' folder.
+// Make sure they do NOT contain a '*.MIN.css' as only unminified files will be processed!
+//
+
+gulp.task('ConcatMinifyCSS', function (cb) { // concat and minify
+    gulp.src([
+            config.uncompressedBuildCSS+'/bootstrap.css',                 // First, we need Bootstraps as some of it´s styles may get overwritten later on
+            config.uncompressedBuildCSS+'/bootstrap-material-design.css', // Then we´ll add addons, seperately, one by one. Add more lines if needed..
+            // config.uncompressedBuildCSS+'/bootstrap.lightbox.css',     // Just an example
+            config.uncompressedBuildCSS+'/ripples.css',                   // more addons..
+            config.uncompressedBuildCSS+'/theme.css',                     // and finally our uncompressed theme.css from the 'build-themeCSS-from-srcSCSS'-function
+        ])
+    	.pipe(plumber())													// Prevent pipe breaking
+        .pipe(ignore('*.min.css'))											// we´ll ignore any .min.css that may accidently went into the './css/uncompressed' folder
+        .pipe(cssnano({discardComments: {removeAll: true}}))				// remove any kind of comments and minify
+        .pipe(concat('theme_minified.css'))									// Concat everything
+        .pipe(rename({														// rename the load to one minified/concatenated file named 'theme.min.css'
+            basename: 'theme',
+            extname: '.min.css'
+        }))
+        .pipe(gulp.dest(config.compressedBuildCSS))							// output 'theme.min.css' to './css/'
+
+        cb()
+});
+
+//
+// Before doing anything with the JS-Files, let´s lint them.
+//
+
+gulp.task('jshint', function() {
+    return gulp.src(config.uncompressedJSSRC)
+    .pipe(plumber({
+        errorHandler: onError
+    }))
+    .pipe(ignore('*.min.js'))                       // Ignore any already minified files that accidently went into ".js/uncompressed/"
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish'))
+    .pipe(notify({ message: 'JS Hinting task complete' }));
+});
+
+//
+// Next we´ll compress and concat JS-Files.
+// Again, we´ll add them one-by-one to make sure we´ll have no possible conflicts
+//
+
+gulp.task('ConcatMinifyJS', function () {
+    gulp.src([
+            config.uncompressedJSSRC+'/navigation.js',
+            config.uncompressedJSSRC+'/skip-link-focus-fix.js',
+            config.uncompressedJSSRC+'/material.js',
+            // config.uncompressedJSSRC+'/bootstrap.lightbox.js',
+            config.uncompressedJSSRC+'/ripples.js',
+            config.uncompressedJSSRC+'/navgoco.js',
+        ])
+        .pipe(ignore('*.min.js'))                       // Ignore any already minified files that accidently went into ".js/uncompressed/"
+        //gutil.log('Almost there...');
+        //.pipe(jshint())                                 // Validates JS files
+        //.pipe(jshint.reporter('jshint-stylish'))        // Print errors to the console
+        .pipe(concat('theme.js'))                       // Concatenate JS files into one theme.js file
+        .pipe(uglify())                                 // Minifies the JS file
+        .pipe(rename({                                  // Rename the theme.js file
+            basename: 'theme',                          // base name of the renamed file
+            extname: '.min.js'                          // extension of the renamed file
+        }))
+        .pipe(gulp.dest(config.compressedJSSRC));       // Destination folder for linted, compressed and minified JS files
+});
+
+// Run:
+// gulp copy-assets
+// Copy all needed dependency assets files from bower_component assets to themes /js, /scss and /fonts folder.
+// Run this task after bower install or bower update
+
+gulp.task('copy-assets', function () {
+
+// Copy all Bootstrap SCSS files
+    gulp.src(basePaths.bower + 'bootstrap-sass/assets/stylesheets/**/*')
+        .pipe(gulp.dest('./sass/bootstrap-sass'));
+
+// Copy all Bootstrap Javascript files
+    gulp.src(basePaths.bower + 'bootstrap-sass/assets/javascripts/**/*.js')
+        .pipe(gulp.dest('./js/uncompressed'));
+
+// Copy all Bootstrap Fonts
+    gulp.src(basePaths.bower + 'bootstrap-sass/assets/fonts/bootstrap/*.{ttf,woff,woff2,eof,svg}')
+        .pipe(gulp.dest('./fonts'));
+
+// Copy all Font Awesome Fonts
+    gulp.src(basePaths.bower + 'fontawesome/fonts/**/*.{ttf,woff,woff2,eof,svg}')
+        .pipe(gulp.dest('./fonts'));
+
+// Copy all Font Awesome SCSS files
+    gulp.src(basePaths.bower + 'fontawesome/scss/*.scss')
+        .pipe(gulp.dest('./sass/fontawesome'));
+
+// Copy all Understrap SCSS files
+    gulp.src(basePaths.bower + '_s/sass/**/*')
+        .pipe(gulp.dest('./sass/_s/sass'));
+
+// Copy all Understrap _s JS files
+    gulp.src(basePaths.bower + '_s/js/*.js')
+        .pipe(gulp.dest('./js/uncompressed'));
+
+// Copy all Material Design CSS files
+    gulp.src(basePaths.bower + 'bootstrap-material-design/dist/css/*.css')
+        .pipe(ignore('*.min.css'))
+        .pipe(gulp.dest('./css/uncompressed'));
+
+// Copy all Material Design JS files
+    gulp.src(basePaths.bower + 'bootstrap-material-design/dist/js/*.js')
+        .pipe(ignore('*.min.js'))
+        .pipe(gulp.dest('./js/uncompressed'));
+
+// Copy jQuery
+    gulp.src(basePaths.bower + 'jquery/dist/*.js')
+        .pipe(gulp.dest('./js/uncompressed'));
+
+// Copy all Owl2 JS files
+    gulp.src(basePaths.bower + 'OwlCarousel2/dist/*.js')
+        .pipe(gulp.dest('./js/uncompressed'));
+
+// Copy all Owl2 SCSS files
+    gulp.src(basePaths.bower + 'OwlCarousel2/dist/assets/*.css')
+        .pipe(gulp.dest('./css/uncompressed'));
+
+// Copy kirki
+    gulp.src(basePaths.bower + 'kirki/**/*')
+        .pipe(gulp.dest('./inc/kirki'));
+
+// Copy CMB2
+    gulp.src(basePaths.bower + 'CMB2/**/*')
+        .pipe(gulp.dest('./inc/CMB2'));
+});

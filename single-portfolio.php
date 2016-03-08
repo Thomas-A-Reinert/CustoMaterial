@@ -13,7 +13,7 @@ get_header(); ?>
 
     <div id="content" class="container<?php echo $postfix; ?>">
 
-        <div id="primary" class="content-area <?php //echo $contentwidth ?> portfolio-page">
+        <div id="primary" class="content-area portfolio-page">
 
             <main id="main" class="site-main" role="main">
 
@@ -22,7 +22,7 @@ get_header(); ?>
                     $yoast_bc_enabled = $yoast_links_options['breadcrumbs-enable'];
                     if ($yoast_bc_enabled) { ?>
                         <div class="breadcrumb">
-                            <?php yoast_breadcrumb('<p id="breadcrumbs"> <i class="fa fa-home"></i> ', '</p>'); ?>
+                            <?php yoast_breadcrumb('<p id="breadcrumbs"><small> <i class="fa fa-home"></i> ', '</small></p>'); ?>
                         </div>
                     <?php }
                 } ?>
@@ -205,7 +205,7 @@ get_header(); ?>
                         ?>
 
                         <footer class="entry-footer">
-                            <?php understrap_entry_footer(); ?>
+                            <small><?php understrap_entry_footer(); ?></small>
                         </footer><!-- .entry-footer -->
                     </article><!-- #post-## -->
 
@@ -229,22 +229,6 @@ get_header(); ?>
 </div><!-- Wrapper end -->
 <script>
     jQuery(document).ready(function () {
-        // var owl = jQuery('.owl-carousel');
-        // owl.owlCarousel({
-        //     items: 1,
-        //     loop: true,
-        //     autoplay:true,
-        //     autoplayTimeout: 5000,
-        //     animateOut: 'fadeOut',
-        //     animateIn: 'fadeIn',
-        //     nav: true,
-        //     dots: true,
-        //     autoplayHoverPause:true,
-        //     margin:0,
-        //     autoHeight:true,
-        //     video: true
-        // });
-
         jQuery(document).ready(function () {
             jQuery(".owl-carousel").owlCarousel({
                 items: 1,

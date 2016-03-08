@@ -35,7 +35,7 @@ $classes = implode(" ", $classes);
 
     <footer class="entry-footer">
 
-        <?php edit_post_link(__('Edit', 'understrap'), '<span class="edit-link">', '</span>'); ?>
+        <small><?php edit_post_link(__('Edit', 'understrap'), '<span class="fa fa-pencil"></span><span class="edit-link">', '</span>'); ?></small>
 
     </footer><!-- .entry-footer -->
 

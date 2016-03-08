@@ -6,6 +6,7 @@
  */
 
 get_header(); ?>
+
 <div class="wrapper" id="single-wrapper">
 
     <div id="content" class="container<?php echo $postfix; ?>">

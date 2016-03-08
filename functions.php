@@ -5,6 +5,8 @@
  * @package understrap
  */
 
+
+
 /**
  * Theme setup and custom theme supports.
  */
@@ -60,7 +62,7 @@ add_filter('kirki/config', 'my_theme_kirki_update_url');
 
 function kirki_configuration_styling($config)
 {
-    $config['logo_image'] = get_stylesheet_directory_uri() . '/imgs/logo.png';
+    $config['logo_image'] = get_stylesheet_directory_uri() . '/assets/imgs/logo-60x60.png';
     $config['description'] = __('The theme description.', 'understrap');
     $config['color_accent'] = '#8bc34a';
     $config['color_back'] = '#607D8B';

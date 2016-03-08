@@ -36,6 +36,8 @@ add_action( 'wp_enqueue_scripts', 'kirki_enqueue_header_gradients', 999 );
 * Hex2RGB Converter
 * http://bavotasan.com/2011/convert-hex-color-to-rgb-using-php/
 */
+
+
 function hex2rgb($hex) {
    $hex = str_replace("#", "", $hex);
 
