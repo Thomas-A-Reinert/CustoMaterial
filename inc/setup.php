@@ -111,6 +111,22 @@ function all_excerpts_get_more_link($post_excerpt) {
 }
 add_filter('wp_trim_excerpt', 'all_excerpts_get_more_link');
 
+
+/*
+ * Alternate button for masonry layout
+ */
+
+function limit_excerpt($limit) {
+  $excerpt = explode(' ', get_the_excerpt(), $limit);
+  if (count($excerpt)>=$limit) {
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt).'...';
+  } else {
+    $excerpt = implode(" ",$excerpt);
+  }
+  $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+  return $excerpt;
+}
 /**
  * Attach a class to linked images' parent anchors
  * e.g. a img => a.img img
