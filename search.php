@@ -8,7 +8,7 @@
 get_header(); ?>
 <div class="wrapper search-wrapper">
 
-    <div class="container">
+    <div class="container<?php echo $postfix; ?>">
 
         <section id="primary" class="<?php echo $contentwidth ?> content-area">
 
