@@ -6,7 +6,7 @@
  */
 function understrap_scripts() {
     wp_enqueue_style( 'understrap-theme', get_stylesheet_directory_uri() . '/assets/css/theme.min.css', array(), '0.3.7', false );
-    wp_register_style( 'fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+    wp_register_style( 'fontawesome',  get_stylesheet_directory_uri() . '/assets/css/font-awesome.min.css', array(), '4.5.0');
     wp_enqueue_style( 'fontawesome');
 
     wp_enqueue_script('jquery');
@@ -16,7 +16,9 @@ function understrap_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-    wp_enqueue_script( 'mixitup-script', get_template_directory_uri() . '/assets/js/jquery.mixitup.min.js', array(), '20024', true );
+    if ( is_archive( 'portfolio' ) ) {
+        wp_enqueue_script( 'mixitup-script', get_template_directory_uri() . '/assets/js/jquery.mixitup.min.js', array(), '20024', true );
+    }
 
     if ( ( is_active_sidebar( 'hero' ) ) || ( is_singular( 'portfolio' ) ) ) {
         wp_enqueue_style( 'understrap-carousel-style', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), '20024', false );
