@@ -207,11 +207,11 @@ gulp.task('bowerUpdate', function () {
 
 // Copy all Bootstrap Fonts
     gulp.src(bowerDir + 'bootstrap-sass/assets/fonts/bootstrap/*.{ttf,woff,woff2,eof,svg}')
-        .pipe(gulp.dest('./fonts'));
+        .pipe(gulp.dest('./assets/fonts'));
 
 // Copy all Font Awesome Fonts
     gulp.src(bowerDir + 'fontawesome/fonts/**/*.{ttf,woff,woff2,eof,svg}')
-        .pipe(gulp.dest('./fonts'));
+        .pipe(gulp.dest('./assets/fonts'));
 
 // Copy all Font Awesome SCSS files
     gulp.src(bowerDir + 'fontawesome/scss/*.scss')
