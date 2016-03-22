@@ -34,10 +34,12 @@ if (post_password_required()) {
             <nav id="comment-nav-above" class="comment-navigation" role="navigation">
                 <h1 class="screen-reader-text"><?php _e('Comment navigation', 'understrap'); ?></h1>
                 <div class="nav-links">
-                    <div
-                        class="nav-previous btn btn-raised"><?php previous_comments_link(__('<span class="fa fa-backward"></span> Older Comments', 'understrap')); ?></div>
-                    <div
-                        class="nav-next btn btn-raised"><?php next_comments_link(__('Newer Comments <span class="fa fa-forward"></span>', 'understrap')); ?></div>
+                    <?php if ( get_previous_comments_link() ) { ?>
+                        <button class="nav-previous btn btn-raised"><?php previous_comments_link(__('<span class="fa fa-backward"></span> Older Comments', 'understrap'));?></button>
+                    <?php }
+                    if ( get_next_comments_link() ) { ?>
+                        <button class="nav-next btn btn-raised"><?php next_comments_link(__('Newer Comments <span class="fa fa-forward"></span>', 'understrap')); ?></button>
+                    <?php } ?>
                 </div>
             </nav><!-- #comment-nav-above -->
         <?php endif; // check for comment navigation ?>
@@ -64,10 +66,12 @@ if (post_password_required()) {
             <nav id="comment-nav-below" class="comment-navigation" role="navigation">
                 <h1 class="screen-reader-text"><?php _e('Comment navigation', 'understrap'); ?></h1>
                 <div class="nav-links">
-                    <div
-                        class="nav-previous btn btn-raised"><?php previous_comments_link(__('<span class="fa fa-backward"></span> Older Comments', 'understrap')); ?></div>
-                    <div
-                        class="nav-next btn btn-raised"><?php next_comments_link(__('Newer Comments <span class="fa fa-forward"></span>', 'understrap')); ?></div>
+                    <?php if ( get_previous_comments_link() ) { ?>
+                        <button class="nav-previous btn btn-raised"><?php previous_comments_link(__('<span class="fa fa-backward"></span> Older Comments', 'understrap'));?></button>
+                    <?php }
+                    if ( get_next_comments_link() ) { ?>
+                        <button class="nav-next btn btn-raised"><?php next_comments_link(__('Newer Comments <span class="fa fa-forward"></span>', 'understrap')); ?></button>
+                    <?php } ?>
                 </div><!-- .nav-links -->
             </nav><!-- #comment-nav-below -->
         <?php endif; // check for comment navigation ?>

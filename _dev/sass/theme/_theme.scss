@@ -997,6 +997,12 @@ article {
 .posts-navigation .nav-next,
 .nav-links .nav-next {
     width: 48%;
+
+    a {
+        display:block;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .btn.btn-raised {background: none;}

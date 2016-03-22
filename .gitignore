@@ -33,3 +33,5 @@ node_modules
 *.tif
 *.psd
 *.bak
+/gulpfile.js - festgerannt.js
+/--gulpfile.js - latest
