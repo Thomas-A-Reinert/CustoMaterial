@@ -22,11 +22,11 @@ function understrap_paging_nav() {
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous btn btn-raised"><?php next_posts_link( __( '<span class="fa fa-backward"></span> Older posts', 'understrap' ) ); ?></div>
+			<button class="nav-previous btn btn-ghost btn-raised"><?php next_posts_link( __( '<span class="fa fa-backward"></span> Older posts', 'understrap' ) ); ?></button>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next btn btn-raised"><?php previous_posts_link( __( 'Newer posts <span class="fa fa-forward"></span>', 'understrap' ) ); ?></div>
+			<button class="nav-next btn btn-ghost btn-raised"><?php previous_posts_link( __( 'Newer posts <span class="fa fa-forward"></span>', 'understrap' ) ); ?></button>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -52,8 +52,13 @@ function understrap_post_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'understrap' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous btn btn-raised">%link</div>', _x( '<span class="fa fa-backward"></span>&nbsp;%title', 'Previous post link', 'understrap' ) );
-				next_post_link(     '<div class="nav-next btn btn-raised">%link</div>',     _x( '%title&nbsp;<span class="fa fa-forward"></span>', 'Next post link',     'understrap' ) );
+
+				if ( get_previous_post_link() ) {
+					previous_post_link( '<button class="nav-previous btn btn-ghost btn-raised">%link</button>', _x( '<span class="fa fa-backward"></span>&nbsp;%title', 'Previous post link', 'understrap' ) );
+				}
+				if ( get_next_post_link() ) {
+					next_post_link(     '<button class="nav-next btn btn-ghost btn-raised">%link</button>',     _x( '%title&nbsp;<span class="fa fa-forward"></span>', 'Next post link',     'understrap' ) );
+				}
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
@@ -85,7 +90,7 @@ function understrap_posted_on() {
 
 	$byline = sprintf(
 		_x( 'by %s', 'post author', 'understrap' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		'<span class="fa fa-user"></span> <span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
 	echo '<span class="posted-on">' . $posted_on . '</span> <span class="byline"> ' . $byline . '</span>';
@@ -103,23 +108,23 @@ function understrap_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( ', ', 'understrap' ) );
 		if ( $categories_list && understrap_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'understrap' ) . '</span>', $categories_list );
+			printf( '<span class="fa fa-bookmark-o"></span><span class="cat-links">' . __( 'Posted in %1$s', 'understrap' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', __( ', ', 'understrap' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'understrap' ) . '</span>', $tags_list );
+			printf( '<br><span class="fa fa-tag"></span><span class="tags-links">' . __( 'Tagged %1$s', 'understrap' ) . '</span>', $tags_list );
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
+		echo '<br><span class="fa fa-comments"></span><span class="comments-link">';
 		comments_popup_link( __( 'Leave a comment', 'understrap' ), __( '1 Comment', 'understrap' ), __( '% Comments', 'understrap' ) );
 		echo '</span>';
 	}
 
-	edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( __( 'Edit', 'understrap' ), '<br><span class="fa fa-pencil"></span><span class="edit-link">', '</span>' );
 }
 endif;
 

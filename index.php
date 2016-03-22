@@ -23,17 +23,19 @@ get_header();
 
     <div id="content" class="container<?php echo $postfix; ?>">
 
-        <div class="<?php echo $contentwidth ?>">
-            <?php if (function_exists('yoast_breadcrumb')) {
-                $yoast_links_options = get_option('wpseo_internallinks');
-                $yoast_bc_enabled = $yoast_links_options['breadcrumbs-enable'];
-                if ($yoast_bc_enabled) { ?>
-                    <div class="breadcrumb">
-                        <small><?php yoast_breadcrumb('<p id="breadcrumbs"> <i class="fa fa-home"></i> ', '</p>'); ?></small>
-                    </div>
-                <?php }
-            } ?>
-        </div>
+        <?php if (function_exists('yoast_breadcrumb')) { ?>
+            <div class="<?php echo $contentwidth ?>">
+                <?php
+                    $yoast_links_options = get_option('wpseo_internallinks');
+                    $yoast_bc_enabled = $yoast_links_options['breadcrumbs-enable'];
+                    if ($yoast_bc_enabled) { ?>
+                        <div class="breadcrumb">
+                            <?php yoast_breadcrumb('<p id="breadcrumbs"><small> <i class="fa fa-home"></i> ', '</small></p>'); ?>
+                        </div>
+                    <?php } ?>
+            </div>
+        <?php } ?>
+
         <div id="primary" class="<?php echo $contentwidth ?> content-area">
 
             <main id="main" class="site-main" role="main" tabindex="-1">

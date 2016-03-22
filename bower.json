@@ -10,13 +10,15 @@
   "main": [
     "sass/theme.scss"
   ],
-    "keywords": [
-      "bootstrap",
-      "underscores",
-      "wordpress",
-      "_s",
-      "sass"
-    ],
+  "keywords": [
+    "bootstrap",
+    "underscores",
+    "wordpress",
+    "_s",
+    "sass"
+    "cmb2",
+    "kirki"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",

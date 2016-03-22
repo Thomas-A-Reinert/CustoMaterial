@@ -1066,8 +1066,8 @@ if ( class_exists( 'Kirki' ) ) {
 		'default'     => 'fullwidth',
 		'priority'    => 10,
 		'choices'     => array(
-			'fullwidth'   => get_stylesheet_directory_uri() . '/imgs/fullwidth_layout.png',
-			'boxed' 	  => get_stylesheet_directory_uri() . '/imgs/boxed_layout.png',
+			'fullwidth'   => get_stylesheet_directory_uri() . '/assets/imgs/fullwidth_layout.png',
+			'boxed' 	  => get_stylesheet_directory_uri() . '/assets/imgs/boxed_layout.png',
 		),
 	) );
 
@@ -1090,7 +1090,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'type'     => 'upload',
 	    'mime_type'=> 'image',
 	    'priority' => 40,
-	    'default'  => '',
+	    'default'  => get_stylesheet_directory_uri() . '/assets/imgs/background.jpg',
 	    'required'  => array(
 	        array(
 	            'setting'  => 'display_background_image',
@@ -1193,14 +1193,14 @@ if ( class_exists( 'Kirki' ) ) {
 	    'priority'    => 20,
 	    'output'      => array(
 			array(
-				'element'  => '.attachment-header-image-caption',
+				'element'  => '.attachment-header-image-caption, .portfolio figcaption',
 				'property' => 'background',
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '.attachment-header-image-caption',
+				'element'  => '.attachment-header-image-caption, .portfolio figcaption',
 				'function' => 'css',
 				'property' => 'background',
 			),
@@ -1225,14 +1225,14 @@ if ( class_exists( 'Kirki' ) ) {
 	    'priority'    => 30,
 	    'output'      => array(
 			array(
-				'element'  => '.attachment-header-image-caption',
+				'element'  => '.attachment-header-image-caption, .portfolio figcaption',
 				'property' => 'color',
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '.attachment-header-image-caption',
+				'element'  => '.attachment-header-image-caption, .portfolio figcaption',
 				'function' => 'css',
 				'property' => 'color',
 			),
@@ -1757,9 +1757,9 @@ if ( class_exists( 'Kirki' ) ) {
 		'default'     => 'img-circle',
 		'priority'    => 22,
 		'choices'     => array(
-			'img-rounded'   => get_stylesheet_directory_uri() . '/imgs/avatar_rounded.png',
-			'img-circle' 	=> get_stylesheet_directory_uri() . '/imgs/avatar_circle.png',
-			'' => get_stylesheet_directory_uri() . '/imgs/avatar_thumbnail.png',
+			'img-rounded'   => get_stylesheet_directory_uri() . '/assets/imgs/avatar_rounded.png',
+			'img-circle' 	=> get_stylesheet_directory_uri() . '/assets/imgs/avatar_circle.png',
+			'' => get_stylesheet_directory_uri() . '/assets/imgs/avatar_thumbnail.png',
 		),
 	) );
 

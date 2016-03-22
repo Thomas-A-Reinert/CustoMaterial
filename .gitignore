@@ -25,3 +25,13 @@ bower_components
 node_modules
 /_bugs.txt
 /generateMD.bat
+/imgs/layout.tif
+/imgs/logo-512.psd
+/imgs/layout_preview.psd
+/_gulpfile.js
+*.psd
+*.tif
+*.psd
+*.bak
+/gulpfile.js - festgerannt.js
+/--gulpfile.js - latest

@@ -19,15 +19,34 @@ get_header(); ?>
                 the_archive_description('<div class="taxonomy-description">', '</div>');
                 ?>
             </header><!-- .page-header -->
+
+            <div class="controls">
+                <?php
+                    // See http://wordpress.stackexchange.com/questions/13485/list-all-subcategories-from-category on how to select cats and it´s children.
+                    //$category_id = get_cat_ID('Portfolio');
+                    $args = array('child_of' => get_cat_ID('Portfolio'));
+                    $categories = get_categories( $args );
+
+                    echo '<button class="btn btn-raised btn-ghost filter" data-filter="all">' . __( "View all" ) . '</button>' ;
+
+                    foreach($categories as $category) {
+                        echo '<button class="btn btn-raised btn-ghost filter" data-filter=".category-' . $category->slug /* get_category_link( $category->term_id ) */ . '">' . $category->name.' <span class="badge">' . $category->count . '</span></button>';
+                    }
+                ?>
+            </div>
         </div>
 
         <div id="primary" class="content-area col-md-12">
 
             <main id="main" class="site-main masonry" role="main" tabindex="-1">
-                <?php if (have_posts()) : ?>
 
+                <?php if (have_posts()) : ?>
                     <?php /* Start the Loop */ ?>
-                    <?php while (have_posts()) : the_post(); ?>
+                    <?php
+                    $counter = 1;
+                    while (have_posts()) : the_post();
+
+                        ?>
 
                         <?php
                         /* Include the Post-Format-specific template for the content.
@@ -35,6 +54,8 @@ get_header(); ?>
                          * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                          */
                         get_template_part('loop-templates/portfolio', get_post_format());
+
+                        $counter = $counter+1;
                         ?>
 
                     <?php endwhile; ?>

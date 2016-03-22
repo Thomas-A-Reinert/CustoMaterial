@@ -74,7 +74,7 @@
 
         <div class="pull-left">
             <?php if (get_theme_mod('footer_show_wp_credits', 'true') == 'true') { ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/imgs/wordpress-icon.png" height="16" width="16"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/wordpress-icon.png" height="16" width="16"
                      alt="<?php printf(esc_html__('Proudly powered by %s', 'understrap'), 'WordPress'); ?>"> <a
                 href="<?php echo esc_url(__('https://wordpress.org/', 'understrap')); ?>"
                 target="_blank"><?php printf(esc_html__('Proudly powered by %s', 'understrap'), 'WordPress'); ?></a><?php
@@ -185,6 +185,10 @@
                 duration: 300,
                 easing: 'swing'
             }
+        });
+
+        jQuery(function(){
+            jQuery('.post-type-archive-portfolio #main').mixItUp();
         });
 
     });

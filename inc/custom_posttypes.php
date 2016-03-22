@@ -16,32 +16,6 @@ Author URI: http://tarcgn.de/portfolio/
  * Plugin setup
  * Register portfolio post type
  */
-// function portfolio_setup() {
-// 	$labels = array(
-// 		'name' => __( 'portfolio', 'portfolio_example_plugin' ),
-// 		'singular_name' => __( 'portfolio', 'portfolio_example_plugin' ),
-// 		'add_new_item' => __( 'Add New portfolio', 'portfolio_example_plugin' ),
-// 		'edit_item' => __( 'Edit portfolio', 'portfolio_example_plugin' ),
-// 		'new_item' => __( 'New portfolio', 'portfolio_example_plugin' ),
-// 		'not_found' => __( 'No portfolio found', 'portfolio_example_plugin' ),
-// 		'all_items' => __( 'All portfolio', 'portfolio_example_plugin' )
-// 	);
-// 	$args = array(
-// 		'labels' => $labels,
-// 		'public' => true,
-// 		'show_ui' => true,
-// 		'show_in_menu' => true,
-// 		'has_archive' => true,
-// 		'map_meta_cap' => true,
-// 		'menu_icon' => 'dashicons-carrot',
-// 		'supports' => array( 'title', 'editor', 'thumbnail', 'author' ),
-// 		'taxonomies' => array( 'portfolio-family' )
-// 	);
-// 	register_post_type( 'portfolio', $args );
-// }
-// add_action( 'init', 'portfolio_setup' );
-
-
 if ( ! function_exists('register_portfolio_posttype') ) {
 
 // Register Custom Post Type
@@ -89,7 +63,7 @@ function register_portfolio_posttype() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => 'portfolio',
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',

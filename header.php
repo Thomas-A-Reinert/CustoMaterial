@@ -84,6 +84,11 @@ if (get_theme_mod('content_width') == 'fullwidth') {
             background-size: cover;
         }
 
+        #main .mix{
+            display: none;
+            -webkit-backface-visibility: hidden;
+        }
+
         <?php
         }
         if (!ctype_space(get_theme_mod('css_code') ) ) {
