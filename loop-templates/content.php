@@ -46,15 +46,13 @@
         } ?>
 
         <div class="entry-content">
-            <?php
-            the_excerpt();
-            ?>
+            <?php the_excerpt(); ?>
 
             <?php
-            wp_link_pages(array(
-                'before' => '<div class="page-links">' . __('Pages:', 'understrap'),
-                'after' => '</div>',
-            ));
+                wp_link_pages(array(
+                    'before' => '<div class="page-links">' . __('Pages:', 'understrap'),
+                    'after' => '</div>',
+                ));
             ?>
 
         </div><!-- .entry-content -->
