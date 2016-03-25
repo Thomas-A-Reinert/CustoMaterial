@@ -147,7 +147,8 @@ gulp.task('scripts', function() {
         config.devDir + '/js/material.js',
         // config.devDir + '/js/bootstrap.lightbox.js', // Add more in the correct order to be processed if needed.
         config.devDir + '/js/ripples.js',
-        config.devDir + '/js/navgoco.js'
+        config.devDir + '/js/navgoco.js',
+        config.devDir + '/js/theme.js'
     ], 'theme.js');
     pipeline.run(app.addScript);
 });
@@ -262,7 +263,7 @@ gulp.task('watch', function() {
 
 // 'gulp' runs most important tasks.
 gulp.task('default', [
-    'clean',
+    //'clean',
     'styles',
     'scripts',
     'fonts',
