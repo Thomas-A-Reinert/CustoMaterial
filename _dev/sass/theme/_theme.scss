@@ -652,7 +652,7 @@ article {
         }
     }
     .entry-content {
-
+        margin-top: 0;
     }
 
     .entry-content,
@@ -711,8 +711,20 @@ article {
 /*
  * Custom Posttype "Portfolio"
  */
+.post-type-archive-portfolio {
+    .badge {
+        background-color: $transparent_black;
+    }
 
+    #primary .masonry {
+        overflow: hidden;
+    }
+}
 .portfolio {
+
+    .entry-content {
+        padding-top: 3em;
+    }
 
     .project-info {
         padding: 0 25px 0 0;
@@ -738,7 +750,7 @@ article {
                 display: block;
                 color: #000000;
                 //background-color: rgba(255,255,255,0.5);
-                background-color: $transparent_white;
+                background-color: $transparent_double_white;
                 text-align: center;
 
                 .h3  {
@@ -798,7 +810,7 @@ article {
             width: 100%;
             display: block;
             text-align: center;
-            background: rgba(255,255,255,0.5);
+            background: $transparent_double_white;
             color: $text-color;
             font-size: 14px;
             text-align: left;
@@ -818,14 +830,14 @@ article {
                 font-weight: 900;
                 text-align: center;
                 text-shadow: 1px 1px 0 rgba(0,0,0,0.75);
-                background: rgba(255,255,255,0.75);
+                background: $transparent_double_white;
                 padding: 5px 0;
                 margin: 0;
                 box-shadow: 0 1px 1px rgba(0,0,0,0.75);
             }
 
             .collapse {
-                background: rgba(255,255,255,0.35);
+                background: $transparent_double_white;
                 padding: 10px 15px 0;
 
                 p {
@@ -999,16 +1011,37 @@ article {
     width: 48%;
 
     a {
-        display:block;
+        display: inline-block;
         height: 100%;
         width: 100%;
+    }
+}
+
+.nav-links.paged-navigation .nav-previous,
+.nav-links.paged-navigation .nav-next {
+    width: 33%;
+}
+
+.nav-links.paged-navigation {
+    button.pagenumbers {
+        margin: auto;
+    }
+    .btn {
+        padding: 0;
+    }
+
+    a {
+        display: block;
+        padding: 5px 20px;
     }
 }
 
 .btn.btn-raised {background: none;}
 .btn.btn-ghost,
 [class*="navigation"] .nav-previous,
+[class*="paged-navigation"] .nav-previous,
 [class*="navigation"] .nav-next,
+[class*="paged-navigation"] .nav-next,
 #submit,
 input[type="submit"] {
     border: 2px solid $transparent_white;
@@ -1019,6 +1052,7 @@ input[type="submit"] {
     color: rgba(0,0,0,0.75);
     overflow: hidden;
     margin: inherit 0;
+    padding: 0;
 
     a {
         color: rgba(0,0,0,0.75);
@@ -1026,6 +1060,7 @@ input[type="submit"] {
         text-decoration: none;
         display: block;
         transition: all 1s ease-in-out;
+        padding: 5px 20px;
 
         &:hover {
             //background: rgba(255,255,255,0.75);
@@ -1034,6 +1069,18 @@ input[type="submit"] {
         }
     }
 }
+
+#submit,
+input[type="submit"],
+input[type="submit"].btn.btn-ghost {
+    padding: 5px 20px;
+
+    &:hover {
+        //background: rgba(255,255,255,0.75);
+        color: #000;
+    }
+}
+
 .btn-ghost.active {
     background-color: rgba(255,255,255,0.75);
 }
@@ -1238,6 +1285,25 @@ input[type="submit"] {
         border: 0;
         font-size: 14px;
     }
+}
+
+
+/*
+ * Lightbox Styling
+ */
+.blueimp-gallery {
+    background: rgba(0,0,0,.9);
+
+    .close {
+        border: none;
+    }
+}
+
+.blueimp-gallery>.indicator>li {
+    height: 50px!important;
+    width: 50px!important;
+    background-size: cover!important;
+    transition: 0.5s all ease-in-out;
 }
 
 /*
