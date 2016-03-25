@@ -131,6 +131,7 @@ function limit_excerpt($limit) {
  * Attach a class to linked images' parent anchors
  * e.g. a img => a.img img
  * http://stackoverflow.com/questions/24042890/add-class-to-wordpress-image-a-anchor-elements
+ * http://wordpress.stackexchange.com/questions/155438/how-to-add-a-class-to-the-attachment-images
  */
 function add_data_attributes_to_linked_images($html) {
     $dataattributes = ''; // can do multiple classes, separate with space

@@ -10,8 +10,19 @@ function understrap_scripts() {
     wp_enqueue_style( 'fontawesome');
 
     wp_enqueue_script('jquery');
-	//wp_enqueue_script( 'understrap-navigation', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '20120206', true );
+	wp_enqueue_script( 'understrap-navigation', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '20120206', true );
+
+    wp_enqueue_script( 'blueimp-script', get_template_directory_uri() . '/assets/js/blueimp-gallery.min.js', array(), '251', true );
+    wp_enqueue_script( 'blueimp-jquery-script', get_template_directory_uri() . '/assets/js/jquery.blueimp-gallery.js', array(), '251', true );
+    //wp_enqueue_script( 'bootstrap-gallery-script', get_template_directory_uri() . '/assets/js/bootstrap-image-gallery.min.js', array(), '251', true );
+    // https://blueimp.github.io/Bootstrap-Image-Gallery/
+    wp_register_style( 'blueimp-styles',  get_stylesheet_directory_uri() . '/assets/css/blueimp-gallery.min.css', array(), '2.5.1');
+    wp_enqueue_style( 'blueimp-styles');
+    // wp_register_style( 'bootstrap-gallery-styles',  get_stylesheet_directory_uri() . '/assets/css/bootstrap-image-gallery.min.css', array(), '2.5.1');
+    // wp_enqueue_style( 'bootstrap-gallery-styles');
+
     wp_enqueue_script( 'tar-init', get_template_directory_uri() . '/assets/js/theme.min.js', array(), '20130115', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

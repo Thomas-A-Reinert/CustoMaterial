@@ -84,13 +84,11 @@
 
                 if (get_theme_mod('footer_show_wp_credits') == 'true') { ?><span class="sep"> | </span><?php } ?>
                 <span>
-                    &copy; <?php echo date('Y');
+                    <?php
                     if (get_theme_mod('footer_custom_footer_text_link', 'http://tarcgn.de/portfolio/') != '')  { ?>
-                    <a href="<?php echo get_theme_mod('footer_custom_footer_text_link'); ?>" target="_blank">
-                        <?php } ?>
-                        <?php echo get_theme_mod('footer_custom_footer_text', 'Theme by Thomas A. Reinert | TAR MediaDesign'); ?>
-                        <?php if (get_theme_mod('footer_custom_footer_text_link', 'http://tarcgn.de/portfolio/') != '')  { ?>
-                    </a>
+                        &copy; <?php echo date('Y');?> <a href="<?php echo get_theme_mod('footer_custom_footer_text_link', 'http://tarcgn.de/portfolio/'); ?>" target="_blank">
+                            <?php echo get_theme_mod('footer_custom_footer_text', 'Theme by Thomas A. Reinert | TAR MediaDesign'); ?>
+                        </a>
                 <?php } ?>
                 </span>
                 <?php
@@ -155,6 +153,7 @@
         });
     </script>
 <?php endif; ?>
+
 <script>
     // Off Canvas Nav Menu
 
@@ -186,10 +185,11 @@
                 easing: 'swing'
             }
         });
-
+<?php if ( is_archive( 'portfolio' ) ) { ?>
         jQuery(function(){
             jQuery('.post-type-archive-portfolio #main').mixItUp();
         });
+<?php } ?>
 
     });
 
@@ -226,13 +226,51 @@
 
     jQuery.material.init();
     jQuery.material.options = {
-        "withRipples": "a, .submit,input[type=submit], .btn"
+        "withRipples": "a, .submit, input[type=submit], .btn"
     }
     jQuery.material.ripples();
+
+    // Configure Blueimp-Gallery
+    // jQuery(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    //     event = event || window.event;
+    //     var target = event.target || event.srcElement,
+    //         link = target.src ? target.parentNode : target,
+    //         options = {index: link, event: event},
+    //         links = this.getElementsByTagName('a');
+    //     blueimp.Gallery(links, options);
+    // });
+    // jQuery(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    //     event = event || window.event;
+    //     var target = event.target || event.srcElement,
+    //         link = target.src ? this.target : target,
+    //         options = {index: link, event: event},
+    //         links = this;
+    //     blueimp.Gallery(links, options);
+    // });
 </script>
 <?php if (!ctype_space(get_theme_mod('javascript_footer_code', 'false'))) {
     echo get_theme_mod('javascript_footer_code');
 } ?>
+
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+<div id="blueimp-gallery-fullscreen" class="blueimp-gallery" data-full-screen="true">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
 </body>
 
 </html>
