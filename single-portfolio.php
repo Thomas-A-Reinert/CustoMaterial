@@ -62,8 +62,8 @@ get_header(); ?>
                         }
                         ?>
 
-                        <div class="entry-content">
-                            <?php the_content(); ?>
+                        <div class="entry-content row">
+                            <div class="col-xs-12"><?php the_content(); ?></div>
                         </div>
 
 

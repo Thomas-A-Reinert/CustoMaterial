@@ -42,8 +42,7 @@ $classes = implode(" ", $classes);
                            title="<?php echo __('Search for:', 'understrap') ?>" class="form-control">
                 </div>
                 <div class="col-sm-3">
-                    <button type="submit"
-                            class="submit btn btn-raised"><?php echo __('Search', 'understrap') ?></button>
+                    <button type="submit" class="submit btn btn-ghost btn-raised"><a><?php echo __('Search', 'understrap') ?></a></button>
                 </div>
             </form>
 
@@ -61,8 +60,7 @@ $classes = implode(" ", $classes);
                            title="<?php echo __('Search for:', 'understrap') ?>" class="form-control">
                 </div>
                 <div class="col-sm-3">
-                    <button type="submit"
-                            class="submit btn btn-raised"><?php echo __('Search', 'understrap') ?></button>
+                    <button type="submit" class="submit btn btn-ghost btn-raised"><a><?php echo __('Search', 'understrap') ?></a></button>
                 </div>
             </form>
 

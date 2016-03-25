@@ -107,7 +107,7 @@ add_filter( 'excerpt_more', 'custom_excerpt_more' );
 
 function all_excerpts_get_more_link($post_excerpt) {
 
-    return $post_excerpt . ' [...]<p><a class="btn btn-default understrap-read-more-link" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More...', 'understrap')  . '</a></p>';
+    return $post_excerpt . ' <br><span class="btn btn-xs btn-ghost btn-raised"><b><a class="understrap-read-more-link" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More...', 'understrap')  . '</a></b></span>';
 }
 add_filter('wp_trim_excerpt', 'all_excerpts_get_more_link');
 
@@ -132,27 +132,38 @@ function limit_excerpt($limit) {
  * e.g. a img => a.img img
  * http://stackoverflow.com/questions/24042890/add-class-to-wordpress-image-a-anchor-elements
  */
-// function add_classes_to_linked_images($html) {
-//     $classes = 'thumbnail test'; // can do multiple classes, separate with space
+function add_data_attributes_to_linked_images($html) {
+    $dataattributes = ''; // can do multiple classes, separate with space
+    //$dataattributes = '';
+    $generateRandomString = generateRandomString(5);
+    $patterns = array();
+    $replacements = array();
 
-//     $patterns = array();
-//     $replacements = array();
+    $patterns[0] = '/<a(?![^>]*class)([^>]*)>\s*<img([^>]*)>\s*<\/a>/'; // matches img tag wrapped in anchor tag where anchor tag where anchor has no existing classes
+    $replacements[0] = '<a\1 ' . $dataattributes . ' data-gallery><img\2></a>';
 
-//     $patterns[0] = '/<a(?![^>]*class)([^>]*)>\s*<img([^>]*)>\s*<\/a>/'; // matches img tag wrapped in anchor tag where anchor tag where anchor has no existing classes
-//     $replacements[0] = '<a\1 class="' . $classes . '"><img\2></a>';
+    $patterns[1] = '/<a([^>]*)class="([^"]*)"([^>]*)>\s*<img([^>]*)>\s*<\/a>/'; // matches img tag wrapped in anchor tag where anchor has existing classes contained in double quotes
+    $replacements[1] = '<a\1class="\2"\3 ' . $dataattributes . ' data-gallery><img\4></a>';
 
-//     $patterns[1] = '/<a([^>]*)class="([^"]*)"([^>]*)>\s*<img([^>]*)>\s*<\/a>/'; // matches img tag wrapped in anchor tag where anchor has existing classes contained in double quotes
-//     $replacements[1] = '<a\1class="' . $classes . ' \2"\3><img\4></a>';
+    $patterns[2] = '/<a([^>]*)class=\'([^\']*)\'([^>]*)>\s*<img([^>]*)>\s*<\/a>/'; // matches img tag wrapped in anchor tag where anchor has existing classes contained in single quotes
+    $replacements[2] = '<a\1class="\2"\3 ' . $dataattributes . ' data-gallery><img\4></a>';
 
-//     $patterns[2] = '/<a([^>]*)class=\'([^\']*)\'([^>]*)>\s*<img([^>]*)>\s*<\/a>/'; // matches img tag wrapped in anchor tag where anchor has existing classes contained in single quotes
-//     $replacements[2] = '<a\1class="' . $classes . ' \2"\3><img\4></a>';
+    $html = preg_replace($patterns, $replacements, $html);
 
-//     $html = preg_replace($patterns, $replacements, $html);
+    return $html;
+}
 
-//     return $html;
-// }
+add_filter('the_content', 'add_data_attributes_to_linked_images', 100, 1);
 
-// add_filter('the_content', 'add_classes_to_linked_images', 100, 1);
+function generateRandomString($length = 10) {
+    $characters = 'abcdefghijklmnopqrstuvwxyz';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
 
 
 /*===================================================================================
@@ -180,5 +191,48 @@ function add_gravatar_class($class) {
     return $class;
 }
 
+/*===================================================================================
+ * Custom Password-protected Post Form
+ * =================================================================================*/
 
+function custom_password_form ( $form ) {
+global $post;
+$label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+$form =
+    '<p>' .
+        __( "To view this protected post, enter the password below:" ) .
+    '</p>' .
+    '<form class="form-inline" action="' .
+    esc_url( site_url( 'wp-login.php?action=postpass',
+                      'login_post' ) ) .
+    '" method="post">' .
+        '<div class="form-group"> ' .
+            '<label class="sr-only" for="' .
+            $label .
+            '">' .
+                __('Password') .
+            ' :</label>' .
+            '<input placeholder="'.
+            __('Password') .
+            '" class="form-control" name="post_password" id="' .
+            $label .
+            '" type="password" size="20" maxlength="20" />'.
 
+        	'<input class="btn btn-lg btn-ghost btn-raised" type="submit" name="Submit" value="' .
+            esc_attr__( "Submit" ) . '" />' .
+        '</div>' .
+    '</form>';
+return $form;
+}
+// if (! is_admin()) {
+    add_filter('the_password_form','custom_password_form');
+// }
+
+// add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );
+
+// function my_post_image_html( $html, $post_id, $post_image_id ) {
+
+//   $html = '<img src="'.get_permalink( $post_id ).'" source="'.get_permalink( $post_id ).'" data-gallery/>';
+//   return $html;
+
+// }

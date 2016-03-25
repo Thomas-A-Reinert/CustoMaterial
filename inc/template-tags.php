@@ -22,11 +22,11 @@ function understrap_paging_nav() {
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<button class="nav-previous btn btn-ghost btn-raised"><?php next_posts_link( __( '<span class="fa fa-backward"></span> Older posts', 'understrap' ) ); ?></button>
+				<span class="nav-previous btn btn-ghost btn-raised"><?php next_posts_link( __( '<span class="fa fa-backward"></span> Older posts', 'understrap' ) ); ?></span>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<button class="nav-next btn btn-ghost btn-raised"><?php previous_posts_link( __( 'Newer posts <span class="fa fa-forward"></span>', 'understrap' ) ); ?></button>
+				<span class="nav-next btn btn-ghost btn-raised"><?php previous_posts_link( __( 'Newer posts <span class="fa fa-forward"></span>', 'understrap' ) ); ?></span>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -54,10 +54,10 @@ function understrap_post_nav() {
 			<?php
 
 				if ( get_previous_post_link() ) {
-					previous_post_link( '<button class="nav-previous btn btn-ghost btn-raised">%link</button>', _x( '<span class="fa fa-backward"></span>&nbsp;%title', 'Previous post link', 'understrap' ) );
+					previous_post_link( '<span class="nav-previous btn btn-ghost btn-raised">%link</span>', _x( '<span class="fa fa-backward"></span>&nbsp;%title', 'Previous post link', 'understrap' ) );
 				}
 				if ( get_next_post_link() ) {
-					next_post_link(     '<button class="nav-next btn btn-ghost btn-raised">%link</button>',     _x( '%title&nbsp;<span class="fa fa-forward"></span>', 'Next post link',     'understrap' ) );
+					next_post_link( '<span class="nav-next btn btn-ghost btn-raised">%link</span>',     _x( '%title&nbsp;<span class="fa fa-forward"></span>', 'Next post link',     'understrap' ) );
 				}
 			?>
 		</div><!-- .nav-links -->
@@ -65,6 +65,90 @@ function understrap_post_nav() {
 	<?php
 }
 endif;
+
+if ( ! function_exists( 'tarthemes_numeric_posts_nav' ) ) :
+function tarthemes_numeric_posts_nav() {
+// Custom Pagination
+// Credits to http://www.wpbeginner.com/wp-themes/how-to-add-numeric-pagination-in-your-wordpress-theme/
+
+	if( is_singular() )
+		return;
+
+	global $wp_query;
+
+	/** Stop execution if there's only 1 page */
+	if( $wp_query->max_num_pages <= 1 )
+		return;
+
+	$paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+	$max   = intval( $wp_query->max_num_pages );
+
+	/**	Add current page to the array */
+	if ( $paged >= 1 )
+		$links[] = $paged;
+
+	/**	Add the pages around the current page to the array */
+	if ( $paged >= 3 ) {
+		$links[] = $paged - 1;
+		$links[] = $paged - 2;
+	}
+
+	if ( ( $paged + 2 ) <= $max ) {
+		$links[] = $paged + 2;
+		$links[] = $paged + 1;
+	}
+
+	echo '<div class="nav-links paged-navigation">' . "\n";
+
+	/**	Previous Post Link */
+	if ( get_previous_posts_link() ) {
+		//printf( '<button class="nav-previous btn btn-ghost btn-raised"><span class="fa fa-backward"></span> %s</button>' . "\n", get_previous_posts_link() );
+	?>
+		<span class="nav-previous btn btn-ghost btn-raised">
+	<?php previous_posts_link( '<span class="fa fa-backward"></span> '.  __('Newer posts', 'understrap' )); ?>
+		</span>
+	<?php
+	}
+	/**	Link to first page, plus ellipses if necessary */
+	if ( ! in_array( 1, $links ) ) {
+		$class = 1 == $paged ? 'active' : '';
+
+		printf( '<span class="btn btn-ghost btn-raised pagenumbers %s"><a href="%s">%s</a></span>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
+
+		if ( ! in_array( 2, $links ) )
+			echo '<span class="btn btn-ghost btn-raised">...</span>';
+	}
+
+	/**	Link to current page, plus 2 pages in either direction if necessary */
+	sort( $links );
+	foreach ( (array) $links as $link ) {
+		$class = $paged == $link ? 'active' : '';
+		printf( '<span class="btn btn-ghost btn-raised pagenumbers %s"><a href="%s">%s</a></span>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
+	}
+
+	/**	Link to last page, plus ellipses if necessary */
+	if ( ! in_array( $max, $links ) ) {
+		if ( ! in_array( $max - 1, $links ) )
+			echo '<span class="btn btn-ghost btn-raised">...</span>' . "\n";
+
+		$class = $paged == $max ? ' active' : '';
+		printf( '<span class="btn btn-ghost btn-raised pagenumbers %s"><a href="%s">%s</a></span>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
+	}
+
+	/**	Next Post Link */
+	if ( get_next_posts_link() ) {
+		//printf( '<button class="nav-next btn btn-ghost btn-raised pull-right">%s  <span class="fa fa-forward"></span></button>' . "\n", get_next_posts_link() );
+	?>
+		<span class="nav-next btn btn-ghost btn-raised pull-right">
+	<?php	next_posts_link( __('Older posts', 'understrap' ) . ' <span class="fa fa-forward"></span>'); ?>
+		</span>
+	<?php
+	}
+	echo '</div>' . "\n";
+
+}
+endif;
+
 
 if ( ! function_exists( 'understrap_posted_on' ) ) :
 /**

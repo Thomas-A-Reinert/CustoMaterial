@@ -88,42 +88,42 @@ $classes = implode(" ", $classes);
     </div>
     <div class="author-contact">
         <small><?php echo __('Contact', 'understrap') . ' ' . get_the_author_meta('display_name') . ':'; ?></small>
-        <ul class="icons">
+        <div class="icons">
             <?php
             if ($website_url && $website_url != '') {
-                echo '<li class="rss btn-xs btn-ghost"><a href="' . esc_url($website_url) . '" target="_blank"><span class="fa fa-link"></span></a></li>';
+                echo '<span class="rss btn btn-ghost btn-raised"><a href="' . esc_url($website_url) . '" target="_blank"><span class="fa fa-link"></span></a></span>';
             }
 
             $rss_url = get_the_author_meta('rss_url');
             if ($rss_url && $rss_url != '') {
-                echo '<li class="rss btn-xs btn-ghost"><a href="' . esc_url($rss_url) . '" target="_blank"><span class="fa fa-rss"></span></a></li>';
+                echo '<span class="rss btn btn-ghost btn-raised"><a href="' . esc_url($rss_url) . '" target="_blank"><span class="fa fa-rss"></span></a></span>';
             }
 
             $google_profile = get_the_author_meta('google_profile');
             if ($google_profile && $google_profile != '') {
-                echo '<li class="google btn-xs btn-ghost"><a href="' . esc_url($google_profile) . '" rel="author" target="_blank"><span class="fa fa-google-plus"></span></a></li>';
+                echo '<span class="google btn btn-ghost btn-raised"><a href="' . esc_url($google_profile) . '" rel="author" target="_blank"><span class="fa fa-google-plus"></span></a></span>';
             }
 
             $twitter_profile = get_the_author_meta('twitter_profile');
             if ($twitter_profile && $twitter_profile != '') {
-                echo '<li class="twitter btn-xs btn-ghost"><a href="' . esc_url($twitter_profile) . '" target="_blank"><span class="fa fa-twitter"></span></a></li>';
+                echo '<span class="twitter btn btn-ghost btn-raised"><a href="' . esc_url($twitter_profile) . '" target="_blank"><span class="fa fa-twitter"></span></a></span>';
             }
 
             $facebook_profile = get_the_author_meta('facebook_profile');
             if ($facebook_profile && $facebook_profile != '') {
-                echo '<li class="facebook btn-xs btn-ghost"><a href="' . esc_url($facebook_profile) . '" target="_blank"><span class="fa fa-facebook"></span></a></li>';
+                echo '<span class="facebook btn btn-ghost btn-raised"><a href="' . esc_url($facebook_profile) . '" target="_blank"><span class="fa fa-facebook"></span></a></span>';
             }
 
             $linkedin_profile = get_the_author_meta('linkedin_profile');
             if ($linkedin_profile && $linkedin_profile != '') {
-                echo '<li class="linkedin btn-xs btn-ghost"><a href="' . esc_url($linkedin_profile) . '" target="_blank"><span class="fa fa-linkedin"></span></a></li>';
+                echo '<span class="linkedin btn btn-ghost btn-raised"><a href="' . esc_url($linkedin_profile) . '" target="_blank"><span class="fa fa-linkedin"></span></a></span>';
             }
 
             $xing_profile = get_the_author_meta('xing_profile');
             if ($xing_profile && $xing_profile != '') {
-                echo '<li class="xing btn-xs btn-ghost"><a href="' . esc_url($xing_profile) . '" target="_blank"><span class="fa fa-xing"></span></a></li>';
+                echo '<span class="xing btn btn-ghost btn-raised"><a href="' . esc_url($xing_profile) . '" target="_blank"><span class="fa fa-xing"></span></a></span>';
             }
             ?>
-        </ul>
+        </div>
     </div>
 </div><!--END .author-bio-->
