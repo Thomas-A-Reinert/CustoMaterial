@@ -343,7 +343,60 @@ if ( class_exists( 'Kirki' ) ) {
 	    'help'        => __( '', 'understrap' ),
 	    'default'     => __( 'MENU', 'understrap' ),
 	    'section'     => 'topbar_features',
-	    'priority'    => 70,
+	    'priority'    => 50,
+	) );
+
+	Kirki::add_field( 'understrap', array(
+	    'type'        => 'switch',
+	    'settings'    => 'toggle_topbar_shadow',
+	    'label'       => __( 'Activate Dropshadow?', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'help'        => __( '', 'understrap' ),
+	    'section'     => 'topbar_features',
+	    'default'     => true,
+	    'priority'    => 60,
+	) );
+
+
+	Kirki::add_field( 'understrap', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'topbar_dropshadow_color',
+		'label'       => esc_attr__( 'Topbar Dropshadow Color', 'understrap' ),
+		'description' => esc_attr__( '', 'understrap' ),
+		'help'        => esc_attr__( '', 'understrap' ),
+		'section'     => 'topbar_features',
+		'default'     => 'rgba(0,0,0,0.75)',
+		'priority'    => 70,
+		'required'    => array(
+			array(
+				'setting'  => 'toggle_topbar_shadow',
+				'operator' => '==',
+				'value'    => true,
+			),
+		),
+	) );
+
+
+	Kirki::add_field( 'understrap', array(
+	    'type'        => 'slider',
+	    'settings'    => 'topbar_dropshadow_size',
+	    'label'       => __( 'Dropshadow size', 'understrap' ),
+	    'description' => __( '', 'understrap' ),
+	    'section'     => 'topbar_features',
+	    'default'     => 1,
+	    'priority'    => 80,
+	    'choices'     => array(
+	        'min'  => 1,
+	        'max'  => 10,
+	        'step' => 1
+	    ),
+	    'required'    => array(
+			array(
+				'setting'  => 'toggle_topbar_shadow',
+				'operator' => '==',
+				'value'    => true,
+			),
+		),
 	) );
 
 	/**
@@ -379,59 +432,6 @@ if ( class_exists( 'Kirki' ) ) {
 				'element'  => '.topbar',
 				'function' => 'css',
 				'property' => 'background-color',
-			),
-		),
-	) );
-
-	Kirki::add_field( 'understrap', array(
-	    'type'        => 'switch',
-	    'settings'    => 'toggle_topbar_shadow',
-	    'label'       => __( 'Activate Dropshadow?', 'understrap' ),
-	    'description' => __( '', 'understrap' ),
-	    'help'        => __( '', 'understrap' ),
-	    'section'     => 'topbar_color_settings',
-	    'default'     => '0',
-	    'priority'    => 20,
-	) );
-
-
-	Kirki::add_field( 'understrap', array(
-		'type'        => 'color-alpha',
-		'settings'    => 'topbar_dropshadow_color',
-		'label'       => esc_attr__( 'Topbar Dropshadow Color', 'understrap' ),
-		'description' => esc_attr__( '', 'understrap' ),
-		'help'        => esc_attr__( '', 'understrap' ),
-		'section'     => 'topbar_color_settings',
-		'default'     => 'rgba(0,0,0,0.75)',
-		'priority'    => 30,
-		'required'    => array(
-			array(
-				'setting'  => 'toggle_topbar_shadow',
-				'operator' => '==',
-				'value'    => true,
-			),
-		),
-	) );
-
-
-	Kirki::add_field( 'understrap', array(
-	    'type'        => 'slider',
-	    'settings'    => 'topbar_dropshadow_size',
-	    'label'       => __( 'Dropshadow size', 'understrap' ),
-	    'description' => __( '', 'understrap' ),
-	    'section'     => 'topbar_color_settings',
-	    'default'     => 1,
-	    'priority'    => 40,
-	    'choices'     => array(
-	        'min'  => 1,
-	        'max'  => 10,
-	        'step' => 1
-	    ),
-	    'required'    => array(
-			array(
-				'setting'  => 'toggle_topbar_shadow',
-				'operator' => '==',
-				'value'    => true,
 			),
 		),
 	) );
@@ -946,7 +946,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'menu_settings',
-	    'default'     => 'true',
+	    'default'     => true,
 	    'priority'    => 150,
 	) );
 
@@ -1177,7 +1177,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '<strong>Notice:</strong> This may lead to super-huge Images when you switch the Sidebar off <b>and</b> activate Fullwidth Layout according to your Monitors Resolution. Anyway, Images will be resized to 1140x641 Pixels and then scaled up to match the Articles Width.', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_features',
-	    'default'     => 'true',
+	    'default'     => true,
 	    'priority'    => 15,
 	) );
 
@@ -1281,7 +1281,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'article_colors',
-	    'default'     => 'true',
+	    'default'     => true,
 	    'priority'    => 20,
 	) );
 
@@ -2441,7 +2441,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'footerwidgets_settings',
-	    'default'     => 'true',
+	    'default'     => true,
 	    'priority'    => 5,
 	) );
 
@@ -2753,7 +2753,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'footer_settings',
-	    'default'     => 'true',
+	    'default'     => true,
 	    'priority'    => 50,
 	) );
 
@@ -2764,7 +2764,7 @@ if ( class_exists( 'Kirki' ) ) {
 	    'description' => __( '', 'understrap' ),
 	    'help'        => __( '', 'understrap' ),
 	    'section'     => 'footer_settings',
-	    'default'     => 'true',
+	    'default'     => true,
 	    'priority'    => 55,
 	) );
 	// Display custom footer text
