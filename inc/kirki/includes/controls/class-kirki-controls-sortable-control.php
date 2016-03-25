@@ -46,15 +46,16 @@ if ( ! class_exists( 'Kirki_Controls_Sortable_Control' ) ) {
 			parent::to_json();
 
 			$this->json['choicesLength'] = 0;
-			if ( is_array( $this->choices ) && count( $this->choices ) )
+			if ( is_array( $this->choices ) && count( $this->choices ) ) {
 				$this->json['choicesLength'] = count( $this->choices );
+			}
 
 			$values = $this->value() == '' ? array_keys( $this->choices ) : $this->value();
 			$filtered_values = array();
 			if ( is_array( $values ) && ! empty( $values ) ) {
 				foreach ( $values as $key => $value ) {
 					if ( array_key_exists( $value, $this->choices ) ) {
-						$filtered_values[$key] = $value;
+						$filtered_values[ $key ] = $value;
 					}
 				}
 			}
@@ -64,7 +65,6 @@ if ( ! class_exists( 'Kirki_Controls_Sortable_Control' ) ) {
 			$this->json['invisibleKeys'] = array_diff( array_keys( $this->choices ), $filtered_values );
 
 			$this->json['inputAttrs'] = maybe_serialize( $this->input_attrs() );
-
 
 		}
 

@@ -16,8 +16,6 @@ if ( ! class_exists( 'Kirki_Init' ) ) {
 		 * Properly set the Kirki URL for assets
 		 * Determines if Kirki is installed as a plugin, in a child theme, or a parent theme
 		 * and then does some calculations to get the proper URL for its CSS & JS assets
-		 *
-		 * @return string
 		 */
 		public function set_url() {
 			/**
@@ -65,13 +63,16 @@ if ( ! class_exists( 'Kirki_Init' ) ) {
 			global $wp_customize;
 
 			$wp_customize->register_section_type( 'Kirki_Sections_Expanded_Section' );
+			$wp_customize->register_section_type( 'Kirki_Sections_Hover_Section' );
 
 			$wp_customize->register_panel_type( 'Kirki_Panels_Expanded_Panel' );
 
 			$wp_customize->register_control_type( 'Kirki_Controls_Checkbox_Control' );
 			$wp_customize->register_control_type( 'Kirki_Controls_Code_Control' );
 			$wp_customize->register_control_type( 'Kirki_Controls_Color_Alpha_Control' );
+			$wp_customize->register_control_type( 'Kirki_Controls_Color_Palette_Control' );
 			$wp_customize->register_control_type( 'Kirki_Controls_Custom_Control' );
+			$wp_customize->register_control_type( 'Kirki_Controls_Dashicons_Control' );
 			$wp_customize->register_control_type( 'Kirki_Controls_Dimension_Control' );
 			$wp_customize->register_control_type( 'Kirki_Controls_Number_Control' );
 			$wp_customize->register_control_type( 'Kirki_Controls_Radio_Control' );
@@ -146,10 +147,6 @@ if ( ! class_exists( 'Kirki_Init' ) ) {
 					 * Create the control
 					 */
 					new Kirki_Control( $args );
-					/**
-					 * Create the scripts for postMessage to properly work
-					 */
-					Kirki_Customizer_Scripts_PostMessage::generate_script( $args );
 					/**
 					 * Create the scripts for tooltips.
 					 */
@@ -243,11 +240,11 @@ if ( ! class_exists( 'Kirki_Init' ) ) {
 		/**
 		 * Handle saving of settings with "user_meta" storage type.
 		 *
-		 * @param string $value Value being saved
-		 * @param WP_Customize_Setting|onj $WP_Customize_Setting The WP_Customize_Setting instance when saving is happening.
+		 * @param $value                 string     Value being saved
+		 * @param wp_customize_setting   object     $WP_Customize_Setting The WP_Customize_Setting instance when saving is happening.
 		 */
 		public function update_user_meta( $value, $wp_customize_setting ) {
-			update_user_meta( get_current_user_id(), $wp_customize_setting->id, $value  );
+			update_user_meta( get_current_user_id(), $wp_customize_setting->id, $value );
 		}
 
 	}

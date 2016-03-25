@@ -28,6 +28,15 @@ if ( ! class_exists( 'Kirki_Controls_Typography_Control' ) ) {
 			parent::to_json();
 			$this->add_values_backwards_compatibility();
 			$this->json['l10n'] = Kirki_l10n::get_strings();
+			$defaults = array(
+				'font-family'    => false,
+				'font-size'      => false,
+				'line-height'    => false,
+				'line-height'    => false,
+				'letter-spacing' => false,
+				'color'          => false,
+			);
+			$this->json['default'] = wp_parse_args( $this->json['default'], $defaults );
 		}
 
 		public function render_content() {}
@@ -47,7 +56,7 @@ if ( ! class_exists( 'Kirki_Controls_Typography_Control' ) ) {
 
 			<div class="wrapper">
 
-				<# if ( data.choices['font-family'] ) { #>
+				<# if ( data.default['font-family'] ) { #>
 					<# if ( '' == data.value['font-family'] ) { data.value['font-family'] = data.default['font-family']; } #>
 					<# if ( data.choices['fonts'] ) { data.fonts = data.choices['fonts']; } #>
 					<div class="font-family">
@@ -64,28 +73,28 @@ if ( ! class_exists( 'Kirki_Controls_Typography_Control' ) ) {
 					</div>
 				<# } #>
 
-				<# if ( data.choices['font-size'] ) { #>
+				<# if ( data.default['font-size'] ) { #>
 					<div class="font-size">
 						<h5>{{ data.l10n['font-size'] }}</h5>
 						<input type="text" value="{{ data.value['font-size'] }}"/>
 					</div>
 				<# } #>
 
-				<# if ( data.choices['line-height'] ) { #>
+				<# if ( data.default['line-height'] ) { #>
 					<div class="line-height">
 						<h5>{{ data.l10n['line-height'] }}</h5>
 						<input type="text" value="{{ data.value['line-height'] }}"/>
 					</div>
 				<# } #>
 
-				<# if ( data.choices['letter-spacing'] ) { #>
+				<# if ( data.default['letter-spacing'] ) { #>
 					<div class="letter-spacing">
 						<h5>{{ data.l10n['letter-spacing'] }}</h5>
 						<input type="text" value="{{ data.value['letter-spacing'] }}"/>
 					</div>
 				<# } #>
 
-				<# if ( data.choices['color'] ) { #>
+				<# if ( data.default['color'] ) { #>
 					<div class="color">
 						<h5>{{ data.l10n['color'] }}</h5>
 						<input type="text" data-palette="{{ data.palette }}" data-default-color="{{ data.default['color'] }}" value="{{ data.value['color'] }}" class="kirki-color-control color-picker" {{{ data.link }}} />
@@ -111,7 +120,7 @@ if ( ! class_exists( 'Kirki_Controls_Typography_Control' ) ) {
 				$old_values['variant'] = 'regular';
 			}
 			// letter spacing was in px, now it requires units.
-			if ( $value['letter-spacing'] == intval( $value['letter-spacing'] ) ) {
+			if ( isset( $value['letter-spacing'] ) && $value['letter-spacing'] == intval( $value['letter-spacing'] ) ) {
 				$value['letter-spacing'] .= 'px';
 			}
 			$this->json['value'] = wp_parse_args( $value, $old_values );

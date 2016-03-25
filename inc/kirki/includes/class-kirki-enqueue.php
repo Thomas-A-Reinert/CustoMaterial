@@ -23,6 +23,7 @@ if ( ! class_exists( 'Kirki_Enqueue' ) ) {
 		public function __construct() {
 			add_action( 'customize_controls_enqueue_scripts', array( $this, 'customize_controls_enqueue_scripts' ) );
 			add_action( 'customize_controls_print_scripts', array( $this, 'branding' ) );
+			add_action( 'customize_preview_init', array( $this, 'postmessage' ) );
 		}
 
 		public function customize_controls_enqueue_scripts() {
@@ -35,7 +36,7 @@ if ( ! class_exists( 'Kirki_Enqueue' ) ) {
 			wp_enqueue_script( 'wp-color-picker-alpha', trailingslashit( Kirki::$url ) . 'assets/js/vendor/wp-color-picker-alpha.js', array( 'wp-color-picker' ), '1.2' );
 			wp_enqueue_style( 'wp-color-picker' );
 
-			$suffix = ( ! Kirki_Toolkit::kirki_debug() ) ? '.min' : '';
+			$suffix = ( ! Kirki_Toolkit::is_debug() ) ? '.min' : '';
 
 			Kirki_Styles_Customizer::enqueue_customizer_control_script( 'codemirror', 'vendor/codemirror/lib/codemirror', array( 'jquery' ) );
 			Kirki_Styles_Customizer::enqueue_customizer_control_script( 'selectize', 'vendor/selectize', array( 'jquery' ) );
@@ -59,21 +60,33 @@ if ( ! class_exists( 'Kirki_Enqueue' ) ) {
 			$google_fonts   = Kirki_Fonts::get_google_fonts();
 			$standard_fonts = Kirki_Fonts::get_standard_fonts();
 			$all_variants   = Kirki_Fonts::get_all_variants();
-			$all_subsets    = Kirki_Fonts::get_all_subsets();
+			$all_subsets    = Kirki_Fonts::get_google_font_subsets();
 
 			$standard_fonts_final = array();
 			foreach ( $standard_fonts as $key => $value ) {
 				$standard_fonts_final[] = array(
-					'family'       => $value['stack'],
-					'label'        => $value['label'],
-					'variants'     => array(
-						array( 'id' => 'regular',   'label' => $all_variants['regular'] ),
-						array( 'id' => 'italic',    'label' => $all_variants['italic'] ),
-						array( 'id' => '700',       'label' => $all_variants['700'] ),
-						array( 'id' => '700italic', 'label' => $all_variants['700italic'] ),
+					'family'      => $value['stack'],
+					'label'       => $value['label'],
+					'subsets'     => array(),
+					'is_standard' => true,
+					'variants'    => array(
+						array(
+							'id'    => 'regular',
+							'label' => $all_variants['regular']
+						),
+						array(
+							'id'    => 'italic',
+							'label' => $all_variants['italic']
+						),
+						array(
+							'id'    => '700',
+							'label' => $all_variants['700']
+						),
+						array(
+							'id'    => '700italic',
+							'label' => $all_variants['700italic']
+						),
 					),
-					'subsets'      => array(),
-					'is_standard'  => true,
 				);
 			}
 
@@ -126,6 +139,18 @@ if ( ! class_exists( 'Kirki_Enqueue' ) ) {
 				wp_localize_script( 'kirki-branding', 'kirkiBranding', $vars );
 				wp_enqueue_script( 'kirki-branding' );
 			}
+		}
+
+		public function postmessage() {
+			wp_enqueue_script( 'kirki_auto_postmessage', trailingslashit( Kirki::$url ) . 'assets/js/kirki-postmessage.js', array( 'customize-preview' ), time(), true );
+			$js_vars_fields = array();
+			$fields = Kirki::$fields;
+			foreach ( $fields as $field ) {
+				if ( isset( $field['transport'] ) && 'postMessage' == $field['transport'] && isset( $field['js_vars'] ) && ! empty( $field['js_vars'] ) && is_array( $field['js_vars'] ) && isset( $field['settings'] ) ) {
+					$js_vars_fields[ $field['settings'] ] = $field['js_vars'];
+				}
+			}
+			wp_localize_script( 'kirki_auto_postmessage', 'js_vars', $js_vars_fields );
 		}
 
 	}

@@ -12,13 +12,13 @@ class Kirki_Output {
 	 * @access protected
 	 * @var array
 	 */
-	protected $output    = array();
+	protected $output = array();
 
 	/**
 	 * @access protected
 	 * @var array
 	 */
-	protected $styles    = array();
+	protected $styles = array();
 
 	/**
 	 * @access protected
@@ -35,6 +35,7 @@ class Kirki_Output {
 	 * @param $value        string|array
 	 */
 	public function __construct( $config_id, $output, $value ) {
+
 		$this->config_id = $config_id;
 		$this->value     = $value;
 		$this->output    = $output;
@@ -88,6 +89,12 @@ class Kirki_Output {
 				continue;
 			}
 
+			if ( isset( $output['element'] ) && is_array( $output['element'] ) ) {
+				$output['element'] = array_unique( $output['element'] );
+				sort( $output['element'] );
+				$output['element'] = implode( ',', $output['element'] );
+			}
+
 			$value = $this->process_value( $value, $output );
 			$this->process_output( $output, $value );
 		}
@@ -111,12 +118,6 @@ class Kirki_Output {
 		$output['units']       = ( isset( $output['units'] ) )       ? $output['units']       : '';
 		$output['suffix']      = ( isset( $output['suffix'] ) )      ? $output['suffix']      : '';
 
-		if ( is_array( $output['element'] ) ) {
-			$output['element'] = array_unique( $output['element'] );
-			sort( $output['element'] );
-			$output['element'] = implode( ',', $output['element'] );
-		}
-
 		$this->styles[ $output['media_query'] ][ $output['element'] ][ $output['property'] ] = $output['prefix'] . $value . $output['units'] . $output['suffix'];
 	}
 
@@ -127,6 +128,8 @@ class Kirki_Output {
 	 * @access protected
 	 * @param $property  string  the CSS property
 	 * @param $value     string  the value
+	 *
+	 * @return array
 	 */
 	protected function process_property_value( $property, $value ) {
 		$properties = apply_filters( 'kirki/' . $this->config_id . '/output/property-classnames', array(
