@@ -121,7 +121,7 @@ if (get_theme_mod('content_width') == 'fullwidth') {
     <?php endif; ?>
 
     <ul class="main-menu">
-        <?php if (has_nav_menu('primary')) :
+        <?php
             wp_nav_menu(array(
                     'theme_location' => 'primary',
                     'container' => false,
@@ -133,14 +133,7 @@ if (get_theme_mod('content_width') == 'fullwidth') {
                     'items_wrap' => '%3$s',// skip the containing <ul>
                 )
             );
-        else :
-            wp_list_pages(array(
-                    'menu_class' => 'nav navbar-nav',//  'nav navbar-right'
-                    'walker' => new Bootstrap_Page_Menu(),
-                    'title_li' => null,
-                )
-            );
-        endif; ?>
+         ?>
     </ul>
 
     <form role="search" method="get" class="form-wrapper cf" action="<?php echo home_url('/'); ?>">
