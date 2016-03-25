@@ -27,10 +27,10 @@ get_header(); ?>
                     $args = array('child_of' => get_cat_ID('Portfolio'));
                     $categories = get_categories( $args );
 
-                    echo '<button class="btn btn-raised btn-ghost filter" data-filter="all">' . __( "View all" ) . '</button>' ;
+                    echo '<span class="btn btn-ghost btn-raised filter" data-filter="all"><a>' . __( "View all" ) . '</a></span>' ;
 
                     foreach($categories as $category) {
-                        echo '<button class="btn btn-raised btn-ghost filter" data-filter=".category-' . $category->slug /* get_category_link( $category->term_id ) */ . '">' . $category->name.' <span class="badge">' . $category->count . '</span></button>';
+                        echo '<span class="btn btn-ghost btn-raised filter" data-filter=".category-' . $category->slug /* get_category_link( $category->term_id ) */ . '"><a>' . $category->name.' <span class="badge">' . $category->count . '</span></a></span>';
                     }
                 ?>
             </div>
