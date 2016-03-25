@@ -49,7 +49,7 @@ get_header(); ?>
 
                     <?php endwhile; ?>
 
-                        <?php understrap_paging_nav(); ?>
+                        <?php tarthemes_numeric_posts_nav(); ?>
 
                     <?php else : ?>
 
